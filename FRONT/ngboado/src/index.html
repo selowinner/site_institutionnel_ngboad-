@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Ngboado</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+  <app-root></app-root>
+
+
+
+
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+  <!-- tabs page d'accueil bloc 3 start -->
+  <script>
+    $(document).ready(function() {
+        $("div.bhoechie-tab-menu>div.list-group>a").click(function(e) {
+            e.preventDefault();
+            $(this).siblings('a.active').removeClass("active");
+            $(this).addClass("active");
+            var index = $(this).index();
+            $("div.bhoechie-tab>div.bhoechie-tab-content").removeClass("active");
+            $("div.bhoechie-tab>div.bhoechie-tab-content").eq(index).addClass("active");
+        });
+    });
+</script>
+  <!-- tabs page d'accueil bloc 3 end -->
+
+
+
+
+</body>
+
+<!-- accordion page presentation script start -->
+<script>
+
+  const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+  
+  accordionItemHeaders.forEach(accordionItemHeader => {
+    accordionItemHeader.addEventListener("click", event => {
+      accordionItemHeader.classList.toggle("active");
+      const accordionItemBody = accordionItemHeader.nextElementSibling;
+      if(accordionItemHeader.classList.contains("active")) {
+        accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+      }
+      else {
+        accordionItemBody.style.maxHeight = 0;
+      }
+      
+    });
+  });
+  </script>
+<!-- accordion page presentation script end -->
+
+
+<!-- ........membres script start........ -->
+<script>
+  $num = $('.imb').length;
+  $even = $num / 2;
+  $odd = ($num + 1) / 2;
+  
+  if ($num % 2 == 0) {
+    $('.imb:nth-child(' + $even + ')').addClass('active');
+    $('.imb:nth-child(' + $even + ')').prev().addClass('prev');
+    $('.imb:nth-child(' + $even + ')').next().addClass('next');
+  } else {
+    $('.imb:nth-child(' + $odd + ')').addClass('active');
+    $('.imb:nth-child(' + $odd + ')').prev().addClass('prev');
+    $('.imb:nth-child(' + $odd + ')').next().addClass('next');
+  }
+  
+  $('.imb').click(function() {
+    $slide = $('.active').width();
+    console.log($('.active').position().left);
+    
+    if ($(this).hasClass('next')) {
+      $('.card-carousel').stop(false, true).animate({left: '-=' + $slide});
+    } else if ($(this).hasClass('prev')) {
+      $('.card-carousel').stop(false, true).animate({left: '+=' + $slide});
+    }
+    
+    $(this).removeClass('prev next');
+    //$(this).siblings().removeClass('prev active next');
+    
+    $(this).addClass('active');
+    $(this).prev().addClass('prev');
+    $(this).next().addClass('next');
+  });
+  
+  
+  // Keyboard nav
+  $('html body').keydown(function(e) {
+    if (e.keyCode == 37) { // left
+      $('.active').prev().trigger('click');
+    }
+    else if (e.keyCode == 39) { // right
+      $('.active').next().trigger('click');
+    }
+  });
+  </script>
+  <script type="text/javascript">
+  
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36251023-1']);
+    _gaq.push(['_setDomainName', 'jqueryscript.net']);
+    _gaq.push(['_trackPageview']);
+  
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  
+  </script>
+  
+  
+  <script>
+    function myFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+    </script>
+  
+    <script>
+        function twFunction() {
+        var popup = document.getElementById("myPopup2");
+        popup.classList.toggle("show");
+      }
+    </script>
+  
+      <script>
+        function tFunction() {
+          var popup = document.getElementById("myPopup3");
+          popup.classList.toggle("show");
+        }
+        </script>
+  
+        <script>
+          function frFunction() {
+            var popup = document.getElementById("myPopup4");
+            popup.classList.toggle("show");
+          }
+          </script>
+  
+          <script>
+            function fvFunction() {
+              var popup = document.getElementById("myPopup5");
+              popup.classList.toggle("show");
+            }
+            </script>
+  
+            <script>
+              var coll = document.getElementsByClassName("collapsible");
+              var i;
+              
+              for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                  this.classList.toggle("active");
+                  var content = this.nextElementSibling;
+                  if (content.style.display === "block") {
+                    content.style.display = "none";
+                  } else {
+                    content.style.display = "block";
+                  }
+                });
+              }
+              </script>
+  
+  <script>            
+  function onTabClick(event) {
+    let activeTabs = document.querySelectorAll('span.active');
+  
+    
+    activeTabs.forEach(function(tab) {
+      tab.className = tab.className.replace('active', '');
+    });
+    
+    event.target.parentElement.className += ' active';
+    document.getElementById(event.target.href.split('#')[1]).className += ' active';
+  }
+  
+  const element = document.getElementById('nav-tab');
+  
+  element.addEventListener('click', onTabClick, false);
+  </script>
+<!-- ........membres script end........ -->
+
+
+<!-- menu script start -->
+<script>
+  $(document).ready(function(){
+      $(".toggle-button").click(function(){
+          $(".full-screen-navigation").addClass("show");
+      });
+      $(".full-screen-navigation .toggle-close").click(function(){
+          $(".full-screen-navigation").removeClass("show");
+      });
+  });
+</script>
+<!-- menu script end -->
+</html>
