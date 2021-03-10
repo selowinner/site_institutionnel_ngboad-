@@ -1,1 +1,1 @@
-Ce dossier correspond au repertopire des fichiers Front-End du projet
+Ce dossier correspond au repertoire des fichiers Front-End du projet
