@@ -1,0 +1,206 @@
+body{
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+}
+
+/* le logo */
+.grid-logo {
+    display: grid;
+    grid-template-areas: 'gauche gauche milieu milieu droite droite';
+    grid-gap: 10px;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 80px;
+  }
+.grid-logo > div{
+    background-color: transparent;
+    text-align: center;
+    padding: 20px 0;
+}
+.logo-gauche { grid-area: gauche; }
+.logo-droite { grid-area: droite; }
+.logo-milieu { grid-area: milieu; }
+.svice-box {
+ margin-top: 105px;
+}
+.svice-icon{
+    display: inline-block;
+    box-shadow: 0px 0px 0px 30px rgba(255,255,255,0.3);
+    color: #276070;
+    background: #fbfcfa;
+    border-radius: 50%;
+    text-align: center;
+    transition: 0.3s linear;
+  }
+.svice-icon img{
+    left: 50%;
+    height: 100px;
+    border-radius: 50%;
+    width: 100px;
+  }
+  .loader-logo {
+    overflow: hidden;
+    transform: translatey(0px);
+    -webkit-animation: float 3s ease-in-out infinite;
+            animation: float 3s ease-in-out infinite;
+  }
+  
+  
+  @-webkit-keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-20px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-20px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
+/* le logo */
+
+  .page-content{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    width: 100%;
+    max-width: 1430px;
+    text-align: center;
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+  .page-content h2{
+    color: #fff;
+    font-size: 38px;
+  }
+ 
+  .march{
+     color: #ffffff;
+     font-size: 43px;
+   }
+ 
+   .prest{
+     color: #ffffff;
+     font-size: 39px;
+     font-weight: 900;
+   }
+ 
+  .page-content p{
+    color: #fff;
+    font-size: 20px;
+  }
+
+  .landing-page{
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    position: relative;
+    overflow: hidden;
+  }
+  .landing-page::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: url("../../../assets/images/sug_bg.jpg") no-repeat;
+    background-size: cover;
+    opacity: .3;
+  }
+ /* section 1 */
+
+ /* section debut */
+ .accordion {
+    width: 80%;
+    max-width: 900px;
+    margin: 7rem ;
+  }
+  .accordion-item {
+    color: #4d4d4d;
+    margin: 1rem 0;
+    border-radius: 0.2rem;
+   border: 1px solid #f1f1f1;
+    -webkit-border-radius: 0.2rem;
+    -moz-border-radius: 0.2rem;
+    -ms-border-radius: 0.2rem;
+    -o-border-radius: 0.2rem;
+    font-size: 15px;
+  }
+  .accordion-item-header {
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    min-height: 2.8rem;
+    line-height: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    border-radius: 0.2rem;
+  }
+  .accordion-item-header.active::after {
+    content: "\002B";
+    /* font-size: 2rem; */
+    position: absolute;
+    /* right: 1rem; */
+    background: linear-gradient(left, #019939, #336699) !important;
+  }
+  .accordion-item-header.active::after {
+    content: "\2212";
+  }
+  .accordion-item-header:active {
+    content: "\2212";
+    font-size: 1rem;
+    /* position: absolute; */
+    /* background: linear-gradient(left, #019939, #336699) !important; */
+    color: #f1f1f1;
+    background-image: linear-gradient(to right, #019969, #336699);
+    border-radius: 0.2rem;
+  }
+  .accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid;
+}
+
+  
+  .lorem-acc{
+  font-size: 18px;
+  color: #4d4d4d;
+  font-weight: 500;
+  }
+  .card{
+    background-color: #fff;
+    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.062);
+    margin-top: 7rem;
+    margin-left: 4rem;
+    width: 515px;
+    height: 500px;
+    border: none;
+   }
+ /* section 2 fin */
+
+ /* le menu style start */
+.overlay {
+  background-image: url("../../../assets/images/sug_bg.jpg");
+}
+/* le menu style end */
