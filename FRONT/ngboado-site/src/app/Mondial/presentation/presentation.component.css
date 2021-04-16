@@ -114,7 +114,7 @@
   .prest{
     color: #ffffff;
     font-size: 39px;
-    font-weight: 900;
+    font-weight: 700;
   }
 
  .page-content p{
@@ -123,58 +123,65 @@
  }
  /*Bg image style end*/
 
+
  /* section 2 accordion */
  .section2{
    padding: 0!important;
    margin: 0!important;
  }
-.accordion {
-    width: 60%;
-    max-width: 900px;
-    margin: 7rem ;
+
+  .ac{
+    width: 90%;
   }
-  .accordion-item {
-    color: #4d4d4d;
-    margin: 1rem 0;
-    border-radius: 0.2rem;
-   border: 1px solid #f1f1f1;
-    -webkit-border-radius: 0.2rem;
-    -moz-border-radius: 0.2rem;
-    -ms-border-radius: 0.2rem;
-    -o-border-radius: 0.2rem;
-    font-size: 15px;
-  } 
-  .accordion-item-header {
-    padding: 0.5rem 3rem 0.5rem 1rem;
-    min-height: 3.5rem;
-    line-height: 1.25rem;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
+ 
+  .ac-label {
+    font-weight: 700;
     position: relative;
+    padding: .7em 1em;
+    margin-bottom: 2px;
+    display: block;
     cursor: pointer;
-    border-radius: 0.2rem;
-  }
-  .accordion-item-header::after {
-    content: "\002B";
-    font-size: 2rem;
-    position: absolute;
-    right: 1rem;
-    background: linear-gradient(left, #019939, #336699) !important;
+    border: 1px solid whiteSmoke ;
+}
   
+  .ac-input:checked + label, .ac-label:hover {
+    background-image: linear-gradient(to left, #336699, #019939);
+    color: #fff;
   }
-  .accordion-item-header.active::after {
-    content: "\2212";
+  
+  .ac-label:after, .ac-input:checked + .ac-label:after {
+    content: "+";
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 0;
+    width: 2em;
+    height: 100%;
+    font-size: 23px;
+    text-align: center;
   }
-  .accordion-item-body {
-    max-height: 0;
+  
+  .ac-input:checked + .ac-label:after {
+    content: "-";
+    color: #fff;
+  }
+  
+  .ac-input {
+    display: none;
+  }
+  
+  .ac-text{
+    opacity: 0;
+    height: 0;
+    margin-bottom: .5em;
+    transition: opacity .5s ease-in-out;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    padding-top: 15px;
   }
-  .accordion-item-body-content {
-    padding: 1rem;
-    line-height: 1.5rem;
-    border-top: 1px solid;
+  
+  .ac-input:checked ~ .ac-text, .ac-sub .ac-input:checked ~ .ac-sub-text {
+    opacity: 1;
+    height: auto;
   }
    
   .btn-primary{
@@ -184,87 +191,22 @@
   }
   
   .lorem-acc{
-  font-size: 13px;
+  font-size: 18px;
   color: #4d4d4d;
   font-weight: 500;
   }
 
   .card{
-    background-color: #f1f1f1;
-    box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.1);
-    margin-top: 7rem;
-   width: 530px;
-
-  }
+    margin-top: 2rem;
+    width: 530px;
+}
    /* section 2 accordion*/
-/* 
-[data-toggle=collapse] i:before {
-  content: "";
-}
 
-[data-toggle=collapse].collapsed i:before {
-  content: "";
-}
-
-#accordion .card-header {
-  margin-bottom: 8px;
-}
-#accordion .accordion-title {
-  position: relative;
-  display: block;
-  padding: 8px 0 8px 50px;
-  background: #213744;
-  border-radius: 8px;
-  overflow: hidden;
-  text-decoration: none;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 700;
-  width: 100%;
-  text-align: left;
-  transition: all 0.4s ease-in-out;
-}
-#accordion .accordion-title i {
-  position: absolute;
-  width: 40px;
-  height: 100%;
-  left: 0;
-  top: 0;
-  color: #fff;
-  background: linear-gradient(to right, #019939, #336699);
-  /* background: radial-gradient(rgba(33, 55, 68, 0.8), #213744); */
-  /* text-align: center;
-  border-right: 1px solid transparent;
-} */
-/* #accordion .accordion-title:hover {
-  padding-left: 60px;
-  background: #213744;
-  color: #fff;
-}
-#accordion .accordion-title:hover i {
-  border-right: 1px solid #fff;
-}
-#accordion .accordion-body {
-  padding: 40px 55px;
-}
-#accordion .accordion-body ul {
-  list-style: none;
-  margin-left: 0;
-  padding-left: 0;
-}
-#accordion .accordion-body li {
-  padding-left: 1.2rem;
-  text-indent: -1.2rem;
-}
-#accordion .accordion-body li:before {
-  content: "";
-  padding-right: 5px;
-  font-size: 16px;
-  color: #213744;
-}  */
 
 /* le menu style start */
 .overlay {
   background-image: url("../../../assets/images/present-bg.jpg");
 }
 /* le menu style end */
+
+

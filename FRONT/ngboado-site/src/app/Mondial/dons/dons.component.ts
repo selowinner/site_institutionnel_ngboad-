@@ -13,6 +13,6 @@ export class DonsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  openClickMenu() { openMenu();}
-  closeClickMenu(){closeMenu();}
+  openClickMenu() {openMenu();}
+  closeClickMenu() {closeMenu();}
 }

@@ -173,7 +173,7 @@ body{
 
 .fab{color: #fff;}
 
-.box{
+/* .box{
 display: none;
 padding: 10px;
 margin-top: 4px;
@@ -189,10 +189,11 @@ margin-top: 4px;
 display: none;
 padding: 10px;
 margin-top: 4px;
-}
+} */
 
 input[type=text]{
 background-color: transparent;
+text-align: center;
 }
 label {
 color: #fff;
@@ -200,9 +201,22 @@ color: #fff;
 span {
 color: #fff;
 }
-.btn {
-color: #fff;
-background-color: transparent;
-border-radius: 19px;
-border: 1px solid #fff;
+.btn { color: #fff; 
+  background-color: transparent; 
+  border-radius: 15px;
+  border: 1px solid #fff; 
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 15px;
+}
+
+input[type="radio"]{
+  height: 17px;
+  width: 50px;
+}
+.don_txt{
+  font-size: 20px;
+}
+label{
+  font-size: 17px;
 }

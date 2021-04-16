@@ -1,5 +1,5 @@
 <!-- le menu (debut) -->
-<!-- <header>
+<header>
     <div id="myNav" class="overlay">
     <a href="javascript:void(0)" class="closebtn" id="closeNav" (click)="closeClickMenu()">&times;</a>
     <div class="overlay-content">
@@ -43,7 +43,7 @@
     </ul>
     </div>
     </div>
-  </header> -->
+  </header>
 <!-- le menu (fin) -->
 
 <!--image d'accueil start-->
@@ -62,7 +62,7 @@
     </div>
 
     <p style="font-size: 45px;">
-      <span style="font-size: 45px;">Faire un don</span> <br>
+      <span style="font-size: 45px;">Faire un don*</span> <br>
       <span style="color: #fff; font-size: 25px">Le meilleur modèle multi-page polyvalent</span></p><br>
       <hr style="background-color: rgba(255, 255, 255, 0.466);"><br>
 
@@ -71,58 +71,78 @@
 <div class="grid-item2"></div>
 <div class="grid-item">
   <div class="lform">
-    <span>Identité donateur</span><br>
-    <label><input type="radio" name="colorRadio" value="one" checked/>&nbsp;Anonyme&nbsp;</label>
-    <label><input type="radio" name="colorRadio" value="deux"/>&nbsp;Visible&nbsp;</label>
-    <!-- <label><input type="radio" name="colorRadio" value="trois"/></label> -->
+    <span class="don_txt">Identité donateur*</span><br>
+    <div class="row" style="line-height: 25px;">
+      <div class="col-md-2"></div>
+      <div class="col-md-4">
+         <label><input type="radio" name="colorRadio" value="elle" checked/><br>Anonyme</label>
+      </div>
+      <div class="col-md-4">
+         <label><input type="radio" name="colorRadio" value="luil"/><br> Visible</label>
+      </div>
+      <div class="col-md-2"></div>
+    </div><br>
   </div>
   
-  <div class="bo1x one">
-    <input type="text" class="form-control" name="" placeholder="xxxxxx1xxxxxxxxxx" />
-  </div>
-  <div class="box deux">
-    <input type="text" class="form-control" name="" placeholder="xxxxxx2xxxxxxxxxx"/>
+  <div class="bo1x one text-center">
+    <input type="text" class="form-control" name="" placeholder="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
   </div>
 </div>
 
 <div class="grid-item">
   <div class="lform">
-    <span>Type dons</span><br>
-    <label><input type="radio" name="colorRadio" value="elle" checked/>&nbsp;Nature&nbsp;</label>
-    <label><input type="radio" name="colorRadio" value="luil"/>&nbsp;Espèces&nbsp;</label>
-    <label><input type="radio" name="colorRadio" value="vert"/>&nbsp;Autres&nbsp;</label>
+    <span class="don_txt">Type dons*</span><br>
+    <div class="row" style="line-height: 25px;">
+      <div class="col-md-4">
+         <label><input type="radio" name="colorRadio" value="elle" checked/><br>Nature</label>
+      </div>
+      <div class="col-md-4">
+         <label><input type="radio" name="colorRadio" value="luil"/><br> Espèces</label>
+      </div>
+      <div class="col-md-4">
+         <label><input type="radio" name="colorRadio" value="vert"/><br> Autres</label>
+      </div>
+    </div><br>
   </div>
   
   <div class="bb0ox elle">
-    <input type="text" class="form-control" name="" placeholder="xxxxxxnatxxxxxxxxxx"/>
+    <input type="text" class="form-control" name="" placeholder="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"/>
   </div>
-  <div class="bbox luil">
+  <!-- <div class="bbox luil">
     <input type="text" class="form-control" name="" placeholder="xxxxxxespxxxxxxxxxx"/>
   </div>
   <div class="bbox vert">
     <input type="text" class="form-control" name="" placeholder="xxxxxxautrexxxxxxxxxx"/>
-  </div>
-<button type="submit" class="btn btn-danger">Valider</button>
+  </div><br> -->
+<button type="submit" class="btn btn-outline">Valider</button>
 
 </div>
 
 <div class="grid-item">
   <div class="lform">
-    <span>Bénéficiaire</span><br>
-    <label><input type="radio" name="colorRadio" value="dada" checked/>&nbsp;ONG&nbsp;</label>
-    <label><input type="radio" name="colorRadio" value="dady"/>&nbsp;Programmes&nbsp;</label>
-    <label><input type="radio" name="colorRadio" value="dade"/>&nbsp;Fonds&nbsp;</label>
+    <span class="don_txt">Bénéficiaire*</span><br>
+    <div class="row" style="line-height: 25px;">
+      <div class="col-md-4">
+         <label><input type="radio" name="colorRadio" value="elle" checked/><br>ONG</label>
+      </div>
+      <div class="col-md-4 don_txt">
+         <label><input type="radio" name="colorRadio" value="luil"/><br> Programmes</label>
+      </div>
+      <div class="col-md-4">
+         <label><input type="radio" name="colorRadio" value="vert"/><br> Fond</label>
+      </div>
+    </div><br>
   </div>
   
-  <div class="b3bbox dada">
-    <input type="text" class="form-control" name="colorRadio" placeholder="xxxxxxongxxxxxxxxxx"/>
+  <div class="r">
+    <input type="text" class="form-control" name="colorRadio" placeholder="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"/>
   </div>
-  <div class="bbbox dady">
-    <input type="text" class="form-control" name="colorRadio" placeholder="xxxxxxprogxxxxxxxxxx"/>
+  <!-- <div class="bbbox dady">
+    <input type="text" class="form-control" name="colorRadio" placeholder="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"/>
   </div>
   <div class="bbbox dade">
-    <input type="text" class="form-control" name="colorRadio" placeholder="xxxxxxfonxxxxxxxxxx"/>
-  </div>
+    <input type="text" class="form-control" name="colorRadio" placeholder="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"/>
+  </div> -->
 </div>
 
 </div>
