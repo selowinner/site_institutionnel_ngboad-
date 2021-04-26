@@ -200,3 +200,8 @@ body{
   background-image: url("../../../assets/images/sug_bg.jpg");
 }
 /* le menu style end */
+
+#prof{
+  display: block;
+}
+.anony{cursor: pointer;}

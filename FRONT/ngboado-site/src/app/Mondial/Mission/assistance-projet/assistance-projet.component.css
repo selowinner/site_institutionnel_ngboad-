@@ -188,7 +188,13 @@ justify-content: center;
 }
 /* search bar icon */
 /* Programmes intitutionnels */
+#slideMission{
+  display: none;
+}
 
+.Asist{
+  cursor: pointer;
+}
 
 /* Programmes intitutionnels */
 .ProgNInst {

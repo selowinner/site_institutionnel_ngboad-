@@ -28,35 +28,56 @@
                 <div class="col-md-3"></div>
             </div>
 
-            <div>
-                <br><br><br>
-                <div class="row no-gutters">
-                    <div class="col-md-4 text-center">
-                        <div class="card rounded-0" style="background: #26313c; height: 194px !important; color: #fff; padding-top: 38px; border: none;">
-                            <div class="card-body">
-                                <h4 class="text-center" style="text-decoration: none;color: #fff;">
-                                    <img class="" style="width: 50px;height: 50px;" src="../../../../assets/icones/prevention.png" alt="Réinsertion">
-                                        <br>
-                                        Prevention
-                                </h4>
-                            </div>
+            <div class="card-popup">
+                <!-- les popups -->
+                    <div class=" row">
+                        <div class="col-md-4 animate__animated animate__fadeInUp">
+                            <div id="firstPop">
+                                <a routerLink="/prevention-programme"><button class="btn btn-danger btn-lg">Programme</button>&nbsp;</a>
+                                <a routerLink="/prevention-projet"><button class="btn btn-danger btn-lg">Projets</button>&nbsp;</a><br>
+                             </div><br>
+                            <span class="bidul">dqsdsqdsqdsqd</span>
+                            <span class="bidul">dqsdsqdsqdsqd</span>
                         </div>
-                        <!-- <div class="container-menu">
-                            <div class="btn-menu"></div>
-                            <div class="blob blob-1">
-                              <p>Programmes</p>
+                        <div class="col-md-4">
+                            <div id="twoPop">
+                                <div id="twoPop">
+                                    <a routerLink="/assistance-programme"><button class="btn btn-danger btn-lg">Programme</button>&nbsp;</a>
+                                    <a routerLink="/assistance-projet"><button class="btn btn-danger btn-lg">Projets</button>&nbsp;</a><br>
+                                 </div><br>
                             </div>
-                            <div class="blob blob-2">
-                              <p>Projets</p>
-                            </div>
-                        </div> -->
+                            <span class="bidul">Programme</span>
+                            <span class="bidul">dqsdsqdsqdsqd</span>
+                        </div>
+                        <div class="col-md-4">
+                            <div id="threePop">
+                                <a routerLink="/reinsertion-programme"><button class="btn btn-danger btn-lg">Programme</button>&nbsp;</a>
+                                <a routerLink="/reinsertion-programme"><button class="btn btn-danger btn-lg">Projets</button>&nbsp;</a><br>
+                             </div><br>
+                            <span class="bidul">Programme</span>
+                            <span class="bidul">dqsdsqdsqdsqd</span>
+                        </div>
+                    </div>
+                <!-- les popups -->
+                <br><br>
+                <div class="row no-gutters mt-2 m-card">
+                    <div class="col-md-4 text-center" onclick="myFpop()">
+                       <div class="card rounded-0" style="background: #26313c; height: 194px !important; color: #fff; padding-top: 36px; border: none;">
+                        <div class="card-body">
+                            <h4 class="text-center" style="text-decoration: none; color: #fff;">
+                                <img style="width: 50px; height: 50px;" src="../../../../assets/icones/prevention.png" alt="prevention">
+                                    <br>
+                                    Prévention
+                            </h4>
+                        </div>
+                       </div>
                     </div>  
 
-                    <div class="col-md-4 text-center">
-                        <div class="card rounded-0" style="background: #019939;height: 194px !important; color: #fff; padding-top: 38px; border: none;">
+                    <div class="col-md-4 text-center" onclick="myTpop()">
+                        <div class="card rounded-0" style="background: #019939; height: 194px !important; color: #fff; padding-top: 36px; border: none;">
                             <div class="card-body">
-                                <h4 class="text-center" style="text-decoration: none;color: #fff;">
-                                    <img class="" style="width: 50px;height: 50px;" src="../../../../assets/icones/assistance.png" alt="Réinsertion">
+                                <h4 class="text-center" style="text-decoration: none; color: #fff;">
+                                    <img  style="width: 50px; height: 50px;" src="../../../../assets/icones/assistance.png" alt="assistance">
                                         <br>
                                         Assistance
                                 </h4>
@@ -64,11 +85,11 @@
                         </div>
                     </div> 
 
-                    <div class="col-md-4 text-center">
-                        <div class="card rounded-0" style="background: #336699; height: 194px !important; color: #fff;border: none;">
+                    <div class="col-md-4 text-center" onclick="myThpop()">
+                        <div class="card rounded-0" style="background: #336699; height: 194px !important; color: #fff; padding-top: 36px; border: none;">
                             <div class="card-body">
-                                <h4 class="text-center" style="text-decoration: none; color: #fff; padding-top: 38px;">
-                                    <img class="" style="width: 50px;height: 50px;" src="../../../../assets/icones/reinsertion.png" alt="Réinsertion">
+                                <h4 class="text-center" style="text-decoration: none; color: #fff;">
+                                    <img  style="width: 50px; height: 50px;" src="../../../../assets/icones/reinsertion.png" alt="reinsertion">
                                         <br>
                                         Réinsertion
                                 </h4>

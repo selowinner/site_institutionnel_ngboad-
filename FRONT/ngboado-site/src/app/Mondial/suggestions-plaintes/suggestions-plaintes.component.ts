@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 declare const openMenu: any;
 declare const closeMenu: any;
+declare var $: any;
 
 
 @Component({
@@ -12,11 +13,12 @@ export class SuggestionsPlaintesComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+   ngOnInit(): void {
+    
+        }
 
   openClickMenu() { openMenu();}
 
-closeClickMenu(){closeMenu();}
+  closeClickMenu(){closeMenu();}
 
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 declare const openMenu: any;
 declare const closeMenu: any; 
+declare const $: any;
 
 @Component({
   selector: 'app-mission-accueil',
@@ -11,16 +12,7 @@ export class MissionAccueilComponent implements OnInit {
 
   constructor() { }
 
-  public ngOnInit(): void {
-    const containerMenu = document.querySelector('.container-menu');
-    const btnMenu = document.querySelector('.btn-menu');
-    
-    btnMenu.addEventListener('click', () => {
-    
-        containerMenu.classList.toggle('active')
-    
-    })
-  }
+  ngOnInit(): void {}
 
   openClickMenu() { openMenu();}
 

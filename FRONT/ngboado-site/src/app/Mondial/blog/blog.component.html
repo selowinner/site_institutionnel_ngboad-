@@ -1,51 +1,110 @@
-<div class="principale">
-    <div class="row">
-        <div class="col-md-4">
-            <ul id="nav-tab" class="nav">
-                <span class="active">
-             <a href="#">&nbsp; Catégorie &nbsp;&nbsp;&nbsp;&nbsp;
-               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+</a></span>
-              </ul>
-        </div>
-        <div class="col-md-4">
-            <div class="logo">
-                <div class="grid-logo">
-                  <div class="logo-gauche"></div>
-                  <div class="logo-milieu">
-                      <div class="svice-box">
-                        <div class="svice-icon loader-logo">
-                          <img src="../../../assets/icones/logo.png" />
-                        </div>
-                      </div>
-                  </div>
-                  <div class="logo-droite"></div>
+<div id="section1">
+     <!-- le logo (debut) -->
+    <div class="row mt-4 mb-4">
+        <div class="col-md-1"></div>
+
+        <div class="col-md-3">
+            <div class="dropdown" id="dropd">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Categorie
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
                 </div>
+              </div>
+        </div>
+
+        <div class="col-md-4 text-center" (click)="openClickMenu()">
+            <div class="loader-logo" id="svice-icon">
+                <img  class="toggle-button" src="../../../assets/icones/logo.png" />
             </div>
         </div>
+
         <div class="col-md-4">
-            <ul id="nav-tab" class="nav">
-                <span class="active">
-             <a href="#">&nbsp; Periode &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+</a></span>
-              </ul>
+            <div class="dropdown" id="dropd2">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Periode
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+        </div>
+
+    </div>
+    <!-- le logo (fin) -->
+
+    <!-- ............................. -->
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+
+            <section id="carousel">
+                <img src="img/arrow_left.svg" alt="Left Carousel Arrow" class="arrow" id="left-arrow">
+                <img src="img/arrow_right.svg" alt="Right Carousel Arrow" class="arrow" id="right-arrow">
+                
+                <!--img 1--><div "class="slide-image" id="slide1">
+                  <span id="slide1Text" style="color: white;">
+                    <p style="font-size: 30px; font-weight: 900; line-height: 33px;">Allassane Ouattara <br> candidat du RHDP</p>
+                    Le lorem ipsum est, en imprimerie, une suite <br>de mots sans signification utilisée 
+                    <br>à titre provisoire pour calibrer une mise en page, <br>
+                    le texte définitif venant remplacer le faux-texte.
+                  </span>
+                </div><!--img 1-->
+
+                <!--img 2--><div class="slide-image" id="slide2">
+                  <span id="slide2Text" style="color: white;">
+                    <p style="font-size: 30px; font-weight: 900; line-height: 33px; ">FIF: Candidature validée <br> pour Didier Drogba</p>
+                    Le lorem ipsum est, en imprimerie, une suite <br>de mots sans signification utilisée 
+                    <br>à titre provisoire pour calibrer une mise en page, <br>
+                    le texte définitif venant remplacer le faux-texte.
+                  </span>
+                </div><!--img 2-->
+
+                <!--img 3--><div class="slide-image" id="slide3">
+                  <span id="slide3Text" style="color: white;">
+                    <p style="font-size: 30px; font-weight: 900; line-height: 33px; ">Arafat Dj: 1an deja <br> qu'il nous a quitté</p>
+                    Le lorem ipsum est, en imprimerie, une suite <br>de mots sans signification utilisée 
+                    <br>à titre provisoire pour calibrer une mise en page, <br>
+                    le texte définitif venant remplacer le faux-texte.
+                  </span>
+                </div><!--img 3-->
+
+                <!--img 4--><div class="slide-image" id="slide4">
+                  <span id="slide4Text" style="color: white;">
+                    <p style="font-size: 30px; font-weight: 900; line-height: 33px;">La nouvelle désillusion<br> de Cristiano Ronaldo</p>
+                    Le lorem ipsum est, en imprimerie, une suite <br>de mots sans signification utilisée 
+                    <br>à titre provisoire pour calibrer une mise en page, <br>
+                    le texte définitif venant remplacer le faux-texte.
+                  </span>
+                 </div> <!--img 4-->
+
+                <!--img 5--><div class="slide-image" id="slide5">
+                  <span id="slide5Text" style="color: white;">
+                    <p style="font-size: 30px; font-weight: 900; line-height: 33px;">La nouvelle désillusion<br> de Cristiano Ronaldo</p>
+                    Le lorem ipsum est, en imprimerie, une suite <br>de mots sans signification utilisée 
+                    <br>à titre provisoire pour calibrer une mise en page, <br>
+                    le texte définitif venant remplacer le faux-texte.
+                  </span>
+                </div><!--img 5-->
+            
+              </section>
+
         </div>
     </div>
+
+
+
+
+    
+    <!-- ............................. -->
 </div>
-
-<!-- slie -->
-<div class="carousel"
-      data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
-      <img src="../../../assets/images/ado1.jpg"  />
-      <img src="../../../assets/images/drogba2.jpg" />
-      <img src="../../../assets/images/arafat3.jpg" />
-      <img src="../../../assets/images/cr7.jpg"  />
-      <img src="../../../assets/images/ado1.jpg" />
-      <img src="../../../assets/images/ado1.jpg" />
-    </div>
-
-
-<!-- barre de recherche -->
-<br><br><br>
+<!-- La barre de recherche -->
+<!-- <br><br>
 <div class="monForm" style="margin-left: 475px;">
   <form>
     <div class="form-group row">
@@ -55,8 +114,8 @@
       </div>
     </div>
   </form>
-</div>
-<!-- barre de recherche -->
+</div> -->
+<!-- La barre de recherche -->
 
 <!-- le menu (debut) -->
 <header>

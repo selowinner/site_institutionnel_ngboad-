@@ -187,9 +187,15 @@ align-items: center;
 justify-content: center;
 }
 /* search bar icon */
-/* Programmes intitutionnels */
-
-
+/* Programmes non  intitutionnels */
+ #slideMission{
+   display: none;
+ }
+.ProgNI{
+  cursor: pointer;
+}
+/* Programmes non  intitutionnels */
+ 
 /* Programmes intitutionnels */
 .ProgNInst {
 width: 550px;

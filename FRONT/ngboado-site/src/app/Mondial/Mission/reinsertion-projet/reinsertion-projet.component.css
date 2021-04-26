@@ -189,6 +189,13 @@ justify-content: center;
 /* search bar icon */
 /* Programmes intitutionnels */
 
+#slideMission{
+  display: none;
+}
+
+.Reinst{
+  cursor: pointer;
+}
 
 /* Programmes intitutionnels */
 .ProgNInst {
@@ -197,8 +204,6 @@ height: 40px;
 padding: 6px;
 text-decoration: none;
 border-radius: 0.2rem;
-/* background-image: linear-gradient(to right, #019939, #336699); */
-/* background-image: transparent; */
 border: 1px solid #ced4da !important;
 color: #4d4d4d;
 font-size: 17px;

@@ -1,50 +1,85 @@
 body{
   overflow-x: hidden;
 }
+/* le menu style start */
+.overlay {
+  background-image: url("../../../assets/images/bg-accueil.jpg");
+}
+/* le menu style end */
 
-/*Bg image*/
-.landing-page{
- width: 100%;
- height: 100vh;
- background: #000;
- position: relative;
- overflow: hidden;
+@media screen and (max-width: 767px) {
+  #cache{
+      display: none !important;
+  }
 }
-.landing-page::after{
- content: "";
- position: absolute;
- left: 0;
- top: 0px;
- width: 100%;
- height: 100%;
- background: url("../../../assets/images/bg-accueil.jpg") no-repeat;
- background-size: cover;
- opacity: .3;
+#header{
+  width: 100%;
+  background: #000;
+  position: relative;
+  overflow: hidden;
 }
-
-.page-content{
- position: absolute;
- top: 40%;
- left: 50%;
- transform: translate(-50%,-50%);
- z-index: 1;
- width: 100%;
- max-width: 1350px;
- text-align: center;
- padding: 0 40px;
- box-sizing: border-box;
- line-height: 275%;
+#header::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: url("../../../assets/images/bg-accueil.jpg") no-repeat;
+  background-size: cover;
+  opacity: .3;
 }
-.page-content h2{
- color: #fff;
- font-size: 38px;
-}
-.page-content p{
- color: #fff;
- font-size: 20px;
+#page-contenu{
+  position: relative;
+  top: 50%;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  line-height: 330%;
+  color: #fff;
 }
 
-/*logo*/
+#svice-icon{
+  cursor: pointer;
+  display: inline-block;
+  box-shadow: 0px 0px 0px 30px rgba(255,255,255,0.3);
+  color: #276070;
+  background: #fbfcfa;
+  border-radius: 50%;
+  text-align: center;
+  transition: 0.3s linear;
+}
+#svice-icon img{
+  left: 50%;
+  height: 100px;
+  border-radius: 50%;
+  width: 100px;
+}
+
+
+.flex-container {
+  display: flex;
+  cursor: pointer;
+}
+
+.flex-container > div {
+  font-size: 30px;
+  height: 166px;
+  width: 480px !important;
+}
+
+div.jeflex1, .jeflex3{
+    margin-top: 50px;
+    background: #26313c;
+    color: #fff;
+}
+div.jeflex2 {
+  height: 215px !important;
+  width: 360%;
+  color: #fff;
+  background: linear-gradient(to right, #019939, #336699);
+}
+
 
 
 /*logo animation start*/
@@ -85,12 +120,6 @@ body{
 /*Bg image style end*/
 
 
-/* le menu style start */
-.overlay {
-  background-image: url("../../../assets/images/bg-accueil.jpg");
-}
-/* le menu style end */
-
 
 /* section 1 style start */
 ol,
@@ -118,7 +147,8 @@ img{
   }
 
   .Texte{
-    font-weight: 800;
+    font-weight: 700;
+    padding-top: 20px;
   }
 /*...................... section 1 style end....................... */
 
@@ -129,17 +159,17 @@ img{
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 32px;
+  font-size: 40px;
 }
 
 .story{
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 500;
   color: #262626 !important;
 }
 
 .cite{
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 470;
   color: #262626 !important;
 }
@@ -155,6 +185,7 @@ img{
 .lorem{
    color: #828282 !important;
    font-weight: 600;
+   font-size: 17px;
 }
 /* .............. section 2 style end.................... */
 
@@ -324,51 +355,3 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
  }
 /*...........section 5 style end................. */
 
-@media screen and (max-width: 767px) {
-  #cache{
-      display: none !important;
-  }
-}
-#header{
-  width: 100%;
-  background: #000;
-  position: relative;
-  overflow: hidden;
-}
-#header::after{
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  background: url("../../../assets/images/bg-accueil.jpg") no-repeat;
-  background-size: cover;
-  opacity: .3;
-}
-#page-contenu{
-  position: relative;
-  top: 50%;
-  z-index: 1;
-  width: 100%;
-  text-align: center;
-  line-height: 330%;
-  color: #fff;
-}
-
-#svice-icon{
-  cursor: pointer;
-  display: inline-block;
-  box-shadow: 0px 0px 0px 30px rgba(255,255,255,0.3);
-  color: #276070;
-  background: #fbfcfa;
-  border-radius: 50%;
-  text-align: center;
-  transition: 0.3s linear;
-}
-#svice-icon img{
-  left: 50%;
-  height: 100px;
-  border-radius: 50%;
-  width: 100px;
-}
