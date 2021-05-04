@@ -189,7 +189,7 @@
 /* search bar icon */
 /* Programmes intitutionnels */
 #slideMission{
-  display: none;
+  display: block;
 }
 
 .Asist{

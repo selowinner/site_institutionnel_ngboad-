@@ -15,14 +15,11 @@ export class BlogComponent implements OnInit {
     $(document).ready(function(){
       var pauseInterval = false;
     
-      // set an interval for the slide to run on
-      var interval = window.setInterval(rotateSlides, 3000) // Duration until slide changes (3sec)
+      var interval = window.setInterval(rotateSlides, 100000) // Duration until slide changes (3sec)
     
       function rotateSlides(){
-        // Get the first slide and store it
         var $firstSlide = $('#carousel').find('div:first');
     
-        // Get the width of the slide so we know how much to slide by
         var width = $firstSlide.width();
     
         // Animate the first slide to move to the left the length of the

@@ -228,7 +228,7 @@ label:after {
 
 .slide-image {
   /*Make the image container full screen*/
-  width: 50vw;
+  width: 65vw;
   height: 60vh;
   /*Make the image cover the the screen and center it*/
   background-position: center;
@@ -276,7 +276,7 @@ label:after {
 }
 
 #right-arrow {
-  right: 74%;
+  right: 73%;
 }
 
 #left-arrow {
@@ -284,55 +284,17 @@ label:after {
 }
 
 #slide1 {
-  /* background-image: url('../../../assets/images/ado1.jpg'); */
-  background: linear-gradient(to left, #019939, transparent);
-  position: relative;
-}
-#slide1::after{
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  background-image: url('../../../assets/images/ado1.jpg');
-  background-size: cover;
-  opacity: .6;
+  background:  linear-gradient(to left, #019939, #0199394d, transparent), url('../../../assets/images/ado1.jpg');
 }
 
 #slide2 {
-  /* background-image: url('../../../assets/images/drogba2.jpg'); */
-  background: linear-gradient(to left, #336699, transparent);
-  position: relative;
-}
-#slide2::after{
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  background-image: url('../../../assets/images/drogba2.jpg');
-  background-size: cover;
-  opacity: .1;
+  background: linear-gradient(to left, #336699, transparent), url('../../../assets/images/drogba2.jpg');
 }
 
+
 #slide3 {
-  background-image: url('../../../assets/images/arafat3.jpg');
-  /* background: #016639;
-  position: relative; */
+  background-image: linear-gradient(to left, #019939, transparent), url('../../../assets/images/arafat3.jpg');
 }
-/* #slide3::after{
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  background-image: url('../../../assets/images/arafat3.jpg');
-  background-size: cover;
-  opacity: .8;
-} */
 
 
 #slide4 {
@@ -340,7 +302,7 @@ label:after {
 }
 
 #slide5 {
-  background-image: url('../../../assets/images/bg-accueil.jpg');
+  background-image: linear-gradient(to left, #019939, transparent), url('../../../assets/images/bg-accueil.jpg');
 }
 
 /*Mobile Devices*/
