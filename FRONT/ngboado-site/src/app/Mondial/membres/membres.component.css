@@ -9,13 +9,20 @@
   .tabs label {
     order: 1;
     display: block;
-    padding: 1rem 2rem;
+    padding: 0.7rem 4rem;
     margin-right: 0.2rem;
     cursor: pointer;
-    background: #90CAF9;
+    background: #fff;
     font-weight: bold;
     transition: background ease 0.2s;
-  }
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin-right: 12px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
   
   .tabs .tab {
     order: 99;
@@ -31,7 +38,8 @@
   }
   
   .tabs input[type=radio]:checked + label {
-    background: #fff;
+    background-image: linear-gradient(to right, #019939, #336699);
+    color: #fff;
   }
   
   .tabs input[type=radio]:checked + label + .tab {
@@ -53,7 +61,7 @@
   /**
    * Generic Styling
   */
-  body {
+  /* body {
     background: #eee;
     min-height: 100vh;
     box-sizing: border-box;
@@ -64,9 +72,21 @@
     max-width: 60rem;
     margin: 0 auto;
     font-size: 112%;
-  }
+  } */
 
-
+  /* search bar icon */
+  .fa{
+    position: absolute;
+    right: 30px;
+    top: 0;
+    font-size: 15px;
+    color: #505056d0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    /* search bar icon */
 
 
 

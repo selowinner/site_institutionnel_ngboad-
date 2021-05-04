@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    overflow-y: hidden !important;
   }
   
   #svice-icon{
@@ -47,165 +48,15 @@ body{
     justify-content: center;
   }
   
-  .car{
-      z-index: 10;
-      margin-top: -120px;
-  }
-  
-  
-  
-  
-  * { box-sizing: border-box; }
-  
 
-
-  * {
-	box-sizing: border-box;
+.lehr{
+  width: 10%;
+  height: 2px;
+  float: left;
+  background: #fff;
+  border: none;
 }
 
-body {
-	font-family: sans-serif;
-	overflow: hidden;
-}
-
-
-
-label {
-	background: #444;
-	color: #fff;
-	transition: transform 400ms ease-out;
-	display: inline-block;
-    /* min-height: 100%; */
-	width: 60vw;
-	height: 700px;
-	position: relative;
-	z-index: 1;
-	text-align: center;
-	/* line-height: 100vh; */
-}
-
-form {
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	white-space: nowrap;
-}
-input {
-	position: absolute;
-}
-
-.keys {
-	position: fixed;
-	z-index: 10;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	padding: 1rem;
-	color: #fff;
-	text-align: center;
-	transition: all 300ms linear;
-	opacity: 0;
-}
-
-input:focus ~ .keys {
-	opacity: 0.8;
-}
-
-input:nth-of-type(1):checked ~ label:nth-of-type(1), 
-input:nth-of-type(2):checked ~ label:nth-of-type(2),
-input:nth-of-type(3):checked ~ label:nth-of-type(3),
-input:nth-of-type(4):checked ~ label:nth-of-type(4),
-input:nth-of-type(5):checked ~ label:nth-of-type(5){
-   z-index: 0;
-}
-
-input:nth-of-type(1):checked ~ label {
-	transform: translate3d(0, 0, 0);
-}
-
-input:nth-of-type(2):checked ~ label {
-	transform: translate3d(-100%, 0, 0);
-}
-
-input:nth-of-type(3):checked ~ label {
-	transform: translate3d(-200%, 0, 0);
-}
-
-input:nth-of-type(4):checked ~ label {
-	transform: translate3d(-300%, 0, 0);
-}
-
-input:nth-of-type(5):checked ~ label {
-	transform: translate3d(-400%, 0, 0);
-}
-
-label {
-	background: #444;
-	background-size: cover;
-	font-size: 3rem;
-}
-
-label[for="clubs"]{
-	background: url('../../../assets/images/ado1.jpg') no-repeat;
-}
-
-label[for="hearts"]{
-	background: url('../../../assets/images/drogba2.jpg') no-repeat;
-}
-
-label[for="spades"] {
-	background: url('../../../assets/images/arafat3.jpg') no-repeat;
-}
-
-label[for="diamonds"] {
-	background: url('../../../assets/images/cr7.jpg') no-repeat;
-}
-
-label[for="auguinard"] {
-	background: url("../../../assets/images/ado1.jpg") no-repeat;
-}
-
-label:before,
-label:after {
-	color: rgb(170, 10, 10);
-	display: block;
-	/* background: rgb(255, 255, 255); */
-	position: absolute;
-	padding: 0.5rem;
-	font-size: 3rem;
-	height: 5rem;
-	vertical-align: middle;
-	line-height: 5rem;
-	top: 60%;
-	transform: translate3d(0, -50%, 0);
-	cursor: pointer;
-}
-
-label:before {
-	content: "\276D";
-	right: 100%;
-	border-top-left-radius: 50%;
-	border-bottom-left-radius: 50%;
-}
-
-label:after {
-	content: "\276C";
-	left: 100%;
-	border-top-right-radius: 50%;
-	border-bottom-right-radius: 50%;
-}
-
-
-
-
-
-  @media screen and ( min-width: 768px ) {
-    .carousel img {
-      height: 400px;
-    }
-  }
 
 /* le menu style start */
 .overlay {
@@ -217,7 +68,7 @@ label:after {
 #carousel {
   /*Set the container carousel to be fullscreen. If you change the size
   of your carousel make sure to also change the size of your slides*/
-  height: 100vh;
+  /* height: 100vh; */
   width: 100vw;
   /*Prevent images from wrapping*/
   white-space: nowrap;
@@ -228,7 +79,7 @@ label:after {
 
 .slide-image {
   /*Make the image container full screen*/
-  width: 65vw;
+  width: 60vw;
   height: 60vh;
   /*Make the image cover the the screen and center it*/
   background-position: center;
@@ -240,7 +91,7 @@ label:after {
 .arrow {
   width: 3%;
   position: absolute;
-  top: 55%;
+  top: 88%;
   transform: translateY(-50%);
   cursor: pointer;
 }
@@ -276,11 +127,11 @@ label:after {
 }
 
 #right-arrow {
-  right: 73%;
+  right: 68%;
 }
 
 #left-arrow {
-  left: 21%;
+  left: 26%;
 }
 
 #slide1 {

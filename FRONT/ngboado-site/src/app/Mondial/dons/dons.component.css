@@ -24,12 +24,12 @@ body{
   
   .page-content{
    position: absolute;
-   top: 40%;
+   top: 25%;
    left: 50%;
    transform: translate(-50%,-50%);
    z-index: 1;
    width: 100%;
-   max-width: 1300px;
+   /* max-width: 1300px; */
    text-align: center;
    padding: 0 40px;
    box-sizing: border-box;
@@ -148,31 +148,13 @@ body{
   /*...................... section 1 style end....................... */
   
 
-  .grid-container {
-    display: grid;
-    grid-template-areas:
-      'header header header header header header'
-      'menu main main main right right'
-      'menu footer footer footer footer footer';
-    grid-gap: 80px;
-    padding: 10px;
-  }
   
-  .grid-item{
-    width: 300px;
-  }
   
 
   *{
     padding: 0;
     margin: 0;
 }
-
-
-.flexb{display: flex}
-
-.fab{color: #fff;}
-
 
 input[type=text]{
 background-color: transparent;
@@ -187,15 +169,14 @@ color: #fff;
 .btn { color: #fff; 
   background-color: transparent; 
   border-radius: 15px;
-  border: 1px solid #fff; 
-  padding-left: 15px;
-  padding-right: 15px;
+  border: 2px solid #fff; 
+  padding: 5px 25px 5px 25px;
   font-size: 15px;
 }
 
 input[type="radio"]{
-  height: 17px;
-  width: 50px;
+  height: 19px;
+  width: 55px;
 }
 .don_txt{
   font-size: 20px;

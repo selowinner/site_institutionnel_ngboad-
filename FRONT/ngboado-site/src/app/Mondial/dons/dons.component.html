@@ -67,85 +67,84 @@
       <hr style="background-color: rgba(255, 255, 255, 0.466);"><br>
 
 
-<div class="grid-container">
-<div class="grid-item2"></div>
-<div class="grid-item">
-  <div class="lform">
-    <span class="don_txt">Identité donateur*</span><br>
-    <div class="row" style="line-height: 25px;">
-      <div class="col-md-2"></div>
-      <div class="col-md-4">
-         <label><input type="radio" name="colorRadio" value="elle" checked/><br>Anonyme</label>
-      </div>
-      <div class="col-md-4">
-         <label><input type="radio" name="colorRadio" value="luil"/><br> Visible</label>
-      </div>
-      <div class="col-md-2"></div>
-    </div><br>
-  </div>
-  
-  <div class="bo1x one text-center">
-    <input type="text" class="form-control" name="" placeholder="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
-  </div>
-</div>
+      <!-- le formulaire -->
+        <div class="row text-center">
+          <!-- le premier -->
+          <div class="col-md-4">
+            <div class="lform">
+              <span class="don_txt">Type dons*</span><br>
+              <div class="row text-center" style="line-height: 25px; margin-left: 150px;">
+                <span class="text-center">
+                   <label><input type="radio" name="colorRadio" /><br>Nature</label>
+                </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span>
+                   <label><input type="radio" name="colorRadio" /><br> Espèces</label>
+                </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span>
+                   <label><input type="radio" name="colorRadio" /><br> Autres</label>
+                </span>
+              </div><br>
+            </div>
+          </div>
+          <!-- le premier -->
 
-<div class="grid-item">
-  <div class="lform">
-    <span class="don_txt">Type dons*</span><br>
-    <div class="row" style="line-height: 25px;">
-      <div class="col-md-4">
-         <label><input type="radio" name="colorRadio" value="elle" checked/><br>Nature</label>
-      </div>
-      <div class="col-md-4">
-         <label><input type="radio" name="colorRadio" value="luil"/><br> Espèces</label>
-      </div>
-      <div class="col-md-4">
-         <label><input type="radio" name="colorRadio" value="vert"/><br> Autres</label>
-      </div>
-    </div><br>
-  </div>
-  
-  <div class="bb0ox elle">
-    <input type="text" class="form-control" name="" placeholder="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"/>
-  </div><br>
-  <!-- <div class="bbox luil">
-    <input type="text" class="form-control" name="" placeholder="xxxxxxespxxxxxxxxxx"/>
-  </div>
-  <div class="bbox vert">
-    <input type="text" class="form-control" name="" placeholder="xxxxxxautrexxxxxxxxxx"/>
-  </div><br> -->
-<button type="submit" class="btn btn-outline">Valider</button>
+          <!-- le deuxieme -->
+          <div class="col-md-4">
+            <div class="lform">
+              <span class="don_txt">Type dons*</span><br>
+              <div class="row" style="line-height: 25px; margin-left: 150px;">
+                <span>
+                   <label><input type="radio" name="colorRadio" /><br>Nature</label>
+                </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span>
+                   <label><input type="radio" name="colorRadio" /><br> Espèces</label>
+                </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span>
+                   <label><input type="radio" name="colorRadio" /><br> Autres</label>
+                </span>
+              </div><br>
+            </div>
+          </div>
+          <!-- le deuxieme -->
 
-</div>
+          <!-- le troisieme -->
+          <div class="col-md-4">
+            <div class="lform">
+              <span class="don_txt">Bénéficiaire*</span><br>
+              <div class="row" style="line-height: 25px; margin-left: 150px;">
+                <span>
+                   <label><input type="radio" name="colorRadio" /><br>ONG</label>
+                </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span>
+                   <label><input type="radio" name="colorRadio" /><br> Programmes</label>
+                </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span>
+                   <label><input type="radio" name="colorRadio" /><br> Fond</label>
+                </span>
+              </div><br>
+            </div>
+          </div>
+          <!-- le troisieme -->
 
-<div class="grid-item">
-  <div class="lform">
-    <span class="don_txt">Bénéficiaire*</span><br>
-    <div class="row" style="line-height: 25px;">
-      <div class="col-md-4">
-         <label><input type="radio" name="colorRadio" value="elle" checked/><br>ONG</label>
-      </div>
-      <div class="col-md-4 don_txt">
-         <label><input type="radio" name="colorRadio" value="luil"/><br> Programmes</label>
-      </div>
-      <div class="col-md-4">
-         <label><input type="radio" name="colorRadio" value="vert"/><br> Fond</label>
-      </div>
-    </div><br>
-  </div>
-  
-  <div class="r">
-    <input type="text" class="form-control" name="colorRadio" placeholder="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"/>
-  </div>
-  <!-- <div class="bbbox dady">
-    <input type="text" class="form-control" name="colorRadio" placeholder="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"/>
-  </div>
-  <div class="bbbox dade">
-    <input type="text" class="form-control" name="colorRadio" placeholder="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"/>
-  </div> -->
-</div>
+        </div>
 
-</div>
+        <form>
+          <div class="form-row">
+            <div class="col mr-5">
+              <input type="text" class="form-control" id="name" placeholder="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" name="name">
+            </div>
+            <div class="col mr-5">
+              <input type="text" class="form-control" placeholder="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" name="benef">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" name="dnt">
+            </div>
+          </div>
+        </form><br>
+        <button type="submit" class="btn btn-outline">Valider</button>
+
+      <!-- le formulaire -->
+
 
     </div>
   </div>

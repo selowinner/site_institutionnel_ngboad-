@@ -166,6 +166,17 @@
 	margin-left: 32%;
   }
 
+/* modal */
+.modal-content{
+	padding: 12px;
+	/* line-height: 20px; */
+}
+#titre-modal{
+	/* line-height: 40px; */
+}
+/* modal */
+
+
   /* search bar icon */
   .fa{
   position: absolute;
