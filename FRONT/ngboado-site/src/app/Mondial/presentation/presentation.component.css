@@ -75,6 +75,7 @@
     height: 100%;
     background: url("../../../assets/images/present-bg.jpg") no-repeat;
     background-size: cover;
+    background-position: center;
     opacity: .3;
   }
 
@@ -196,6 +197,30 @@
   font-weight: 500;
   }
 
+  @media only screen and (max-width: 568px) {
+    #Bonjour, #logoBoh, #logoPresentation, .card {
+      background-color: lightblue;
+      width: 450px !important;
+    }
+  }
+  @media only screen and (max-width: 375px) {
+    #Bonjour, #logoBoh, #logoPresentation, .card {
+      background-color: lightblue;
+      width: 330px !important;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    #Bonjour, #logoBoh, #logoPresentation, .card {
+      background-color: lightblue;
+      width: 330px !important;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    #Bonjour, #logoBoh, #logoPresentation, .card {
+      background-color: lightblue;
+      width: 330px !important;
+    }
+  }
   .card{
     margin-top: 2rem;
     width: 530px;
@@ -205,7 +230,9 @@
 
 /* le menu style start */
 .overlay {
-  background-image: url("../../../assets/images/present-bg.jpg");
+  background-image: url("../../../assets/images/bg-accueil.jpg");
+  background-position: center;
+  background-size: cover;
 }
 /* le menu style end */
 
