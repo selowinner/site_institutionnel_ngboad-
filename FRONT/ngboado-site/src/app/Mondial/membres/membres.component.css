@@ -118,16 +118,16 @@
 
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 180px;
-    background-color: #ccc;
+    width: 200px;
+    background-color: rgb(236, 235, 235);
     color: rgb(32, 32, 32);
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
     position: absolute;
     z-index: 1;
-    top: 86%;
-    left: 30%;
+    top: 90%;
+    left: 20%;
     margin-left: -50px;
 }
 
@@ -135,11 +135,56 @@
     content: "";
     position: absolute;
     bottom: 100%;
-    left: 50%;
+    left: 45%;
     margin-left: -5px;
-    border-width: 5px;
+    border-width: 10px;
     border-style: solid;
-    border-color: transparent transparent #ccc transparent;
+    border-color: transparent transparent rgb(236, 235, 235) transparent;
+}
+
+.modalTooltip .modalTooltiptext {
+  width: 100%;
+  background-color: rgb(236, 235, 235);
+  color: rgb(32, 32, 32);
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 90%;
+  left: 5%;
+  margin-left: -50px;
+}
+.modalTooltip #texteMdal{
+  text-align: center;
+}
+.modalTooltip #imageFermer{
+  margin-right: 10px;
+  margin-top: 10px;
+  text-align: end;
+}
+.modalTooltip #imageFermer img{
+  cursor: pointer;
+  outline: 1px solid rgb(109, 109, 109);
+}
+.modalTooltip .modalTooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 47%;
+  margin-left: -5px;
+  border-width: 55px;
+  border-style: solid;
+  border-color: transparent transparent rgb(236, 235, 235) transparent;
+}
+.modal-content {
+  border: none !important;
+  background-color: transparent!important;
+  position: relative;
+  opacity: 1.0;
+  outline: 0;
+ }
+.modal.in .modal-dialog {
+  background-color: transparent;
 }
 
 .arrow {
@@ -175,6 +220,7 @@
     cursor: pointer;
     position: absolute;
     transform: translateX(-50%);
+    /* transition: 0.8s ease; */
     left: 50%;
     opacity: 0;
     z-index: 10;
@@ -229,3 +275,32 @@
     background-image: url("../../../assets/images/bg-accueil.jpg");
   }
   /* le menu style end */
+
+
+/*logo*/
+#svice-icon{
+  cursor: pointer;
+  display: inline-block;
+  box-shadow: 0px 0px 0px 30px rgba(255,255,255,0.3);
+  color: #276070;
+  background: #fbfcfa;
+  border-radius: 50%;
+  text-align: center;
+  transition: 0.3s linear;
+}
+#svice-icon img{
+  left: 50%;
+  height: 100px;
+  border-radius: 50%;
+  width: 100px;
+}
+/* 
+/*logo*/
+
+/*logo animation start*/
+.loader-logo {
+ overflow: hidden;
+ transform: translatey(0px);
+ -webkit-animation: float 3s ease-in-out infinite;
+         animation: float 3s ease-in-out infinite;
+}

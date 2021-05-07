@@ -15,7 +15,7 @@ export class BlogComponent implements OnInit {
     $(document).ready(function(){
       var pauseInterval = false;
     
-      var interval = window.setInterval(rotateSlides, 100000) // Duration until slide changes (3sec)
+      var interval = window.setInterval(rotateSlides, 1000000) // Duration until slide changes (3sec)
     
       function rotateSlides(){
         var $firstSlide = $('#carousel').find('div:first');
@@ -55,7 +55,7 @@ export class BlogComponent implements OnInit {
         // Animate to the previous slide
         $previousSlide.animate({marginLeft: 0}, 1000, function(){
           // Resume the interval
-          interval = window.setInterval(rotateSlides, 3000);
+          interval = window.setInterval(rotateSlides, 1000000);
         });
       }
     
@@ -74,7 +74,7 @@ export class BlogComponent implements OnInit {
           // Reset slide position to the end of the queue
           $currentSlide.css({marginLeft: 0})
           // Resume the interval
-          interval = window.setInterval(rotateSlides, 3000);
+          interval = window.setInterval(rotateSlides, 1000000);
         });
       }
     

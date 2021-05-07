@@ -117,8 +117,8 @@ h6{
     padding: 5px 0;
     position: absolute;
     z-index: 1;
-    top: 100%;
-    left: 30%;
+    top: 150%;
+    left: 21%;
     margin-left: -50px;
 }
 
@@ -132,6 +132,52 @@ h6{
     border-style: solid;
     border-color: transparent transparent #fff transparent;
 }
+
+.modalTooltip .modalTooltiptext {
+    width: 100%;
+    background-color: rgb(236, 235, 235);
+    color: rgb(32, 32, 32);
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 90%;
+    left: 5%;
+    margin-left: -50px;
+  }
+  .modalTooltip #texteMdal{
+    text-align: center;
+  }
+  .modalTooltip #imageFermer{
+    margin-right: 10px;
+    margin-top: 10px;
+    text-align: end;
+  }
+  .modalTooltip #imageFermer img{
+    cursor: pointer;
+    outline: 1px solid rgb(109, 109, 109);
+  }
+  .modalTooltip .modalTooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 47%;
+    margin-left: -5px;
+    border-width: 55px;
+    border-style: solid;
+    border-color: transparent transparent rgb(236, 235, 235) transparent;
+  }
+  .modal-content {
+    border: none !important;
+    background-color: transparent!important;
+    position: relative;
+    opacity: 1.0;
+    outline: 0;
+   }
+  .modal.in .modal-dialog {
+    background-color: transparent;
+  }
+  
 
 .arrow {
     position: absolute;

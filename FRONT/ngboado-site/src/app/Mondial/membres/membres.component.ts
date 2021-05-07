@@ -54,14 +54,23 @@ export class MembresComponent implements OnInit {
                 
                 if(pos == 0){
                   //todo implementation du modal
-                  alert("Affichage du modal");
+                  const mEl = document.querySelector('[data-position="0"]').lastElementChild;
+                  //Récuperation de l'id de chaque element
+                  const dataslider = mEl.id;
+                  console.log(mEl);
+                  //Ajout des deux attribues dans l'element 
+                  mEl.setAttribute('data-toggle', 'modal');
+                  mEl.setAttribute('data-target', '#exampleModalCenter'+dataslider);
                   for(let i = 0; i < pos; i++) {
                     const timeout = setTimeout(()=>{
+                      
                         myArray.map(el => {
+                          console.log('hfjhhfhf');
+                          console.log(el);
                 			  const pos = Number(el.getAttribute('data-position'));
 			                  const prev = (pos-1) < 0 ? myArray.length-1 : pos-1;
 			                  const go = prev;
-			
+                        
 			                  el.setAttribute('data-position', go)
 		                  })
                     }, 100)
@@ -70,10 +79,14 @@ export class MembresComponent implements OnInit {
                   for(let i = 0; i < pos; i++) {
                     const timeout = setTimeout(()=>{
                         myArray.map(el => {
+                          console.log('11111');
+                          console.log(el.lastElementChild);
                 			  const pos = Number(el.getAttribute('data-position'));
 			                  const prev = (pos-1) < 0 ? myArray.length-1 : pos-1;
 			                  const go = prev;
-			
+                        
+                        el.lastElementChild.setAttribute('data-toggle', '');
+                        el.lastElementChild.setAttribute('data-target', '#');
 			                  el.setAttribute('data-position', go)
 		                  })
                     }, 100)
