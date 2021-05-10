@@ -1,53 +1,65 @@
 <section class="section1">
   
   <!-- le logo (debut) -->
-    <div class="row mt-4 mb-4 text-center">
-      <div class="col-md-4"></div>
-      <div class="col-md-4 text-center" (click)="openClickMenu()">
-          <div class="loader-logo" id="svice-icon">
-              <img  class="toggle-button" src="../../../../assets/icones/logo.png" />
-          </div>
+    <div class="container py-5">
+      <div class="row mt-4 mb-4 text-center">
+        <div class="col-md-4"></div>
+        <div class="col-md-4 text-center" (click)="openClickMenu()">
+            <div class="loader-logo" id="svice-icon">
+                <img  class="toggle-button" src="../../../../assets/icones/logo.png" />
+            </div>
+        </div>
+        <div class="col-md-4"></div>
       </div>
-      <div class="col-md-4"></div>
-   </div>
+    </div>
   <!-- le logo (fin) -->
   
    
   <!-- le titre (debut) -->
-  <div class="row mt-4 mb-4 text-center">
-      <div class="col-md-4"></div>
-      <div class="col-md-4 text-center">
-        <div class="AsProg">Programmes - Réinsertion</div>
+  <div class="container-fluid">
+    <div class="row mt-4 mb-4 text-center">
+      <div class="col-md-5"></div>
+      <div class="col-md-2 text-center">
+        <div class="AsProg ">
+          <h6 class="my-2" style="font-weight: bold;">Programmes - Réinsertion</h6>
+        </div>
       </div>
-      <div class="col-md-4"></div>
+      <div class="col-md-5"></div>
+    </div>
   </div>
   <!-- le titre (fin) -->
         
   <br><br>
   
   <!-- /* Programmes intitutionnels */ -->
-      <div class="row">
-          <div class="col-md-5">
-            <div class="ProgInst">&nbsp;&nbsp;1. Programmes intitutionnels</div>
-          </div>
-          <div class="col-md-7">
-            <form action="">
-              <div class="form-group row">
-                <div class="col-md-12">
-                  <i class="fa fa-search"></i>
-                  <input type="search" class="form-control" placeholder="Recherche"> </div>
-              </div>
-            </form>
-          </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4 mb-2 mt-2">
+        <div class="ProgInst">
+          <h6 class="my-2" style="font-weight: 700;">
+            &nbsp;&nbsp;1. Programmes intitutionnels
+          </h6>
+        </div>
       </div>
+      <div class="col-md-3"></div>
+      <div class="col-md-5 mb-2 mt-2">
+        <form action="">
+          <div class="form-group row">
+            <div class="col-md-12 my-2">
+              <i class="fa fa-search"></i>
+              <input type="search" class="form-control" placeholder="Recherche"> </div>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
   <!-- /* Programmes intitutionnels */ -->
   
   
   <!-- le carousel -->
-  <div class="">
+  <div class="container-fluid mt-2 mb-2">
       <ul id="autoWidth" class="cs-hidden">
-  <!--1------------------------------>
-  
+        <!--1------------------------------>
         <li class="item-a">
             <div class="box">
                 <p class="marvel">01 <span class="marvel2">Programme</span></p>
@@ -58,8 +70,7 @@
                 </div>
               </div>
         </li>
-  <!--2------------------------------>
-  
+        <!--2------------------------------>
         <li class="item-a">
             <div class="box">
                 <p class="marvel">02 <span class="marvel2">Programme</span></p>
@@ -70,8 +81,7 @@
                 </div>
             </div>
         </li>
-  <!--3------------------------------>
-  
+        <!--3------------------------------>
         <li class="item-a">
             <div class="box">
               <p class="marvel">03 <span class="marvel2">Programme</span></p>
@@ -82,8 +92,7 @@
               </div>
             </div>
         </li>
-  <!--4------------------------------>
-  
+        <!--4------------------------------>
         <li class="item-a">
             <div class="box">
               <p class="marvel">04 <span class="marvel2">Programme</span></p>
@@ -94,8 +103,7 @@
               </div>
             </div>
         </li>
-  <!--5------------------------------>
-      
+        <!--5------------------------------>
         <li class="item-a">
             <div class="box">
               <p class="marvel">00 <span class="marvel2">Programme</span></p>
@@ -105,8 +113,7 @@
               </div>
             </div>
         </li>
-  <!--6------------------------------>
-  
+        <!--6------------------------------>
         <li class="item-a">
             <div class="box">
               <p class="marvel">001 <span class="marvel2">Programme</span></p>
@@ -117,97 +124,99 @@
                 </div>
             </div>
         </li>
-    </ul>
+      </ul>
   </div>
   <!-- le carousel fin -->
   
   
   <!-- /* Programmes non-intitutionnels */ -->
-      <div class="row">
-        <div class="col-md-5 Reinst" onclick="maFonction()">
-          <div class="ProgNInst">&nbsp;&nbsp; 2. Programmes non-intitutionnels</div>
+  <div class="container-fluid mb-4 mt-4">
+    <div class="row ">
+      <div class="col-md-4 mb-2 mt-2 Reinst">
+        <div class="ProgNInst" id="ProgNInst">
+          <h6 class="my-2" style="font-weight: 700;">
+            &nbsp;&nbsp;2. Programmes non-intitutionnels
+          </h6>
         </div>
-        <div class="col-md-7"></div>
       </div>
+      <div class="col-md-7"></div>
+    </div>
+  </div>
   <!-- /* Programmes non-intitutionnels */ -->
   
   <!-- le carousel -->
-  <div id="slideMission">
-    <ul id="AutoWidth" class="cs-hidden">
-<!--1------------------------------>
-
-      <li class="item-a">
-          <div class="box">
-              <p class="marvel">01 <span class="marvel2">Programme</span></p>
-              <hr class="trait">
-              <div class="details">
-                <p class="lorem text-center">
-                  Agence N'GBOADÔ pour la <br> Coordination des Actions Humanitaires.</p>
-              </div>
-            </div>
-      </li>
-<!--2------------------------------>
-
-      <li class="item-a">
-          <div class="box">
-              <p class="marvel">02 <span class="marvel2">Programme</span></p>
-              <hr class="trait">
-              <div class="details">
-                <p class="lorem text-center">
-                  Agence N'GBOADÔ de Developpe-<br>ment et d'Impact pour les droits humains.</p>
-              </div>
-          </div>
-      </li>
-<!--3------------------------------>
-
-      <li class="item-a">
-          <div class="box">
-            <p class="marvel">03 <span class="marvel2">Programme</span></p>
-            <hr class="trait">
-            <div class="details">
-              <p class="lorem text-center">
-                Agence N'GBOADÔ<br> pour l'Education et la Culture.</p>
-            </div>
-          </div>
-      </li>
-<!--4------------------------------>
-
-      <li class="item-a">
-          <div class="box">
-            <p class="marvel">04 <span class="marvel2">Programme</span></p>
-            <hr class="trait">
-            <div class="details">
-              <p class="lorem text-center">
-                Agence N'GBOADÔ<br> pour la Santé, l'Hygiène et le Sport.</p>
-            </div>
-          </div>
-      </li>
-<!--5------------------------------>
-    
-      <li class="item-a">
-          <div class="box">
-            <p class="marvel">00 <span class="marvel2">Programme</span></p>
-            <hr class="trait">
-            <div class="details">
-                <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non.</p>
-            </div>
-          </div>
-      </li>
-<!--6------------------------------>
-
-      <li class="item-a">
-          <div class="box">
-            <p class="marvel">001 <span class="marvel2">Programme</span></p>
-              <hr class="trait">
-              <div class="details">
+  <section id="hiddenSlide">
+    <div id="slideMission" class="container-fluid">
+      <ul id="programNonInst" class="cs-hidden">
+        <!--1------------------------------>
+        <li class="item-a">
+            <div class="box">
+                <p class="marvel">01 <span class="marvel2">Programme</span></p>
+                <hr class="trait">
+                <div class="details">
                   <p class="lorem text-center">
                     Agence N'GBOADÔ pour la <br> Coordination des Actions Humanitaires.</p>
+                </div>
               </div>
-          </div>
-      </li>
-  </ul>
-</div>
-<!-- le carousel fin -->
+        </li>
+        <!--2------------------------------>
+        <li class="item-a">
+            <div class="box">
+                <p class="marvel">02 <span class="marvel2">Programme</span></p>
+                <hr class="trait">
+                <div class="details">
+                  <p class="lorem text-center">
+                    Agence N'GBOADÔ de Developpe-<br>ment et d'Impact pour les droits humains.</p>
+                </div>
+            </div>
+        </li>
+        <!--3------------------------------>
+        <li class="item-a">
+            <div class="box">
+              <p class="marvel">03 <span class="marvel2">Programme</span></p>
+              <hr class="trait">
+              <div class="details">
+                <p class="lorem text-center">
+                  Agence N'GBOADÔ<br> pour l'Education et la Culture.</p>
+              </div>
+            </div>
+        </li>
+        <!--4------------------------------>
+        <li class="item-a">
+            <div class="box">
+              <p class="marvel">04 <span class="marvel2">Programme</span></p>
+              <hr class="trait">
+              <div class="details">
+                <p class="lorem text-center">
+                  Agence N'GBOADÔ<br> pour la Santé, l'Hygiène et le Sport.</p>
+              </div>
+            </div>
+        </li>
+        <!--5------------------------------>
+        <li class="item-a">
+            <div class="box">
+              <p class="marvel">00 <span class="marvel2">Programme</span></p>
+              <hr class="trait">
+              <div class="details">
+                  <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non.</p>
+              </div>
+            </div>
+        </li>
+        <!--6------------------------------>
+        <li class="item-a">
+            <div class="box">
+              <p class="marvel">001 <span class="marvel2">Programme</span></p>
+                <hr class="trait">
+                <div class="details">
+                    <p class="lorem text-center">
+                      Agence N'GBOADÔ pour la <br> Coordination des Actions Humanitaires.</p>
+                </div>
+            </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- le carousel fin -->
       
   </section>
    

@@ -12,7 +12,68 @@ export class BlogComponent implements OnInit {
   constructor() { }
 
   public ngOnInit(): void {
-    $(document).ready(function(){
+    $(document).ready(function() {
+      var slider = $('#programNonInst').lightSlider({
+        item:2,
+        slideMargin:0,
+        slidePager: false,
+        slideWidth:200,
+        loop:false
+      });
+
+      //VIDEO DANS LES SLIDE
+      var $videoSrc;  
+      $('.video-btn').click(function() {
+        $videoSrc = $(this).data( "src" );
+      });
+      console.log($videoSrc);
+  
+      // when the modal is opened autoplay it  
+      $('#myModal').on('shown.bs.modal', function (e) {
+        // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+        $("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" ); 
+      });
+
+      // stop playing the youtube video when I close the modal
+      $('#myModal').on('hide.bs.modal', function (e) {
+        // a poor man's stop video
+        $("#video").attr('src',$videoSrc); 
+      }); 
+      /* $('#programNonInst').lightSlider({
+          item:2,
+          loop:false,
+          slideMove:2,
+          easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+          speed:600,
+          responsive : [
+              {
+                  breakpoint:800,
+                  settings: {
+                      item:3,
+                      slideMove:1,
+                      slideMargin:6,
+                    }
+              },
+              {
+                  breakpoint:480,
+                  settings: {
+                      item:2,
+                      slideMove:1
+                    }
+              }
+          ]
+      });   */
+    });
+
+    
+    /* $('#programNonInst').lightSlider({
+      autoWidth: true,
+      loop: true,
+      onSliderLoad: function() {
+        $('#programNonInst').removeClass('cS-hidden');
+      }
+    }); */
+    /* $(document).ready(function(){
       var pauseInterval = false;
     
       var interval = window.setInterval(rotateSlides, 1000000) // Duration until slide changes (3sec)
@@ -78,7 +139,7 @@ export class BlogComponent implements OnInit {
         });
       }
     
-    });
+    }); */
   }
 
 

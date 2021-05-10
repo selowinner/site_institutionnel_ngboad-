@@ -65,8 +65,8 @@ export class MembresComponent implements OnInit {
                     const timeout = setTimeout(()=>{
                       
                         myArray.map(el => {
-                          console.log('hfjhhfhf');
-                          console.log(el);
+                          /* console.log('hfjhhfhf');
+                          console.log(el); */
                 			  const pos = Number(el.getAttribute('data-position'));
 			                  const prev = (pos-1) < 0 ? myArray.length-1 : pos-1;
 			                  const go = prev;
@@ -79,8 +79,8 @@ export class MembresComponent implements OnInit {
                   for(let i = 0; i < pos; i++) {
                     const timeout = setTimeout(()=>{
                         myArray.map(el => {
-                          console.log('11111');
-                          console.log(el.lastElementChild);
+                         /*  console.log('11111');
+                          console.log(el.lastElementChild); */
                 			  const pos = Number(el.getAttribute('data-position'));
 			                  const prev = (pos-1) < 0 ? myArray.length-1 : pos-1;
 			                  const go = prev;

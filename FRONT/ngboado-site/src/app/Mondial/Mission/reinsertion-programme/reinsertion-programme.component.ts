@@ -13,21 +13,33 @@ export class ReinsertionProgrammeComponent implements OnInit {
   constructor() { }
 
   public ngOnInit(): void {
-    $('#autoWidth').lightSlider({
-      autoWidth: true,
-      loop: true,
-      onSliderLoad: function() {
-        $('#autoWidth').removeClass('cS-hidden');
-      }
-    });
+      //document.getElementById("hiddenSlide").style.display = "none";
+      $('#autoWidth').lightSlider({
+        autoWidth: true,
+        loop: true,
+        onSliderLoad: function() {
+          $('#autoWidth').removeClass('cS-hidden');
+        }
+      });
 
-    $('#AutoWidth').lightSlider({
-      autoWidth: true,
-      loop: true,
-      onSliderLoad: function() {
-        $('#AutoWidth').removeClass('cS-hidden');
-      }
-    });
+      $('#programNonInst').lightSlider({
+        autoWidth: true,
+        loop: true,
+        onSliderLoad: function() {
+          $('#programNonInst').removeClass('cS-hidden');
+        }
+      });
+
+      document.getElementById("ProgNInst").addEventListener("click", function() {
+        const x = document.getElementById("hiddenSlide");
+        console.log(x.style.visibility);
+        if(x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }); 
+      
   }
   
   openClickMenu() { openMenu();}

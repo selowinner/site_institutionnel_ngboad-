@@ -145,8 +145,6 @@ ul span a {
 
 /* programme-assistance titre */
 .AsProg {
-  width: 305px;
-  height: 40px;
   padding: 5px;
   text-decoration: none;
   border-radius: 0.2rem;
@@ -156,22 +154,18 @@ ul span a {
   text-align: center;
   font-weight: bold;
   font-size: 20px;
-  margin-left: 22%;
 }
 /* programme-assistance titre fin */
 
 /* Programmes intitutionnels */
 .ProgInst {
-width: 550px;
-height: 40px;
-padding: 6px;
-text-decoration: none;
-border-radius: 0.2rem;
-background-image: linear-gradient(to right, #019939, #336699);
-border: none !important;
-color: #fff;
-font-size: 17px;
-margin-left: 30px !important;
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 0.2rem;
+  background-image: linear-gradient(to right, #019939, #336699);
+  border: none !important;
+  color: #fff;
+  font-size: 17px;
 }
 
 /* search bar icon */
@@ -188,19 +182,18 @@ justify-content: center;
 }
 /* search bar icon */
 /* Programmes intitutionnels */
- 
-#slideMission{
-  display: none;
-}
 
 .Reinst{
   cursor: pointer;
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 0.2rem;
+  /* background-image: linear-gradient(to right, #019939, #336699); */
+  font-size: 17px;
 }
 /* Programmes intitutionnels */
 .ProgNInst {
-width: 550px;
-height: 40px;
-padding: 6px;
+padding: 5px;
 text-decoration: none;
 border-radius: 0.2rem;
 /* background-image: linear-gradient(to right, #019939, #336699); */
@@ -208,12 +201,13 @@ border-radius: 0.2rem;
 border: 1px solid #ced4da !important;
 color: #4d4d4d;
 font-size: 17px;
-margin-left: 30px !important;
 }
 /* Programmes intitutionnels */
 
 /* le menu style start */
 .overlay {
   background-image: url("../../../../assets/images/missionAcc.jpg");
+  background-position: center;
+  background-size: cover;
 }
 /* le menu style end */
