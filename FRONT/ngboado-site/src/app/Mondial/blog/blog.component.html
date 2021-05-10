@@ -1,45 +1,38 @@
 <div id="section1">
-     <!-- le logo (debut) -->
-    <div class="row mt-4 mb-4">
-        <div class="col-md-1"></div>
-
-        <div class="col-md-3">
-            <div class="dropdown" id="dropd">
-                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Categorie
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </div>
+  <!-- le logo (debut) -->
+  <div class="row mt-4 mb-4 container-fluid">
+    <div class="col-md-2">
+      <div ngbDropdown class="d-block mt-5 float-left">
+        <button class="btn" id="dropdownCategorie" ngbDropdownToggle>Categorie</button>
+        <div ngbDropdownMenu aria-labelledby="dropdownCategorie">
+          <button ngbDropdownItem>Action - 1</button>
+          <button ngbDropdownItem>Another Action</button>
+          <button ngbDropdownItem>Something else is here</button>
         </div>
-
-        <div class="col-md-4 text-center mt-3" (click)="openClickMenu()">
-            <div class="loader-logo" id="svice-icon">
-                <img  class="toggle-button" src="../../../assets/icones/logo.png" />
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="dropdown" id="dropd2">
-                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Periode
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </div>
-        </div>
-
+      </div>
     </div>
-    <!-- le logo (fin) -->
-    <br><br>
+
+    <div class="col-md-8 text-center mt-5" (click)="openClickMenu()">
+        <div class="loader-logo" id="svice-icon">
+            <img  class="toggle-button" src="../../../assets/icones/logo.png" />
+        </div>
+    </div>
+    
+    <div class="col-md-2">
+      <div ngbDropdown class="d-block mt-5 float-right">
+        <button class="btn" id="dropdownPeriode" ngbDropdownToggle>Periode</button>
+        <div ngbDropdownMenu aria-labelledby="dropdownPeriode">
+          <button ngbDropdownItem>Action - 1</button>
+          <button ngbDropdownItem>Another Action</button>
+          <button ngbDropdownItem>Something else is here</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- le logo (fin) -->
+  <br><br>
     <!-- ............................. -->
-    <section class="mt-5 mb-4">
+    <section class="mt-5 mb-2">
       <div id="slideMission" class="container-fluid">
         <ul id="programNonInst" class="cs-hidden">
           <!--1------------------------------>
@@ -251,15 +244,23 @@
 </div>
 <!-- La barre de recherche -->
 <br>
-<div class="monForm" style="margin-left: 540px;">
-  <form>
-    <div class="form-group row">
-      <div class="col-sm-6">
-        <i class="fa fa-search"></i>
-        <input type="search" class="form-control" placeholder="Recherche">
-      </div>
+<div class="row mb-5 container-fluid">
+  <div class="col-md-4"></div>
+
+  <div class="col-md-6 mt-5">
+    <div class="monForm">
+      <form class="" style="margin-left: 15% !important;">
+        <div class="form-group row">
+          <div class="col-sm-6">
+            <i class="fa fa-search"></i>
+            <input type="search" class="form-control" placeholder="Recherche">
+          </div>
+        </div>
+      </form>
     </div>
-  </form>
+  </div>
+  
+  <div class="col-md-3"></div>
 </div>
 <!-- La barre de recherche -->
 
