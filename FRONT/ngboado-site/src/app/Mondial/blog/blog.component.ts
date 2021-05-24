@@ -27,7 +27,7 @@ export class BlogComponent implements OnInit {
         controls:false,
         pager:false
       });
-      
+
       var slider = $('#programNonInst').lightSlider({
         item:2,
         slideMargin:0,
