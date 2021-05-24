@@ -67,6 +67,9 @@ const routes: Routes = [
   {path: 'reinsertion-programme',
   component: ReinsertionProgrammeComponent
   },
+  {path: 'dons',
+  component: DonsComponent
+  },
 ];
 
 @NgModule({

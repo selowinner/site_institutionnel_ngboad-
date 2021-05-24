@@ -15,8 +15,9 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  
   openClickMenu() { openMenu();}
-
+ 
   closeClickMenu(){closeMenu();}
 
 }

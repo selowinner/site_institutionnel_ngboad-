@@ -4,6 +4,7 @@
 .tabs {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
   
   .tabs label {
@@ -22,6 +23,7 @@
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    
 }
   
   .tabs .tab {
