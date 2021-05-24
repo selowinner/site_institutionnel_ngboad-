@@ -1,9 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import { RouterModule, Routes } from '@angular/router';
 // import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-// import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -26,58 +25,6 @@ import { ReinsertionProjetComponent } from './Mondial/Mission/reinsertion-projet
 import { ReinsertionProgrammeComponent } from './Mondial/Mission/reinsertion-programme/reinsertion-programme.component';
 
 
-const appRoutes: Routes = [
-  {path: '',
-  component: HomeComponent},
-  {path: 'membres',
-  component: MembresComponent
-  },
-  {path: 'partenaires',
-  component: PartenairesComponent
-  },
-  {path: 'blog',
-  component: BlogComponent
-  },  
-  {path: 'suggestions-plaintes',
-  component: SuggestionsPlaintesComponent
-  },  
-  {path: 'agence-fond',
-  component: AgenceFondComponent
-   },  
-  {path: 'agence',
-  component: AgenceComponent
-  },
-  {path: 'fond',
-  component: FondComponent
-  },
-  {path: 'presentation',
-  component: PresentationComponent
-  },
-   {path: 'mission-accueil',
-  component: MissionAccueilComponent
-  },
-  {path: 'assistance-projet',
-  component: AssistanceProjetComponent
-  },
-  {path: 'assistance-programme',
-  component: AssistanceProgrammeComponent
-  },
-  {path: 'prevention-projet',
-  component: PreventionProjetComponent
-  },
-  {path: 'prevention-programme',
-  component: PreventionProgrammeComponent
-  },
-  {path: 'reinsertion-projet',
-  component: ReinsertionProjetComponent
-  },
-  {path: 'reinsertion-programme',
-  component: ReinsertionProgrammeComponent
-  },
-  {path: 'dons',
-  component: DonsComponent
-  },
-];
 @NgModule({
   declarations: [
     AppComponent,
@@ -103,12 +50,9 @@ const appRoutes: Routes = [
     BrowserModule,
     NgbModule,
     // FormsModule,
-    // HttpClientModule,
+    HttpClientModule,
     // ReactiveFormsModule,
-    AppRoutingModule,
-    RouterModule.forRoot(
-      appRoutes
-    )
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

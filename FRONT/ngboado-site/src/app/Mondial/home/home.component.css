@@ -2,25 +2,6 @@ body{
   overflow-x: hidden;
 }
 
-#lolo{
-  background-color: #000;
-}
-
-.loade{
-  height: 500px;
-}
-.fl1{
-  -ms-transform: rotate(20deg); /* IE 9 */
-  transform: rotate(-20deg);
-  width: 50px;
-  height: 250px;
-}
-.fl2{
-  -ms-transform: rotate(20deg); /* IE 9 */
-  transform: rotate(-120deg);
-  width: 50px;
-  height: 240px;
-}
 /* #svice-icon{
   margin-left: 200px !important;
 } */
@@ -90,7 +71,7 @@ body{
 
 .flex-container > div {
   font-size: 30px;
-  height: 166px;
+  height: 148px;
   width: 480px !important;
 }
 
@@ -100,7 +81,7 @@ div.jeflex1, .jeflex3{
     color: #fff;
 }
 div.jeflex2 {
-  height: 215px !important;
+  height: 197px !important;
   width: 360%;
   color: #fff;
   background: linear-gradient(to right, #019939, #336699);
