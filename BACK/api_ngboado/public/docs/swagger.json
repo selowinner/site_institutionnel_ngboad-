@@ -1,1 +1,652 @@
-{"openapi":"3.0.0","info":{"title":"Api_ngboado","version":"1.0.0","description":"Documentation swagger Api ngboado"},"paths":{},"definitions":{"Accordion":{"type":"object","properties":{"id":{"type":"uint"},"title":{"type":"string"},"slug":{"type":"string"},"description":{"type":"string"},"image":{"type":"string"}}}},"components":{},"tags":[]}
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Api_ngboado",
+        "version": "1.0.0",
+        "description": "Documentation swagger Api ngboado"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Accordion": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "readonly": true,
+                        "title": "Identifiant en base de donnée",
+                        "type": "uint"
+                    },
+                    "title": {
+                        "readonly": true,
+                        "type": "string",
+                        "title": "Titre de L'accordion",
+                        "minLength": 2
+                    },
+                    "slug": {
+                        "type": "string",
+                        "title": "Slug auto générer à partir du titre de l'accordion"
+                    },
+                    "description": {
+                        "type": "string",
+                        "nullable": true,
+                        "title": "Description de l'accordion"
+                    },
+                    "image": {
+                        "type": "string",
+                        "nullable": true,
+                        "title": "image pour l'accordion"
+                    },
+                    "has_button": {
+                        "type": "boolean"
+                    },
+                    "button_text": {
+                        "type": "string"
+                    },
+                    "has_link": {
+                        "type": "boolean"
+                    },
+                    "uri_path": {
+                        "type": "string"
+                    },
+                    "has_button_link": {
+                        "type": "boolean"
+                    },
+                    "button_link": {
+                        "type": "string"
+                    },
+                    "tags": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "createdAt": {
+                        "type": "string"
+                    },
+                    "updatedAt": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "title",
+                    "description",
+                    "tags",
+                    "image"
+                ]
+            },
+            "BlogArticle": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "uint"
+                    },
+                    "categorie_id": {
+                        "type": "uint"
+                    },
+                    "title": {
+                        "type": "string"
+                    },
+                    "slug": {
+                        "type": "string"
+                    },
+                    "image": {
+                        "type": "string"
+                    },
+                    "has_link": {
+                        "type": "boolean"
+                    },
+                    "link": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "categorie": {
+                        "$ref": "#/components/schemas/BlogCategorie"
+                    },
+                    "createdAt": {
+                        "type": "string"
+                    },
+                    "updatedAt": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "title"
+                ]
+            },
+            "BlogCategorie": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "uint"
+                    },
+                    "title": {
+                        "type": "string"
+                    },
+                    "slug": {
+                        "type": "string"
+                    },
+                    "parent_id": {
+                        "type": "uint"
+                    },
+                    "parent": {
+                        "type": "BlogCategorie"
+                    },
+                    "createdAt": {
+                        "type": "string"
+                    },
+                    "updatedAt": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "title"
+                ]
+            },
+            "Bureau": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "uint"
+                    },
+                    "title": {
+                        "type": "string"
+                    },
+                    "slug": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "echelon_id": {
+                        "type": "uint"
+                    },
+                    "lat": {
+                        "type": "float"
+                    },
+                    "lon": {
+                        "type": "float"
+                    },
+                    "echelon": {
+                        "$ref": "#/components/schemas/Echelon"
+                    },
+                    "membres": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/Membre"
+                        }
+                    },
+                    "fonds": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/Fond"
+                        }
+                    },
+                    "programmes": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/Programme"
+                        }
+                    },
+                    "projets": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/Projet"
+                        }
+                    },
+                    "createdAt": {
+                        "type": "string"
+                    },
+                    "updatedAt": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "echelon_id",
+                    "title"
+                ]
+            },
+            "CategoriePartenaire": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "uint"
+                    },
+                    "title": {
+                        "type": "string"
+                    },
+                    "slug": {
+                        "type": "string"
+                    },
+                    "parent_id": {
+                        "type": "uint"
+                    },
+                    "parent": {
+                        "type": "CategoriePartenaire"
+                    },
+                    "createdAt": {
+                        "type": "string"
+                    },
+                    "updatedAt": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "title"
+                ]
+            },
+            "Echelon": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "uint"
+                    },
+                    "title": {
+                        "type": "string"
+                    },
+                    "slug": {
+                        "type": "string"
+                    },
+                    "parent_id": {
+                        "type": "uint"
+                    },
+                    "parent": {
+                        "type": "Echelon"
+                    },
+                    "createdAt": {
+                        "type": "string"
+                    },
+                    "updatedAt": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "title"
+                ]
+            },
+            "Fond": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "uint"
+                    },
+                    "title": {
+                        "type": "string"
+                    },
+                    "slug": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "bureau_id": {
+                        "type": "uint"
+                    },
+                    "bureau": {
+                        "$ref": "#/components/schemas/Bureau"
+                    },
+                    "createdAt": {
+                        "type": "string"
+                    },
+                    "updatedAt": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "title",
+                    "bureau_id"
+                ]
+            },
+            "Membre": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "uint"
+                    },
+                    "fullname": {
+                        "type": "string"
+                    },
+                    "job": {
+                        "type": "string"
+                    },
+                    "slug": {
+                        "type": "string"
+                    },
+                    "image": {
+                        "type": "string"
+                    },
+                    "biographie": {
+                        "type": "string"
+                    },
+                    "type_membre_id": {
+                        "type": "uint"
+                    },
+                    "membre": {
+                        "$ref": "#/components/schemas/Membre"
+                    },
+                    "bureaux": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/Bureau"
+                        }
+                    },
+                    "createdAt": {
+                        "type": "string"
+                    },
+                    "updatedAt": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "fullname",
+                    "job",
+                    "image",
+                    "biographie",
+                    "type_membre_id"
+                ]
+            },
+            "MembreBureau": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "uint"
+                    },
+                    "membre_id": {
+                        "type": "uint"
+                    },
+                    "bureau_id": {
+                        "type": "uint"
+                    },
+                    "membre": {
+                        "$ref": "#/components/schemas/Membre"
+                    },
+                    "bureau": {
+                        "$ref": "#/components/schemas/Bureau"
+                    },
+                    "createdAt": {
+                        "type": "string"
+                    },
+                    "updatedAt": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "membre_id",
+                    "bureau_id"
+                ]
+            },
+            "Partenaire": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "uint"
+                    },
+                    "title": {
+                        "type": "string"
+                    },
+                    "slug": {
+                        "type": "string"
+                    },
+                    "image": {
+                        "type": "string"
+                    },
+                    "has_link": {
+                        "type": "boolean"
+                    },
+                    "link": {
+                        "type": "string"
+                    },
+                    "slogan": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "categorie_id": {
+                        "type": "uint"
+                    },
+                    "categorie": {
+                        "$ref": "#/components/schemas/CategoriePartenaire"
+                    },
+                    "createdAt": {
+                        "type": "string"
+                    },
+                    "updatedAt": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "categorie_id",
+                    "title",
+                    "image"
+                ]
+            },
+            "Programme": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "uint"
+                    },
+                    "title": {
+                        "type": "string"
+                    },
+                    "slug": {
+                        "type": "string"
+                    },
+                    "images": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "slogan": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "bureau_id": {
+                        "type": "uint"
+                    },
+                    "bureau": {
+                        "$ref": "#/components/schemas/Bureau"
+                    },
+                    "createdAt": {
+                        "type": "string"
+                    },
+                    "updatedAt": {
+                        "type": "string"
+                    }
+                }
+            },
+            "Projet": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "uint"
+                    },
+                    "title": {
+                        "type": "string"
+                    },
+                    "slug": {
+                        "type": "string"
+                    },
+                    "images": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "slogan": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "bureau_id": {
+                        "type": "uint"
+                    },
+                    "bureau": {
+                        "$ref": "#/components/schemas/Bureau"
+                    },
+                    "createdAt": {
+                        "type": "string"
+                    },
+                    "updatedAt": {
+                        "type": "string"
+                    }
+                }
+            },
+            "SectionSuggestion": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "uint"
+                    },
+                    "title": {
+                        "type": "string"
+                    },
+                    "slug": {
+                        "type": "string"
+                    },
+                    "image": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "has_button": {
+                        "type": "boolean"
+                    },
+                    "button_text": {
+                        "type": "string"
+                    },
+                    "has_button_link": {
+                        "type": "boolean"
+                    },
+                    "button_link": {
+                        "type": "string"
+                    },
+                    "createdAt": {
+                        "type": "string"
+                    },
+                    "updatedAt": {
+                        "type": "string"
+                    }
+                }
+            },
+            "Slide": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "uint"
+                    },
+                    "title": {
+                        "type": "string"
+                    },
+                    "slug": {
+                        "type": "string"
+                    },
+                    "image": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "has_link": {
+                        "type": "boolean"
+                    },
+                    "uri_path": {
+                        "type": "string"
+                    },
+                    "has_button": {
+                        "type": "boolean"
+                    },
+                    "button_text": {
+                        "type": "string"
+                    },
+                    "has_button_link": {
+                        "type": "boolean"
+                    },
+                    "button_link": {
+                        "type": "string"
+                    },
+                    "tags": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "createdAt": {
+                        "type": "string"
+                    },
+                    "updatedAt": {
+                        "type": "string"
+                    }
+                }
+            },
+            "Suggestion": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "uint"
+                    },
+                    "anonymous": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "objet": {
+                        "type": "string"
+                    },
+                    "suggestion": {
+                        "type": "string"
+                    },
+                    "createdAt": {
+                        "type": "string"
+                    },
+                    "updatedAt": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "anonymous",
+                    "suggestion"
+                ]
+            },
+            "TypeMembre": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "uint"
+                    },
+                    "role": {
+                        "type": "string"
+                    },
+                    "role_priority": {
+                        "type": "uint"
+                    },
+                    "slug": {
+                        "type": "string"
+                    },
+                    "membres": {
+                        "$ref": "#/components/schemas/Membre"
+                    },
+                    "createdAt": {
+                        "type": "string"
+                    },
+                    "updatedAt": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "role",
+                    "role_priority"
+                ]
+            }
+        }
+    },
+    "tags": []
+}

@@ -1,7 +1,38 @@
 import { DateTime } from 'luxon'
 import { BaseModel, column, belongsTo, BelongsTo } from '@ioc:Adonis/Lucid/Orm'
 import BlogCategorie from './BlogCategorie'
-
+/**
+ * @swagger
+ * components:
+ *  schemas:
+ *    BlogArticle:
+ *      type: object
+ *      properties:
+ *        id:
+ *          type: uint
+ *        categorie_id:
+ *          type: uint
+ *        title:
+ *          type: string
+ *        slug:
+ *          type: string
+ *        image:
+ *          type: string
+ *        has_link:
+ *          type: boolean
+ *        link:
+ *          type: string
+ *        description:
+ *          type: string
+ *        categorie:
+ *          "$ref": '#/components/schemas/BlogCategorie'
+ *        createdAt:
+ *          type: string
+ *        updatedAt:
+ *          type: string
+ *      required:
+ *        - title
+ */
 export default class BlogArticle extends BaseModel {
   @column({ isPrimary: true })
   public id: number

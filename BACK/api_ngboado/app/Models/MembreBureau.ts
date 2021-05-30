@@ -3,6 +3,31 @@ import { BaseModel, column, BelongsTo, belongsTo } from '@ioc:Adonis/Lucid/Orm'
 import Bureau from './Bureau'
 import Membre from './Membre'
 
+/**
+ * @swagger
+ * components:
+ *  schemas:
+ *    MembreBureau:
+ *      type: object
+ *      properties:
+ *        id:
+ *          type: uint
+ *        membre_id:
+ *          type: uint
+ *        bureau_id:
+ *          type: uint
+ *        membre:
+ *          "$ref": '#/components/schemas/Membre'
+ *        bureau:
+ *          "$ref": '#/components/schemas/Bureau'
+ *        createdAt: 
+ *          type: string
+ *        updatedAt: 
+ *          type: string
+ *      required:
+ *        - membre_id
+ *        - bureau_id
+ */
 export default class MembreBureau extends BaseModel {
   @column({ isPrimary: true })
   public id: number

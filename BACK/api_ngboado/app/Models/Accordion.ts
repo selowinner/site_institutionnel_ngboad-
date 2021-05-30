@@ -3,20 +3,56 @@ import { BaseModel, column } from '@ioc:Adonis/Lucid/Orm'
 
 /**
  * @swagger
- * definitions:
- *  Accordion:
- *    type: object
- *    properties:
- *      id:
- *        type: uint
- *      title:
- *        type: string
- *      slug:
- *        type: string
- *      description:
- *        type: string
- *      image:
- *        type: string
+ * components:
+ *  schemas:
+ *    Accordion:
+ *      type: object
+ *      properties:
+ *        id:
+ *          readonly: true
+ *          title: "Identifiant en base de donnée"
+ *          type: uint
+ *        title:
+ *          readonly: true
+ *          type: string
+ *          title: "Titre de L'accordion"
+ *          minLength: 2
+ *        slug:
+ *          type: string
+ *          title: "Slug auto générer à partir du titre de l'accordion"
+ *        description:
+ *          type: string
+ *          nullable: true
+ *          title: "Description de l'accordion"
+ *        image:
+ *          type: string
+ *          nullable: true
+ *          title: "image pour l'accordion"
+ *        has_button:
+ *          type: boolean
+ *        button_text:
+ *          type: string
+ *        has_link:
+ *          type: boolean
+ *        uri_path:
+ *          type: string
+ *        has_button_link:
+ *          type: boolean
+ *        button_link:
+ *          type: string
+ *        tags:
+ *          type: array
+ *          items:
+ *            type: string
+ *        createdAt:
+ *          type: string
+ *        updatedAt:
+ *          type: string
+ *      required:
+ *        - title
+ *        - description
+ *        - tags
+ *        - image
  */
 export default class Accordion extends BaseModel {
   @column({ isPrimary: true })

@@ -6,6 +6,53 @@ import Fond from './Fond'
 import Programme from './Programme'
 import Projet from './Projet'
 
+/**
+ * @swagger
+ * components:
+ *  schemas:
+ *    Bureau:
+ *      type: object
+ *      properties:
+ *        id:
+ *          type: uint
+ *        title:
+ *          type: string
+ *        slug:
+ *          type: string
+ *        description:
+ *          type: string
+ *        echelon_id:
+ *          type: uint
+ *        lat:
+ *          type: float
+ *        lon:
+ *          type: float
+ *        echelon:
+ *          "$ref": '#/components/schemas/Echelon'
+ *        membres:
+ *          type: array
+ *          items: 
+ *            "$ref": '#/components/schemas/Membre'
+ *        fonds:
+ *          type: array
+ *          items: 
+ *            "$ref": '#/components/schemas/Fond'
+ *        programmes:
+ *          type: array
+ *          items: 
+ *            "$ref": '#/components/schemas/Programme'
+ *        projets:
+ *          type: array
+ *          items: 
+ *            "$ref": '#/components/schemas/Projet'
+ *        createdAt:
+ *          type: string
+ *        updatedAt:
+ *          type: string
+ *      required:
+ *        - echelon_id
+ *        - title
+ */
 export default class Bureau extends BaseModel {
   @column({ isPrimary: true })
   public id: number

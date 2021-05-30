@@ -1,6 +1,36 @@
 import { DateTime } from 'luxon'
 import { BaseModel, column } from '@ioc:Adonis/Lucid/Orm'
 
+/**
+ * @swagger
+ * components:
+ *  schemas:
+ *    SectionSuggestion:
+ *      type: object
+ *      properties:
+ *        id:
+ *          type: uint
+ *        title:
+ *          type: string
+ *        slug:
+ *          type: string
+ *        image:
+ *          type: string
+ *        description:
+ *          type: string
+ *        has_button:
+ *          type: boolean
+ *        button_text:
+ *          type: string
+ *        has_button_link:
+ *          type: boolean
+ *        button_link:
+ *          type: string
+ *        createdAt: 
+ *          type: string
+ *        updatedAt: 
+ *          type: string
+ */
 export default class SectionSuggestion extends BaseModel {
   @column({ isPrimary: true })
   public id: number

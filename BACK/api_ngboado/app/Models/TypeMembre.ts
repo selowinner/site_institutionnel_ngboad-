@@ -2,6 +2,31 @@ import { DateTime } from 'luxon'
 import { BaseModel, column, hasMany, HasMany } from '@ioc:Adonis/Lucid/Orm'
 import Membre from './Membre'
 
+/**
+ * @swagger
+ * components:
+ *  schemas:
+ *    TypeMembre:
+ *      type: object
+ *      properties:
+ *        id:
+ *          type: uint
+ *        role:
+ *          type: string
+ *        role_priority:
+ *          type: uint
+ *        slug:
+ *          type: string
+ *        membres:
+ *          "$ref": '#/components/schemas/Membre'
+ *        createdAt: 
+ *          type: string
+ *        updatedAt: 
+ *          type: string
+ *      required:
+ *        - role
+ *        - role_priority
+ */
 export default class TypeMembre extends BaseModel {
   @column({ isPrimary: true })
   public id: number

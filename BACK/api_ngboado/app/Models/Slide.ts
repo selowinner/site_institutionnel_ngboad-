@@ -1,6 +1,45 @@
 import { DateTime } from 'luxon'
 import { BaseModel, column } from '@ioc:Adonis/Lucid/Orm'
 
+/**
+ * @swagger
+ * components:
+ *  schemas:
+ *    Slide:
+ *      type: object
+ *      properties:
+ *        id:
+ *          type: uint
+ *        title:
+ *          type: string
+ *        slug:
+ *          type: string
+ *        image:
+ *          type: string
+ *        description:
+ *          type: string
+ *        has_link:
+ *          type: boolean
+ *        uri_path:
+ *          type: string
+ *        has_button:
+ *          type: boolean
+ *        button_text:
+ *          type: string
+ *        has_button_link:
+ *          type: boolean
+ *        button_link:
+ *          type: string
+ *        tags:
+ *          type: array
+ *          items:
+ *            type: string
+ *        createdAt: 
+ *          type: string
+ *        updatedAt: 
+ *          type: string
+ *      
+ */
 export default class Slide extends BaseModel {
   @column({ isPrimary: true })
   public id: number

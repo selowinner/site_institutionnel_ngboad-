@@ -5,7 +5,7 @@
   "scripts": {
     "build": "node ace build --production",
     "start": "node server.js",
-    "dev": "node ace serve --watch",
+    "dev": "node ace swagger:generate & node ace serve --watch",
     "postbuild": "node ace swagger:generate && cp -a public/docs/ build/docs"
   },
   "devDependencies": {

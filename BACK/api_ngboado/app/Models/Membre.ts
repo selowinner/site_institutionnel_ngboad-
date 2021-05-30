@@ -3,6 +3,44 @@ import { BaseModel, column, belongsTo, BelongsTo, hasMany, HasMany } from '@ioc:
 import TypeMembre from './TypeMembre'
 import MembreBureau from './MembreBureau'
 
+/**
+ * @swagger
+ * components:
+ *  schemas:
+ *    Membre:
+ *      type: object
+ *      properties:
+ *        id:
+ *          type: uint
+ *        fullname:
+ *          type: string
+ *        job: 
+ *          type: string
+ *        slug:
+ *          type: string
+ *        image:
+ *          type: string
+ *        biographie:
+ *          type: string
+ *        type_membre_id:
+ *          type: uint
+ *        membre:
+ *          "$ref": '#/components/schemas/Membre'
+ *        bureaux:
+ *          type: array
+ *          items:
+ *            "$ref": '#/components/schemas/Bureau'
+ *        createdAt: 
+ *          type: string
+ *        updatedAt: 
+ *          type: string
+ *      required:
+ *        - fullname
+ *        - job
+ *        - image
+ *        - biographie
+ *        - type_membre_id
+ */
 export default class Membre extends BaseModel {
   @column({ isPrimary: true })
   public id: number

@@ -1,6 +1,30 @@
 import { DateTime } from 'luxon'
 import { BaseModel, belongsTo, BelongsTo, column } from '@ioc:Adonis/Lucid/Orm'
 
+/**
+ * @swagger
+ * components:
+ *  schemas:
+ *    Echelon:
+ *      type: object
+ *      properties:
+ *        id:
+ *          type: uint
+ *        title:
+ *          type: string
+ *        slug:
+ *          type: string
+ *        parent_id:
+ *          type: uint
+ *        parent:
+ *          type: Echelon
+ *        createdAt: 
+ *          type: string
+ *        updatedAt: 
+ *          type: string
+ *      required:
+ *        - title
+ */
 export default class Echelon extends BaseModel {
   @column({ isPrimary: true })
   public id: number

@@ -3,6 +3,33 @@ import { BaseModel, belongsTo, column } from '@ioc:Adonis/Lucid/Orm'
 import Bureau from './Bureau'
 import { BelongsTo } from '@ioc:Adonis/Lucid/Relations'
 
+/**
+ * @swagger
+ * components:
+ *  schemas:
+ *    Fond:
+ *      type: object
+ *      properties:
+ *        id:
+ *          type: uint
+ *        title:
+ *          type: string
+ *        slug:
+ *          type: string
+ *        description:
+ *          type: string
+ *        bureau_id:
+ *          type: uint
+ *        bureau:
+ *          "$ref": '#/components/schemas/Bureau'
+ *        createdAt: 
+ *          type: string
+ *        updatedAt: 
+ *          type: string
+ *      required:
+ *        - title
+ *        - bureau_id
+ */
 export default class Fond extends BaseModel {
   @column({ isPrimary: true })
   public id: number

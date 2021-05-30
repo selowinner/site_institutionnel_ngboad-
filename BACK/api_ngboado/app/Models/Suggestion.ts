@@ -1,6 +1,31 @@
 import { DateTime } from 'luxon'
 import { BaseModel, column } from '@ioc:Adonis/Lucid/Orm'
 
+/**
+ * @swagger
+ * components:
+ *  schemas:
+ *    Suggestion:
+ *      type: object
+ *      properties:
+ *        id:
+ *          type: uint
+ *        anonymous:
+ *          type: string
+ *        name:
+ *          type: string
+ *        objet:
+ *          type: string
+ *        suggestion:
+ *          type: string
+ *        createdAt: 
+ *          type: string
+ *        updatedAt: 
+ *          type: string
+ *      required:
+ *        - anonymous
+ *        - suggestion
+ */
 export default class Suggestion extends BaseModel {
   @column({ isPrimary: true })
   public id: number

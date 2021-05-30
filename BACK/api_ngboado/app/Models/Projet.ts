@@ -2,6 +2,36 @@ import { DateTime } from 'luxon'
 import { BaseModel, BelongsTo, belongsTo, column } from '@ioc:Adonis/Lucid/Orm'
 import Bureau from './Bureau'
 
+/**
+ * @swagger
+ * components:
+ *  schemas:
+ *    Projet:
+ *      type: object
+ *      properties:
+ *        id:
+ *          type: uint
+ *        title:
+ *          type: string
+ *        slug:
+ *          type: string
+ *        images:
+ *          type: array
+ *          items:
+ *            type: string
+ *        slogan:
+ *          type: string
+ *        description:
+ *          type: string
+ *        bureau_id:
+ *          type: uint
+ *        bureau:
+ *          "$ref": '#/components/schemas/Bureau'
+ *        createdAt: 
+ *          type: string
+ *        updatedAt: 
+ *          type: string
+ */
 export default class Projet extends BaseModel {
   @column({ isPrimary: true })
   public id: number
