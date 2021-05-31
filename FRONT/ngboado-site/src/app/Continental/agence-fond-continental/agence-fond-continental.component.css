@@ -1,0 +1,131 @@
+/* box style */
+
+  
+div.ag-card-ac1{
+    background: #660099;
+    color: #fff;
+}
+
+div.ag-card-ac2{
+    background: #0099CC;
+    color: #fff;
+}
+/* box style */
+
+/*logo*/
+
+/*logo animation start*/
+.loader-logo {
+  overflow: hidden;
+  transform: translatey(0px);
+  -webkit-animation: float 3s ease-in-out infinite;
+          animation: float 3s ease-in-out infinite;
+}
+
+
+@-webkit-keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+/*logo animation end*/
+/*logo style end*/
+/*Bg image style end*/
+
+
+/* section 1 style start */
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a, 
+a:hover, 
+a:focus {
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+   .Texte{
+     font-weight: 800;
+   }
+/*...................... section 1 style end....................... */
+
+
+/* le menu style start */
+.overlay {
+background-image: url("../../../assets/images/agence&fond.jpg");
+}
+/* le menu style end */
+
+
+@media screen and (max-width: 767px) {
+#cache{
+    display: none !important;
+}
+}
+#header{
+width: 100%;
+background: #000;
+position: relative;
+overflow: hidden;
+}
+#header::after{
+content: "";
+position: absolute;
+left: 0;
+top: 0px;
+width: 100%;
+height: 100%;
+background: url("../../../assets/images/agence&fond.jpg") no-repeat;
+background-size: cover;
+opacity: .3;
+}
+#page-contenu{
+position: relative;
+top: 50%;
+z-index: 1;
+width: 100%;
+text-align: center;
+}
+
+#svice-icon{
+cursor: pointer;
+display: inline-block;
+box-shadow: 0px 0px 0px 30px rgba(255,255,255,0.3);
+color: #276070;
+background: #fbfcfa;
+border-radius: 50%;
+text-align: center;
+transition: 0.3s linear;
+}
+#svice-icon img{
+left: 50%;
+height: 100px;
+border-radius: 50%;
+width: 100px;
+}
+
+.leTitre{
+line-height: 55px;
+}

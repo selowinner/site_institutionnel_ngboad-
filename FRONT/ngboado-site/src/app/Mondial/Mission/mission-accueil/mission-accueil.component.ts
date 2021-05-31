@@ -16,6 +16,6 @@ export class MissionAccueilComponent implements OnInit {
 
   openClickMenu() { openMenu();}
 
-  closeClickMenu(){closeMenu();}
+  closeClickMenu(){closeMenu();} 
 
 }

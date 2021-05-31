@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 declare const openMenu: any;
 declare const closeMenu: any;
 declare var $: any;
+
 @Component({
   selector: 'app-partenaires',
   templateUrl: './partenaires.component.html',

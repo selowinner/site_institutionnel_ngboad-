@@ -20,7 +20,7 @@ export class FondComponent implements OnInit {
       }
     });
   }
-  openClickMenu() { openMenu();}
+openClickMenu() { openMenu();}
 
 closeClickMenu(){closeMenu();}
 }

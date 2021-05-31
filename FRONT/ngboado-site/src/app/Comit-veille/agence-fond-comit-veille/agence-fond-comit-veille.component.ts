@@ -1,0 +1,15 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-agence-fond-comit-veille',
+  templateUrl: './agence-fond-comit-veille.component.html',
+  styleUrls: ['./agence-fond-comit-veille.component.css']
+})
+export class AgenceFondComitVeilleComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}

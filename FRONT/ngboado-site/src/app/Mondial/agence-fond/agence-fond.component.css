@@ -1,34 +1,15 @@
 /* box style */
-.flex-container {
-    display: flex;
-    cursor: pointer;
-  }
+
   
-  .flex-container > div {
-    font-size: 30px;
-    height: 253px;
-    width: 400%;
-  }
-  
-  div.flex1{
+  div.ag-card-ac1{
       background: #019939;
       color: #fff;
   }
 
-  div.flex3{
+  div.ag-card-ac2{
       background: #336699;
       color: #fff;
   }
-  .grid-container {
-    display: grid;
-    grid-template-areas:
-      'header header header header header header'
-      'menu main main main right right'
-      'menu footer footer footer footer footer';
-    grid-gap: 80px;
-    padding: 10px;
-  }
-
 /* box style */
 
   /*logo*/

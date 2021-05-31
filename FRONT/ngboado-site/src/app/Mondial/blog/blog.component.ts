@@ -4,6 +4,7 @@ import { ApiDataService } from '../../api-data.service';
 declare const openMenu: any;
 declare const closeMenu: any;
 declare const $: any;
+
 @Component({
   selector: 'app-blog',
   templateUrl: './blog.component.html',
