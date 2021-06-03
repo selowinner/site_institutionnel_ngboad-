@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
+declare const openMenu: any;
+declare const closeMenu: any;
+declare const $: any;  
 @Component({
   selector: 'app-presentation-continental',
   templateUrl: './presentation-continental.component.html',
@@ -12,4 +14,7 @@ export class PresentationContinentalComponent implements OnInit {
   ngOnInit(): void {
   }
 
+openClickMenu() { openMenu();}
+
+closeClickMenu(){closeMenu();}
 }
