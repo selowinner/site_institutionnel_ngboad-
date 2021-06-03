@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { HomeComponent } from './Mondial/home/home.component';
 import { AgenceComponent } from './Mondial/agence/agence.component';
 import { AgenceFondComponent } from './Mondial/agence-fond/agence-fond.component';
@@ -23,6 +24,7 @@ import { PreventionProjetComponent } from './Mondial/Mission/prevention-projet/p
 import { PreventionProgrammeComponent } from './Mondial/Mission/prevention-programme/prevention-programme.component';
 import { ReinsertionProjetComponent } from './Mondial/Mission/reinsertion-projet/reinsertion-projet.component';
 import { ReinsertionProgrammeComponent } from './Mondial/Mission/reinsertion-programme/reinsertion-programme.component';
+
 import { ContinentAccueilComponent } from './Continental/continent-accueil/continent-accueil.component';
 import { PresentationContinentalComponent } from './Continental/presentation-continental/presentation-continental.component';
 import { MissionAccueilContinentalComponent } from './Continental/Mission/mission-accueil-continental/mission-accueil-continental.component';
@@ -40,6 +42,7 @@ import { AgenceFondContinentalComponent } from './Continental/agence-fond-contin
 import { SuggestionPlainteContinentalComponent } from './Continental/suggestion-plainte-continental/suggestion-plainte-continental.component';
 import { MembresContinentalComponent } from './Continental/membres-continental/membres-continental.component';
 import { PartenairesContinentalComponent } from './Continental/partenaires-continental/partenaires-continental.component';
+
 import { ComitVeilleAccueilComponent } from './Comit-veille/comit-veille-accueil/comit-veille-accueil.component';
 import { FondComitVeilleComponent } from './Comit-veille/fond-comit-veille/fond-comit-veille.component';
 import { AgenceComitVeilleComponent } from './Comit-veille/agence-comit-veille/agence-comit-veille.component';
@@ -57,6 +60,7 @@ import { AssistanceProjetComitVeilleComponent } from './Comit-veille/Mission/ass
 import { ReinsertionProjetComitVeilleComponent } from './Comit-veille/Mission/reinsertion-projet-comit-veille/reinsertion-projet-comit-veille.component';
 import { PreventionProjetComitVeilleComponent } from './Comit-veille/Mission/prevention-projet-comit-veille/prevention-projet-comit-veille.component';
 import { MissionAccueilComitVeilleComponent } from './Comit-veille/Mission/mission-accueil-comit-veille/mission-accueil-comit-veille.component';
+
 import { DistrictAccueilComponent } from './District/district-accueil/district-accueil.component';
 import { FondDistrictComponent } from './District/fond-district/fond-district.component';
 import { AgenceDistrictComponent } from './District/agence-district/agence-district.component';
@@ -74,6 +78,7 @@ import { PreventionProjetDistrictComponent } from './District/Mission/prevention
 import { ReinsertionProgrammeDistrictComponent } from './District/Mission/reinsertion-programme-district/reinsertion-programme-district.component';
 import { PreventionProgrammeDistrictComponent } from './District/Mission/prevention-programme-district/prevention-programme-district.component';
 import { AssistanceProgrammeDistrictComponent } from './District/Mission/assistance-programme-district/assistance-programme-district.component';
+
 import { PaysAccueilComponent } from './Pays/pays-accueil/pays-accueil.component';
 import { BlogPaysComponent } from './Pays/blog-pays/blog-pays.component';
 import { FondPaysComponent } from './Pays/fond-pays/fond-pays.component';
@@ -91,6 +96,7 @@ import { PreventionProjetPaysComponent } from './Pays/Mission/prevention-projet-
 import { AssistanceProgrammePaysComponent } from './Pays/Mission/assistance-programme-pays/assistance-programme-pays.component';
 import { ReinsertionProgrammePaysComponent } from './Pays/Mission/reinsertion-programme-pays/reinsertion-programme-pays.component';
 import { PreventionProgrammePaysComponent } from './Pays/Mission/prevention-programme-pays/prevention-programme-pays.component';
+
 import { RegionalAccueilComponent } from './Regional/regional-accueil/regional-accueil.component';
 import { FondRegionalComponent } from './Regional/fond-regional/fond-regional.component';
 import { AgenceRegionalComponent } from './Regional/agence-regional/agence-regional.component';
@@ -106,6 +112,7 @@ import { PresentationRegionalComponent } from './Regional/presentation-regional/
 import { AssistanceProgrammeRegionalComponent } from './Regional/Mission/assistance-programme-regional/assistance-programme-regional.component';
 import { ReinsertionProjetRegionalComponent } from './Regional/Mission/reinsertion-projet-regional/reinsertion-projet-regional.component';
 import { PreventionProjetRegionalComponent } from './Regional/Mission/prevention-projet-regional/prevention-projet-regional.component';
+
 import { SectionAccueilComponent } from './Section/section-accueil/section-accueil.component';
 import { BlogSectionComponent } from './Section/blog-section/blog-section.component';
 import { ReinsertionProgrammeRegionalComponent } from './Regional/Mission/reinsertion-programme-regional/reinsertion-programme-regional.component';
@@ -125,6 +132,7 @@ import { SousRegionalAccueilComponent } from './Sous-regional/sous-regional-accu
 import { AssistanceProgrammeSectionComponent } from './Section/Mission/assistance-programme-section/assistance-programme-section.component';
 import { ReinsertionProgrammeSectionComponent } from './Section/Mission/reinsertion-programme-section/reinsertion-programme-section.component';
 import { PreventionProgrammeSectionComponent } from './Section/Mission/prevention-programme-section/prevention-programme-section.component';
+
 import { BlogSousRegionalComponent } from './Sous-regional/blog-sous-regional/blog-sous-regional.component';
 import { MembresSectionComponent } from './Section/membres-section/membres-section.component';
 import { DonsSousRegionalComponent } from './Sous-regional/dons-sous-regional/dons-sous-regional.component';
@@ -146,142 +154,56 @@ import { ReinsertionProgrammeSousRegionalComponent } from './Sous-regional/Missi
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    AgenceComponent,
-    AgenceFondComponent,
-    FondComponent,
-    MembresComponent,
-    PartenairesComponent,
-    BlogComponent,
-    PresentationComponent,
-    DonsComponent,
-    SuggestionsPlaintesComponent,
-    MissionAccueilComponent,
-    AssistanceProgrammeComponent,
-    AssistanceProjetComponent,
-    PreventionProjetComponent,
-    PreventionProgrammeComponent,
-    ReinsertionProjetComponent,
-    ReinsertionProgrammeComponent,
-    ContinentAccueilComponent,
-    PresentationContinentalComponent,
-    MissionAccueilContinentalComponent,
-    AssistanceContinentalComponent,
-    AssistanceProjetContinentalComponent,
-    ReinsertionProjetContinentalComponent,
-    PreventionProjetContinentalComponent,
-    PreventionProgrammeContinentalComponent,
-    ReinsertionProgrammeContinentalComponent,
-    BlogContinentalComponent,
-    FondContinentalComponent,
-    DonsContinentalComponent,
-    AgenceContinentalComponent,
-    AgenceFondContinentalComponent,
-    SuggestionPlainteContinentalComponent,
-    MembresContinentalComponent,
-    PartenairesContinentalComponent,
-    ComitVeilleAccueilComponent,
-    FondComitVeilleComponent,
-    AgenceComitVeilleComponent,
-    BlogComitVeilleComponent,
-    DonsComitVeilleComponent,
-    PresentationComitVeilleComponent,
-    MembresComitVeilleComponent,
-    PartenairesComitVeilleComponent,
-    AgenceFondComitVeilleComponent,
-    SuggestionsPlaintesComitVeilleComponent,
-    AssistanceProgrammeComitVeilleComponent,
-    ReinsertionProgrammeComitVeilleComponent,
-    PreventionProgrammeComitVeilleComponent,
-    AssistanceProjetComitVeilleComponent,
-    ReinsertionProjetComitVeilleComponent,
-    PreventionProjetComitVeilleComponent,
-    MissionAccueilComitVeilleComponent,
-    DistrictAccueilComponent,
-    FondDistrictComponent,
-    AgenceDistrictComponent,
-    AgenceFondDistrictComponent,
-    DonsDistrictComponent,
-    BlogDistrictComponent,
-    MembresDistrictComponent,
-    PartenairesDistrictComponent,
-    PresentationDistrictComponent,
-    SuggestionPlainteDistrictComponent,
-    MissionAccueilDistrictComponent,
-    AssistanceProjetDistrictComponent,
-    ReinsertionProjetDistrictComponent,
-    PreventionProjetDistrictComponent,
-    ReinsertionProgrammeDistrictComponent,
-    PreventionProgrammeDistrictComponent,
-    AssistanceProgrammeDistrictComponent,
-    PaysAccueilComponent,
-    BlogPaysComponent,
-    FondPaysComponent,
-    AgencePaysComponent,
-    DonsPaysComponent,
-    AgenceFondPaysComponent,
-    PresentationsPaysComponent,
-    MembresPaysComponent,
-    PartenairesPaysComponent,
-    SuggestionsPlaintesPaysComponent,
-    MissionPaysComponent,
-    AssistanceProjetPaysComponent,
-    ReinsertionProjetPaysComponent,
-    PreventionProjetPaysComponent,
-    AssistanceProgrammePaysComponent,
-    ReinsertionProgrammePaysComponent,
-    PreventionProgrammePaysComponent,
-    RegionalAccueilComponent,
-    FondRegionalComponent,
-    AgenceRegionalComponent,
-    AgenceFondRegionalComponent,
-    MissionAccueilRegionalComponent,
-    BlogRegionalComponent,
-    DonsRegionalComponent,
-    MembresRegionalComponent,
-    AssistanceProjetRegionalComponent,
-    SuggestionsPlaintesRegionalComponent,
-    PartenairesRegionalComponent,
-    PresentationRegionalComponent,
-    AssistanceProgrammeRegionalComponent,
-    ReinsertionProjetRegionalComponent,
-    PreventionProjetRegionalComponent,
-    SectionAccueilComponent,
-    BlogSectionComponent,
-    ReinsertionProgrammeRegionalComponent,
-    PreventionProgrammeRegionalComponent,
-    FondSectionComponent,
-    AgenceSectionComponent,
-    AgenceFondSectionComponent,
-    PresentationSectionComponent,
-    SuggestionsPlaintesSectionComponent,
-    DonsSectionComponent,
-    PartenairesSectionComponent,
-    MissionAccueilSectionComponent,
-    AssistanceProjetSectionComponent,
-    ReinsertionProjetSectionComponent,
-    PreventionProjetSectionComponent,
-    SousRegionalAccueilComponent,
-    AssistanceProgrammeSectionComponent,
-    ReinsertionProgrammeSectionComponent,
-    PreventionProgrammeSectionComponent,
-    BlogSousRegionalComponent,
-    MembresSectionComponent,
-    DonsSousRegionalComponent,
-    PresentationSousRegionalComponent,
-    FondSousRegionalComponent,
-    AgenceSousRegionalComponent,
-    AgenceFondSousRegionalComponent,
-    SuggestionsPlaintesSousRegionalComponent,
-    MembresSousRegionalComponent,
-    MissionAccueilSousRegionalComponent,
-    AssistanceProjetSousRegionalComponent,
-    ReinsertionProjetSousRegionalComponent,
-    PreventionProjetSousRegionalComponent,
-    AssistanceProgrammeSousRegionalComponent,
-    PreventionProgrammeSousRegionalComponent,
-    ReinsertionProgrammeSousRegionalComponent,
+    HomeComponent, AgenceComponent, AgenceFondComponent, FondComponent, MembresComponent,
+    PartenairesComponent, BlogComponent, PresentationComponent, DonsComponent, SuggestionsPlaintesComponent,
+    MissionAccueilComponent, AssistanceProgrammeComponent, AssistanceProjetComponent, PreventionProjetComponent,
+    PreventionProgrammeComponent, ReinsertionProjetComponent,ReinsertionProgrammeComponent,
+
+    ContinentAccueilComponent, PresentationContinentalComponent, MissionAccueilContinentalComponent,
+    AssistanceContinentalComponent, AssistanceProjetContinentalComponent, ReinsertionProjetContinentalComponent, 
+    PreventionProjetContinentalComponent, PreventionProgrammeContinentalComponent, ReinsertionProgrammeContinentalComponent, 
+    BlogContinentalComponent, FondContinentalComponent, DonsContinentalComponent, AgenceContinentalComponent, 
+    AgenceFondContinentalComponent, SuggestionPlainteContinentalComponent, MembresContinentalComponent, PartenairesContinentalComponent,
+
+    ComitVeilleAccueilComponent, FondComitVeilleComponent, AgenceComitVeilleComponent, BlogComitVeilleComponent,
+    DonsComitVeilleComponent, PresentationComitVeilleComponent, MembresComitVeilleComponent, PartenairesComitVeilleComponent,
+    AgenceFondComitVeilleComponent, SuggestionsPlaintesComitVeilleComponent, AssistanceProgrammeComitVeilleComponent, 
+    ReinsertionProgrammeComitVeilleComponent, PreventionProgrammeComitVeilleComponent, AssistanceProjetComitVeilleComponent,
+    ReinsertionProjetComitVeilleComponent, PreventionProjetComitVeilleComponent, MissionAccueilComitVeilleComponent,
+
+    DistrictAccueilComponent, FondDistrictComponent, AgenceDistrictComponent, AgenceFondDistrictComponent,
+    DonsDistrictComponent, BlogDistrictComponent, MembresDistrictComponent, PartenairesDistrictComponent,
+    PresentationDistrictComponent, SuggestionPlainteDistrictComponent, MissionAccueilDistrictComponent, 
+    AssistanceProjetDistrictComponent, ReinsertionProjetDistrictComponent, PreventionProjetDistrictComponent, 
+    ReinsertionProgrammeDistrictComponent, PreventionProgrammeDistrictComponent,AssistanceProgrammeDistrictComponent,
+
+    PaysAccueilComponent, BlogPaysComponent, FondPaysComponent, AgencePaysComponent,
+    DonsPaysComponent, AgenceFondPaysComponent, PresentationsPaysComponent, MembresPaysComponent,
+    PartenairesPaysComponent, SuggestionsPlaintesPaysComponent, MissionPaysComponent, 
+    AssistanceProjetPaysComponent, ReinsertionProjetPaysComponent, PreventionProjetPaysComponent, 
+    AssistanceProgrammePaysComponent, ReinsertionProgrammePaysComponent, PreventionProgrammePaysComponent,
+
+    RegionalAccueilComponent, FondRegionalComponent, AgenceRegionalComponent,
+    AgenceFondRegionalComponent, MissionAccueilRegionalComponent, BlogRegionalComponent,
+    DonsRegionalComponent, MembresRegionalComponent, AssistanceProjetRegionalComponent,
+    SuggestionsPlaintesRegionalComponent, PartenairesRegionalComponent, PresentationRegionalComponent,
+    AssistanceProgrammeRegionalComponent, ReinsertionProjetRegionalComponent, PreventionProjetRegionalComponent,
+
+    SectionAccueilComponent, BlogSectionComponent, FondSectionComponent, MembresSectionComponent,
+    AgenceSectionComponent, AgenceFondSectionComponent, PresentationSectionComponent,  DonsSectionComponent,
+    SuggestionsPlaintesSectionComponent, PartenairesSectionComponent, PreventionProgrammeSectionComponent, 
+    MissionAccueilSectionComponent, AssistanceProjetSectionComponent, ReinsertionProjetSectionComponent, 
+    PreventionProjetSectionComponent, AssistanceProgrammeSectionComponent, ReinsertionProgrammeSectionComponent,
+    
+
+    BlogSousRegionalComponent, PreventionProgrammeRegionalComponent, ReinsertionProgrammeRegionalComponent,
+    SousRegionalAccueilComponent, DonsSousRegionalComponent, PresentationSousRegionalComponent, 
+    FondSousRegionalComponent, AgenceSousRegionalComponent, AgenceFondSousRegionalComponent,
+    SuggestionsPlaintesSousRegionalComponent, MembresSousRegionalComponent, MissionAccueilSousRegionalComponent,
+    AssistanceProjetSousRegionalComponent, ReinsertionProjetSousRegionalComponent, PreventionProjetSousRegionalComponent,
+    AssistanceProgrammeSousRegionalComponent, PreventionProgrammeSousRegionalComponent, ReinsertionProgrammeSousRegionalComponent,
   ],
+
   imports: [
     BrowserModule,
     NgbModule,

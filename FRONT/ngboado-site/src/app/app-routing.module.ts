@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+//les composants du site mondial
 import { HomeComponent } from './Mondial/home/home.component';
 import { AgenceComponent } from './Mondial/agence/agence.component';
 import { AgenceFondComponent } from './Mondial/agence-fond/agence-fond.component';
@@ -18,6 +19,8 @@ import { PreventionProjetComponent } from './Mondial/Mission/prevention-projet/p
 import { PreventionProgrammeComponent } from './Mondial/Mission/prevention-programme/prevention-programme.component';
 import { ReinsertionProjetComponent } from './Mondial/Mission/reinsertion-projet/reinsertion-projet.component';
 import { ReinsertionProgrammeComponent } from './Mondial/Mission/reinsertion-programme/reinsertion-programme.component';
+
+//les composants du site continental
 import { ContinentAccueilComponent } from './Continental/continent-accueil/continent-accueil.component';
 import { PresentationContinentalComponent } from './Continental/presentation-continental/presentation-continental.component';
 import { MembresContinentalComponent } from './Continental/membres-continental/membres-continental.component';
@@ -34,6 +37,8 @@ import { PreventionProjetContinentalComponent } from './Continental/Mission/prev
 import { ReinsertionProjetContinentalComponent } from './Continental/Mission/reinsertion-projet-continental/reinsertion-projet-continental.component';
 import { ReinsertionProgrammeContinentalComponent } from './Continental/Mission/reinsertion-programme-continental/reinsertion-programme-continental.component';
 import { DonsContinentalComponent } from './Continental/dons-continental/dons-continental.component';
+
+//les composants du site regional
 import { RegionalAccueilComponent } from './Regional/regional-accueil/regional-accueil.component';
 import { MembresRegionalComponent } from './Regional/membres-regional/membres-regional.component';
 import { PartenairesRegionalComponent } from './Regional/partenaires-regional/partenaires-regional.component';
@@ -52,6 +57,8 @@ import { PreventionProgrammeRegionalComponent } from './Regional/Mission/prevent
 import { ReinsertionProjetRegionalComponent } from './Regional/Mission/reinsertion-projet-regional/reinsertion-projet-regional.component';
 import { ReinsertionProgrammeRegionalComponent } from './Regional/Mission/reinsertion-programme-regional/reinsertion-programme-regional.component';
 import { DonsRegionalComponent } from './Regional/dons-regional/dons-regional.component';
+
+//les composants du site pays
 import { PaysAccueilComponent } from './Pays/pays-accueil/pays-accueil.component';
 import { PresentationsPaysComponent } from './Pays/presentations-pays/presentations-pays.component';
 import { MembresPaysComponent } from './Pays/membres-pays/membres-pays.component';
@@ -79,7 +86,73 @@ import { PreventionProgrammeComitVeilleComponent } from './Comit-veille/Mission/
 import { ReinsertionProgrammeComitVeilleComponent } from './Comit-veille/Mission/reinsertion-programme-comit-veille/reinsertion-programme-comit-veille.component';
 import { ReinsertionProjetComitVeilleComponent } from './Comit-veille/Mission/reinsertion-projet-comit-veille/reinsertion-projet-comit-veille.component';
 
+//les composants du site regional
+import { SousRegionalAccueilComponent } from './Sous-regional/sous-regional-accueil/sous-regional-accueil.component';
+import { PresentationSousRegionalComponent } from './Sous-regional/presentation-sous-regional/presentation-sous-regional.component';
+import { MembresSousRegionalComponent } from './Sous-regional/membres-sous-regional/membres-sous-regional.component';
+import { PartenairesSousRegionalComponent } from './Sous-regional/partenaires-sous-regional/partenaires-sous-regional.component';
+import { BlogSousRegionalComponent } from './Sous-regional/blog-sous-regional/blog-sous-regional.component';
+import { SuggestionsPlaintesSousRegionalComponent } from './Sous-regional/suggestions-plaintes-sous-regional/suggestions-plaintes-sous-regional.component';
+import { AgenceFondSousRegionalComponent } from './Sous-regional/agence-fond-sous-regional/agence-fond-sous-regional.component';
+import { FondSousRegionalComponent } from './Sous-regional/fond-sous-regional/fond-sous-regional.component';
+import { MissionAccueilSousRegionalComponent } from './Sous-regional/Mission/mission-accueil-sous-regional/mission-accueil-sous-regional.component';
+import { AssistanceProgrammeSousRegionalComponent } from './Sous-regional/Mission/assistance-programme-sous-regional/assistance-programme-sous-regional.component';
+import { PreventionProjetSousRegionalComponent } from './Sous-regional/Mission/prevention-projet-sous-regional/prevention-projet-sous-regional.component';
+import { PreventionProgrammeSousRegionalComponent } from './Sous-regional/Mission/prevention-programme-sous-regional/prevention-programme-sous-regional.component';
+import { ReinsertionProjetSousRegionalComponent } from './Sous-regional/Mission/reinsertion-projet-sous-regional/reinsertion-projet-sous-regional.component';
+import { ReinsertionProgrammeSousRegionalComponent } from './Sous-regional/Mission/reinsertion-programme-sous-regional/reinsertion-programme-sous-regional.component';
+import { DonsSousRegionalComponent } from './Sous-regional/dons-sous-regional/dons-sous-regional.component';
+
+//les composants du site comit-veille
+import { MembresComitVeilleComponent } from './Comit-veille/membres-comit-veille/membres-comit-veille.component';
+import { PartenairesComitVeilleComponent } from './Comit-veille/partenaires-comit-veille/partenaires-comit-veille.component';
+import { BlogComitVeilleComponent } from './Comit-veille/blog-comit-veille/blog-comit-veille.component';
+import { SuggestionsPlaintesComitVeilleComponent } from './Comit-veille/suggestions-plaintes-comit-veille/suggestions-plaintes-comit-veille.component';
+import { AgenceFondComitVeilleComponent } from './Comit-veille/agence-fond-comit-veille/agence-fond-comit-veille.component';
+import { AgenceComitVeilleComponent } from './Comit-veille/agence-comit-veille/agence-comit-veille.component';
+import { FondComitVeilleComponent } from './Comit-veille/fond-comit-veille/fond-comit-veille.component';
+import { DonsComitVeilleComponent } from './Comit-veille/dons-comit-veille/dons-comit-veille.component';
+
+//les composants du site district
+import { DistrictAccueilComponent } from './District/district-accueil/district-accueil.component';
+import { PresentationDistrictComponent } from './District/presentation-district/presentation-district.component';
+import { MembresDistrictComponent } from './District/membres-district/membres-district.component';
+import { PartenairesDistrictComponent } from './District/partenaires-district/partenaires-district.component';
+import { BlogDistrictComponent } from './District/blog-district/blog-district.component';
+import { SuggestionPlainteDistrictComponent } from './District/suggestion-plainte-district/suggestion-plainte-district.component';
+import { AgenceFondDistrictComponent } from './District/agence-fond-district/agence-fond-district.component';
+import { AgenceDistrictComponent } from './District/agence-district/agence-district.component';
+import { FondDistrictComponent } from './District/fond-district/fond-district.component';
+import { MissionAccueilDistrictComponent } from './District/Mission/mission-accueil-district/mission-accueil-district.component';
+import { AssistanceProjetDistrictComponent } from './District/Mission/assistance-projet-district/assistance-projet-district.component';
+import { AssistanceProgrammeDistrictComponent } from './District/Mission/assistance-programme-district/assistance-programme-district.component';
+import { PreventionProjetDistrictComponent } from './District/Mission/prevention-projet-district/prevention-projet-district.component';
+import { ReinsertionProjetDistrictComponent } from './District/Mission/reinsertion-projet-district/reinsertion-projet-district.component';
+import { ReinsertionProgrammeDistrictComponent } from './District/Mission/reinsertion-programme-district/reinsertion-programme-district.component';
+import { DonsDistrictComponent } from './District/dons-district/dons-district.component';
+
+//les composants du site section
+import { SectionAccueilComponent } from './Section/section-accueil/section-accueil.component';
+import { PresentationSectionComponent } from './Section/presentation-section/presentation-section.component';
+import { MembresSectionComponent } from './Section/membres-section/membres-section.component';
+import { PartenairesSectionComponent } from './Section/partenaires-section/partenaires-section.component';
+import { BlogSectionComponent } from './Section/blog-section/blog-section.component';
+import { SuggestionsPlaintesSectionComponent } from './Section/suggestions-plaintes-section/suggestions-plaintes-section.component';
+import { AgenceFondSectionComponent } from './Section/agence-fond-section/agence-fond-section.component';
+import { FondSectionComponent } from './Section/fond-section/fond-section.component';
+import { MissionAccueilSectionComponent } from './Section/Mission/mission-accueil-section/mission-accueil-section.component';
+import { AssistanceProgrammeSectionComponent } from './Section/Mission/assistance-programme-section/assistance-programme-section.component';
+import { AssistanceProjetSectionComponent } from './Section/Mission/assistance-projet-section/assistance-projet-section.component';
+import { PreventionProjetSectionComponent } from './Section/Mission/prevention-projet-section/prevention-projet-section.component';
+import { PreventionProgrammeSectionComponent } from './Section/Mission/prevention-programme-section/prevention-programme-section.component';
+import { ReinsertionProjetSectionComponent } from './Section/Mission/reinsertion-projet-section/reinsertion-projet-section.component';
+import { ReinsertionProgrammeSectionComponent } from './Section/Mission/reinsertion-programme-section/reinsertion-programme-section.component';
+import { DonsSectionComponent } from './Section/dons-section/dons-section.component';
+
+
 const routes: Routes = [
+
+  // routes site mondial
   {path: '', component: HomeComponent}, 
   {path: 'membres', component: MembresComponent},
   {path: 'partenaires', component: PartenairesComponent},
@@ -140,104 +213,104 @@ const routes: Routes = [
   {path: 'dons-regional', component: DonsRegionalComponent },
 
   //routes site pays
-  // {path: 'pays-accueil', component: PaysAccueilComponent },
-  // {path: 'presentation-pays', component: PresentationsPaysComponent },
-  // {path: 'membres-pays', component: MembresPaysComponent },
-  // {path: 'partenaires-pays', component: PartenairesPaysComponent },
-  // {path: 'blog-pays', component: BlogPaysComponent },  
-  // {path: 'suggestions-plaintes-pays', component: SuggestionsPlaintesPaysComponent },  
-  // {path: 'agence-fond-pays', component: AgenceFondPaysComponent },  
-  // {path: 'agence-pays', component: AgencePaysComponent},
-  // {path: 'fond-pays', component: FondPaysComponent},
-  // {path: 'presentation-pays', component: PresentationsPaysComponent},
-  // {path: 'mission-accueil-pays', component: MissionPaysComponent},
-  // {path: 'assistance-projet-pays', component: AssistanceProjetPaysComponent},
-  // {path: 'assistance-programme-pays', component: AssistanceProjetSousRegionalComponent},
-  // {path: 'prevention-projet-pays', component: PreventionProjetPaysComponent},
-  // {path: 'prevention-programme-pays', component: PreventionProgrammePaysComponent},
-  // {path: 'reinsertion-projet-pays', component: ReinsertionProjetPaysComponent},
-  // {path: 'reinsertion-programme-pays', component: ReinsertionProgrammePaysComponent},
-  // {path: 'dons-pays', component: DonsPaysComponent},
+  {path: 'pays-accueil', component: PaysAccueilComponent },
+  {path: 'presentation-pays', component: PresentationsPaysComponent },
+  {path: 'membres-pays', component: MembresPaysComponent },
+  {path: 'partenaires-pays', component: PartenairesPaysComponent },
+  {path: 'blog-pays', component: BlogPaysComponent },  
+  {path: 'suggestions-plaintes-pays', component: SuggestionsPlaintesPaysComponent },  
+  {path: 'agence-fond-pays', component: AgenceFondPaysComponent },  
+  {path: 'agence-pays', component: AgencePaysComponent},
+  {path: 'fond-pays', component: FondPaysComponent},
+  {path: 'presentation-pays', component: PresentationsPaysComponent},
+  {path: 'mission-accueil-pays', component: MissionPaysComponent},
+  {path: 'assistance-projet-pays', component: AssistanceProjetPaysComponent},
+  {path: 'assistance-programme-pays', component: AssistanceProjetSousRegionalComponent},
+  {path: 'prevention-projet-pays', component: PreventionProjetPaysComponent},
+  {path: 'prevention-programme-pays', component: PreventionProgrammePaysComponent},
+  {path: 'reinsertion-projet-pays', component: ReinsertionProjetPaysComponent},
+  {path: 'reinsertion-programme-pays', component: ReinsertionProgrammePaysComponent},
+  {path: 'dons-pays', component: DonsPaysComponent},
 
-    //routes site sous-regional
-    // {path: 'pays-accueil', component: PaysAccueilComponent },
-    // {path: 'presentation-pays', component: PresentationsPaysComponent },
-    // {path: 'membres-pays', component: MembresPaysComponent },
-    // {path: 'partenaires-pays', component: PartenairesPaysComponent },
-    // {path: 'blog-pays', component: BlogPaysComponent },  
-    // {path: 'suggestions-plaintes-pays', component: SuggestionsPlaintesPaysComponent },  
-    // {path: 'agence-fond-pays', component: AgenceFondPaysComponent },  
-    // {path: 'agence-pays', component: AgencePaysComponent},
-    // {path: 'fond-pays', component: FondPaysComponent},
-    // {path: 'presentation-pays', component: PresentationsPaysComponent},
-    // {path: 'mission-accueil-pays', component: MissionPaysComponent},
-    // {path: 'assistance-projet-pays', component: AssistanceProjetPaysComponent},
-    // {path: 'assistance-programme-pays', component: AssistanceProjetSousRegionalComponent},
-    // {path: 'prevention-projet-pays', component: PreventionProjetPaysComponent},
-    // {path: 'prevention-programme-pays', component: PreventionProgrammePaysComponent},
-    // {path: 'reinsertion-projet-pays', component: ReinsertionProjetPaysComponent},
-    // {path: 'reinsertion-programme-pays', component: ReinsertionProgrammePaysComponent},
-    // {path: 'dons-pays', component: DonsPaysComponent},
+  // routes site sous-regional
+  {path: 'sous-regional-accueil', component: SousRegionalAccueilComponent },
+  {path: 'presentation-sous-regional', component: PresentationSousRegionalComponent },
+  {path: 'membres-sous-regional', component: MembresSousRegionalComponent },
+  {path: 'partenaires-sous-regional', component: PartenairesSousRegionalComponent },
+  {path: 'blog-sous-regional', component: BlogSousRegionalComponent },  
+  {path: 'suggestions-plaintes-sous-regional', component: SuggestionsPlaintesSousRegionalComponent },  
+  {path: 'agence-fond-sous-regional', component: AgenceFondSousRegionalComponent },  
+  {path: 'agence-sous-regional', component: AgenceSousRegionalComponent},
+  {path: 'fond-sous-regional', component: FondSousRegionalComponent},
+  {path: 'presentation-sous-regional', component: PresentationSousRegionalComponent},
+  {path: 'mission-accueil-sous-regional', component: MissionAccueilSousRegionalComponent},
+  {path: 'assistance-projet-sous-regional', component: AssistanceProjetSousRegionalComponent},
+  {path: 'assistance-programme-sous-regional', component: AssistanceProgrammeSousRegionalComponent},
+  {path: 'prevention-projet-sous-regional', component: PreventionProjetSousRegionalComponent},
+  {path: 'prevention-programme-sous-regional', component: PreventionProgrammeSousRegionalComponent},
+  {path: 'reinsertion-projet-sous-regional', component: ReinsertionProjetSousRegionalComponent},
+  {path: 'reinsertion-programme-sous-regional', component: ReinsertionProgrammeSousRegionalComponent},
+  {path: 'dons-sous-regional', component: DonsSousRegionalComponent},
 
-    //routes site district
-    // {path: 'pays-accueil', component: PaysAccueilComponent },
-    // {path: 'presentation-pays', component: PresentationsPaysComponent },
-    // {path: 'membres-pays', component: MembresPaysComponent },
-    // {path: 'partenaires-pays', component: PartenairesPaysComponent },
-    // {path: 'blog-pays', component: BlogPaysComponent },  
-    // {path: 'suggestions-plaintes-pays', component: SuggestionsPlaintesPaysComponent },  
-    // {path: 'agence-fond-pays', component: AgenceFondPaysComponent },  
-    // {path: 'agence-pays', component: AgencePaysComponent},
-    // {path: 'fond-pays', component: FondPaysComponent},
-    // {path: 'presentation-pays', component: PresentationsPaysComponent},
-    // {path: 'mission-accueil-pays', component: MissionPaysComponent},
-    // {path: 'assistance-projet-pays', component: AssistanceProjetPaysComponent},
-    // {path: 'assistance-programme-pays', component: AssistanceProjetSousRegionalComponent},
-    // {path: 'prevention-projet-pays', component: PreventionProjetPaysComponent},
-    // {path: 'prevention-programme-pays', component: PreventionProgrammePaysComponent},
-    // {path: 'reinsertion-projet-pays', component: ReinsertionProjetPaysComponent},
-    // {path: 'reinsertion-programme-pays', component: ReinsertionProgrammePaysComponent},
-    // {path: 'dons-pays', component: DonsPaysComponent},
+  //routes site district
+  {path: 'district-accueil', component: DistrictAccueilComponent },
+  {path: 'presentation-district', component: PresentationDistrictComponent },
+  {path: 'membres-district', component: MembresDistrictComponent },
+  {path: 'partenaires-district', component: PartenairesDistrictComponent },
+  {path: 'blog-district', component: BlogDistrictComponent },  
+  {path: 'suggestion-plainte-district', component: SuggestionPlainteDistrictComponent },  
+  {path: 'agence-fond-district', component: AgenceFondDistrictComponent },  
+  {path: 'agence-district', component: AgenceDistrictComponent},
+  {path: 'fond-district', component: FondDistrictComponent},
+  {path: 'presentation-district', component: PresentationDistrictComponent},
+  {path: 'mission-accueil-district', component: MissionAccueilDistrictComponent},
+  {path: 'assistance-projet-district', component: AssistanceProjetDistrictComponent},
+  {path: 'assistance-programme-district', component: AssistanceProgrammeDistrictComponent},
+  {path: 'prevention-projet-district', component: PreventionProjetDistrictComponent},
+  {path: 'prevention-programme-district', component: PreventionProgrammePaysComponent},
+  {path: 'reinsertion-projet-district', component: ReinsertionProjetDistrictComponent},
+  {path: 'reinsertion-programme-district', component: ReinsertionProgrammeDistrictComponent},
+  {path: 'dons-district', component: DonsDistrictComponent},
 
-    //routes site sections//
-    // {path: 'pays-accueil', component: PaysAccueilComponent },
-    // {path: 'presentation-pays', component: PresentationsPaysComponent },
-    // {path: 'membres-pays', component: MembresPaysComponent },
-    // {path: 'partenaires-pays', component: PartenairesPaysComponent },
-    // {path: 'blog-pays', component: BlogPaysComponent },  
-    // {path: 'suggestions-plaintes-pays', component: SuggestionsPlaintesPaysComponent },  
-    // {path: 'agence-fond-pays', component: AgenceFondPaysComponent },  
-    // {path: 'agence-pays', component: AgencePaysComponent},
-    // {path: 'fond-pays', component: FondPaysComponent},
-    // {path: 'presentation-pays', component: PresentationsPaysComponent},
-    // {path: 'mission-accueil-pays', component: MissionPaysComponent},
-    // {path: 'assistance-projet-pays', component: AssistanceProjetPaysComponent},
-    // {path: 'assistance-programme-pays', component: AssistanceProjetSousRegionalComponent},
-    // {path: 'prevention-projet-pays', component: PreventionProjetPaysComponent},
-    // {path: 'prevention-programme-pays', component: PreventionProgrammePaysComponent},
-    // {path: 'reinsertion-projet-pays', component: ReinsertionProjetPaysComponent},
-    // {path: 'reinsertion-programme-pays', component: ReinsertionProgrammePaysComponent},
-    // {path: 'dons-pays', component: DonsPaysComponent},
+  //routes site section//
+  {path: 'section-accueil', component: SectionAccueilComponent },
+  {path: 'presentation-section', component: PresentationSectionComponent },
+  {path: 'membres-section', component: MembresSectionComponent },
+  {path: 'partenaires-section', component: PartenairesSectionComponent },
+  {path: 'blog-section', component: BlogSectionComponent },  
+  {path: 'suggestions-plaintes-section', component: SuggestionsPlaintesSectionComponent },  
+  {path: 'agence-fond-section', component: AgenceFondSectionComponent },  
+  {path: 'agence-section', component: AgenceFondSectionComponent},
+  {path: 'fond-section', component: FondSectionComponent},
+  {path: 'presentation-section', component: PresentationSectionComponent},
+  {path: 'mission-accueil-section', component: MissionAccueilSectionComponent},
+  {path: 'assistance-projet-section', component: AssistanceProjetSectionComponent},
+  {path: 'assistance-programme-section', component: AssistanceProgrammeSectionComponent},
+  {path: 'prevention-projet-section', component: PreventionProjetSectionComponent},
+  {path: 'prevention-programme-section', component: PreventionProgrammeSectionComponent},
+  {path: 'reinsertion-projet-section', component: ReinsertionProjetSectionComponent},
+  {path: 'reinsertion-programme-section', component: ReinsertionProgrammeSectionComponent},
+  {path: 'dons-section', component: DonsSectionComponent},
 
-    //routes site comit-veille
-    { path: 'comitedeveille-accueil', component: ComitVeilleAccueilComponent },
-    { path: 'comitedeveille-presentation', component: PresentationComitVeilleComponent },
-    { path: 'comitedeveille-mission-accueil', component: MissionAccueilComitVeilleComponent },
-    // {path: 'partenaires-pays', component: PartenairesPaysComponent },
-    // {path: 'blog-pays', component: BlogPaysComponent },  
-    // {path: 'suggestions-plaintes-pays', component: SuggestionsPlaintesPaysComponent },  
-    // {path: 'agence-fond-pays', component: AgenceFondPaysComponent },  
-    // {path: 'agence-pays', component: AgencePaysComponent},
-    // {path: 'fond-pays', component: FondPaysComponent},
-    // {path: 'presentation-pays', component: PresentationsPaysComponent},
-    // {path: 'mission-accueil-pays', component: MissionPaysComponent},
-    { path: 'comitedeveille-assistance-projet', component: AssistanceProjetComitVeilleComponent },
-    { path: 'comitedeveille-assistance-programme', component: AssistanceProgrammeComitVeilleComponent },
-    { path: 'comitedeveille-prevention-projet', component: PreventionProjetComitVeilleComponent },
-    { path: 'comitedeveille-prevention-programme', component: PreventionProgrammeComitVeilleComponent },
-    { path: 'comitedeveille-reinsertion-projet', component: ReinsertionProjetComitVeilleComponent},
-    { path: 'comitedeveille-reinsertion-programme', component: ReinsertionProgrammeComitVeilleComponent},
-    // {path: 'dons-pays', component: DonsPaysComponent},
+  //routes site comit-veille
+  {path: 'comit-veille-accueil', component: ComitVeilleAccueilComponent },
+  {path: 'presentation-comit-veille', component: PresentationComitVeilleComponent },
+  {path: 'membres-comit-veille', component: MembresComitVeilleComponent },
+  {path: 'partenaires-comit-veille', component: PartenairesComitVeilleComponent },
+  {path: 'blog-comit-veille', component: BlogComitVeilleComponent },  
+  {path: 'suggestions-plaintes-comit-veille', component: SuggestionsPlaintesComitVeilleComponent },  
+  {path: 'agence-fond-comit-veille', component: AgenceFondComitVeilleComponent },  
+  {path: 'agence-comit-veille', component: AgenceComitVeilleComponent},
+  {path: 'fond-comit-veille', component: FondComitVeilleComponent},
+  {path: 'presentation-comit-veille', component: PresentationComitVeilleComponent},
+  {path: 'mission-accueil-comit-veille', component: MissionAccueilComitVeilleComponent},
+  {path: 'assistance-projet-comit-veille', component: AssistanceProjetComitVeilleComponent},
+  {path: 'assistance-programme-comit-veille', component: AssistanceProgrammeComitVeilleComponent},
+  {path: 'prevention-projet-comit-veille', component: PreventionProjetComitVeilleComponent},
+  {path: 'prevention-programme-comit-veille', component: PreventionProjetComitVeilleComponent},
+  {path: 'reinsertion-projet-comit-veille', component: ReinsertionProjetComitVeilleComponent},
+  {path: 'reinsertion-programme-comit-veille', component: ReinsertionProgrammeComitVeilleComponent},
+  {path: 'dons-comit-veille', component: DonsComitVeilleComponent},
 ];
 
 @NgModule({
