@@ -229,7 +229,7 @@ body{
   margin: 30px auto;
 }
 
-@media (max-width:1280px){
+/* @media (max-width:1280px){
   #programNonInst {
     display:none;
   }
@@ -238,7 +238,7 @@ body{
   #prNotInst {
     display:none;
   }
-}
+} */
 
 .modal-body {
 position:relative;

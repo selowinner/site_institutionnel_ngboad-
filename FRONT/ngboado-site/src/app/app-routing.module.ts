@@ -69,6 +69,15 @@ import { PreventionProgrammePaysComponent } from './Pays/Mission/prevention-prog
 import { ReinsertionProjetPaysComponent } from './Pays/Mission/reinsertion-projet-pays/reinsertion-projet-pays.component';
 import { ReinsertionProgrammePaysComponent } from './Pays/Mission/reinsertion-programme-pays/reinsertion-programme-pays.component';
 import { DonsPaysComponent } from './Pays/dons-pays/dons-pays.component';
+import { ComitVeilleAccueilComponent } from './Comit-veille/comit-veille-accueil/comit-veille-accueil.component';
+import { PresentationComitVeilleComponent } from './Comit-veille/presentation-comit-veille/presentation-comit-veille.component';
+import { MissionAccueilComitVeilleComponent } from './Comit-veille/Mission/mission-accueil-comit-veille/mission-accueil-comit-veille.component';
+import { AssistanceProgrammeComitVeilleComponent } from './Comit-veille/Mission/assistance-programme-comit-veille/assistance-programme-comit-veille.component';
+import { AssistanceProjetComitVeilleComponent } from './Comit-veille/Mission/assistance-projet-comit-veille/assistance-projet-comit-veille.component';
+import { PreventionProjetComitVeilleComponent } from './Comit-veille/Mission/prevention-projet-comit-veille/prevention-projet-comit-veille.component';
+import { PreventionProgrammeComitVeilleComponent } from './Comit-veille/Mission/prevention-programme-comit-veille/prevention-programme-comit-veille.component';
+import { ReinsertionProgrammeComitVeilleComponent } from './Comit-veille/Mission/reinsertion-programme-comit-veille/reinsertion-programme-comit-veille.component';
+import { ReinsertionProjetComitVeilleComponent } from './Comit-veille/Mission/reinsertion-projet-comit-veille/reinsertion-projet-comit-veille.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent}, 
@@ -211,9 +220,9 @@ const routes: Routes = [
     // {path: 'dons-pays', component: DonsPaysComponent},
 
     //routes site comit-veille
-    // {path: 'pays-accueil', component: PaysAccueilComponent },
-    // {path: 'presentation-pays', component: PresentationsPaysComponent },
-    // {path: 'membres-pays', component: MembresPaysComponent },
+    { path: 'comitedeveille-accueil', component: ComitVeilleAccueilComponent },
+    { path: 'comitedeveille-presentation', component: PresentationComitVeilleComponent },
+    { path: 'comitedeveille-mission-accueil', component: MissionAccueilComitVeilleComponent },
     // {path: 'partenaires-pays', component: PartenairesPaysComponent },
     // {path: 'blog-pays', component: BlogPaysComponent },  
     // {path: 'suggestions-plaintes-pays', component: SuggestionsPlaintesPaysComponent },  
@@ -222,12 +231,12 @@ const routes: Routes = [
     // {path: 'fond-pays', component: FondPaysComponent},
     // {path: 'presentation-pays', component: PresentationsPaysComponent},
     // {path: 'mission-accueil-pays', component: MissionPaysComponent},
-    // {path: 'assistance-projet-pays', component: AssistanceProjetPaysComponent},
-    // {path: 'assistance-programme-pays', component: AssistanceProjetSousRegionalComponent},
-    // {path: 'prevention-projet-pays', component: PreventionProjetPaysComponent},
-    // {path: 'prevention-programme-pays', component: PreventionProgrammePaysComponent},
-    // {path: 'reinsertion-projet-pays', component: ReinsertionProjetPaysComponent},
-    // {path: 'reinsertion-programme-pays', component: ReinsertionProgrammePaysComponent},
+    { path: 'comitedeveille-assistance-projet', component: AssistanceProjetComitVeilleComponent },
+    { path: 'comitedeveille-assistance-programme', component: AssistanceProgrammeComitVeilleComponent },
+    { path: 'comitedeveille-prevention-projet', component: PreventionProjetComitVeilleComponent },
+    { path: 'comitedeveille-prevention-programme', component: PreventionProgrammeComitVeilleComponent },
+    { path: 'comitedeveille-reinsertion-projet', component: ReinsertionProjetComitVeilleComponent},
+    { path: 'comitedeveille-reinsertion-programme', component: ReinsertionProgrammeComitVeilleComponent},
     // {path: 'dons-pays', component: DonsPaysComponent},
 ];
 

@@ -19,28 +19,41 @@ function myFunction() {
 
   function myFpop() {
     var x = document.getElementById("firstPop");
-    if(x.style.display === "block") {
-      x.style.display = "none";
+    var y = document.getElementById("twoPop");
+    var z = document.getElementById("threePop");
+
+    if(x.style.visibility === "visible") {
+      x.style.visibility = "hidden";
     } else {
-      x.style.display = "block";
+      x.style.visibility = "visible";
+      y.style.visibility = "hidden";
+      z.style.visibility = "hidden";
     }
   }
 
   function myTpop() {
     var x = document.getElementById("twoPop");
-    if(x.style.display === "block") {
-      x.style.display = "none";
+    var y = document.getElementById("firstPop");
+    var z = document.getElementById("threePop");
+    if(x.style.visibility === "visible") {
+      x.style.visibility = "hidden";
     } else {
-      x.style.display = "block";
+      x.style.visibility = "visible";
+      y.style.visibility = "hidden";
+      z.style.visibility = "hidden";
     }
   }
 
   function myThpop() {
     var x = document.getElementById("threePop");
-    if(x.style.display === "block") {
-      x.style.display = "none";
+    var y = document.getElementById("firstPop");
+    var z = document.getElementById("twoPop");
+    if(x.style.visibility === "visible") {
+      x.style.visibility = "hidden";
     } else {
-      x.style.display = "block";
+      x.style.visibility = "visible";
+      y.style.visibility = "hidden";
+      z.style.visibility = "hidden";
     }
   }
 
