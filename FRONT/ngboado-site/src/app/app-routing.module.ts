@@ -307,7 +307,7 @@ const routes: Routes = [
   {path: 'assistance-projet-comit-veille', component: AssistanceProjetComitVeilleComponent},
   {path: 'assistance-programme-comit-veille', component: AssistanceProgrammeComitVeilleComponent},
   {path: 'prevention-projet-comit-veille', component: PreventionProjetComitVeilleComponent},
-  {path: 'prevention-programme-comit-veille', component: PreventionProjetComitVeilleComponent},
+  {path: 'prevention-programme-comit-veille', component: PreventionProgrammeComitVeilleComponent},
   {path: 'reinsertion-projet-comit-veille', component: ReinsertionProjetComitVeilleComponent},
   {path: 'reinsertion-programme-comit-veille', component: ReinsertionProgrammeComitVeilleComponent},
   {path: 'dons-comit-veille', component: DonsComitVeilleComponent},

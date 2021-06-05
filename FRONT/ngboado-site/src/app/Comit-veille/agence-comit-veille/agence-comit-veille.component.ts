@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+declare const openMenu: any;
+declare const closeMenu: any;
+declare const $: any;
 
 @Component({
   selector: 'app-agence-comit-veille',
@@ -9,7 +12,17 @@ export class AgenceComitVeilleComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
+    $('#autoWidth').lightSlider({
+      autoWidth: true,
+      loop: true,
+      onSliderLoad: function() {
+        $('#autoWidth').removeClass('cS-hidden');
+      }
+    });
   }
+openClickMenu() { openMenu();}
+
+closeClickMenu(){closeMenu();}
 
 }

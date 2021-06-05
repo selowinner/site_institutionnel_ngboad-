@@ -4,11 +4,17 @@
   /* le logo */
   #page-contenu{
     position: relative;
-    top: 20%;
+    top: 50%;
     z-index: 1;
     width: 100%;
+    min-height: 100%;
+    margin-bottom: 0;
     text-align: center;
   }
+
+.page-wrap {
+    min-height: 70vh;
+}
   #svice-icon{
     cursor: pointer;
     display: inline-block;
@@ -61,7 +67,7 @@
   
     #header{
       width: 100%;
-      height: 100vh;
+      height: 100%;
       background: #000;
       position: relative;
       overflow: hidden;
