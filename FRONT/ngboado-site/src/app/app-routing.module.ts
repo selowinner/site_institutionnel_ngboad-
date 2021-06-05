@@ -76,6 +76,15 @@ import { PreventionProgrammePaysComponent } from './Pays/Mission/prevention-prog
 import { ReinsertionProjetPaysComponent } from './Pays/Mission/reinsertion-projet-pays/reinsertion-projet-pays.component';
 import { ReinsertionProgrammePaysComponent } from './Pays/Mission/reinsertion-programme-pays/reinsertion-programme-pays.component';
 import { DonsPaysComponent } from './Pays/dons-pays/dons-pays.component';
+import { ComitVeilleAccueilComponent } from './Comit-veille/comit-veille-accueil/comit-veille-accueil.component';
+import { PresentationComitVeilleComponent } from './Comit-veille/presentation-comit-veille/presentation-comit-veille.component';
+import { MissionAccueilComitVeilleComponent } from './Comit-veille/Mission/mission-accueil-comit-veille/mission-accueil-comit-veille.component';
+import { AssistanceProgrammeComitVeilleComponent } from './Comit-veille/Mission/assistance-programme-comit-veille/assistance-programme-comit-veille.component';
+import { AssistanceProjetComitVeilleComponent } from './Comit-veille/Mission/assistance-projet-comit-veille/assistance-projet-comit-veille.component';
+import { PreventionProjetComitVeilleComponent } from './Comit-veille/Mission/prevention-projet-comit-veille/prevention-projet-comit-veille.component';
+import { PreventionProgrammeComitVeilleComponent } from './Comit-veille/Mission/prevention-programme-comit-veille/prevention-programme-comit-veille.component';
+import { ReinsertionProgrammeComitVeilleComponent } from './Comit-veille/Mission/reinsertion-programme-comit-veille/reinsertion-programme-comit-veille.component';
+import { ReinsertionProjetComitVeilleComponent } from './Comit-veille/Mission/reinsertion-projet-comit-veille/reinsertion-projet-comit-veille.component';
 
 //les composants du site regional
 import { SousRegionalAccueilComponent } from './Sous-regional/sous-regional-accueil/sous-regional-accueil.component';
@@ -95,8 +104,6 @@ import { ReinsertionProgrammeSousRegionalComponent } from './Sous-regional/Missi
 import { DonsSousRegionalComponent } from './Sous-regional/dons-sous-regional/dons-sous-regional.component';
 
 //les composants du site comit-veille
-import { ComitVeilleAccueilComponent } from './Comit-veille/comit-veille-accueil/comit-veille-accueil.component';
-import { PresentationComitVeilleComponent } from './Comit-veille/presentation-comit-veille/presentation-comit-veille.component';
 import { MembresComitVeilleComponent } from './Comit-veille/membres-comit-veille/membres-comit-veille.component';
 import { PartenairesComitVeilleComponent } from './Comit-veille/partenaires-comit-veille/partenaires-comit-veille.component';
 import { BlogComitVeilleComponent } from './Comit-veille/blog-comit-veille/blog-comit-veille.component';
@@ -104,12 +111,6 @@ import { SuggestionsPlaintesComitVeilleComponent } from './Comit-veille/suggesti
 import { AgenceFondComitVeilleComponent } from './Comit-veille/agence-fond-comit-veille/agence-fond-comit-veille.component';
 import { AgenceComitVeilleComponent } from './Comit-veille/agence-comit-veille/agence-comit-veille.component';
 import { FondComitVeilleComponent } from './Comit-veille/fond-comit-veille/fond-comit-veille.component';
-import { MissionAccueilComitVeilleComponent } from './Comit-veille/Mission/mission-accueil-comit-veille/mission-accueil-comit-veille.component';
-import { AssistanceProjetComitVeilleComponent } from './Comit-veille/Mission/assistance-projet-comit-veille/assistance-projet-comit-veille.component';
-import { AssistanceProgrammeComitVeilleComponent } from './Comit-veille/Mission/assistance-programme-comit-veille/assistance-programme-comit-veille.component';
-import { PreventionProjetComitVeilleComponent } from './Comit-veille/Mission/prevention-projet-comit-veille/prevention-projet-comit-veille.component';
-import { ReinsertionProjetComitVeilleComponent } from './Comit-veille/Mission/reinsertion-projet-comit-veille/reinsertion-projet-comit-veille.component';
-import { ReinsertionProgrammeComitVeilleComponent } from './Comit-veille/Mission/reinsertion-programme-comit-veille/reinsertion-programme-comit-veille.component';
 import { DonsComitVeilleComponent } from './Comit-veille/dons-comit-veille/dons-comit-veille.component';
 
 //les composants du site district
@@ -306,7 +307,7 @@ const routes: Routes = [
   {path: 'assistance-projet-comit-veille', component: AssistanceProjetComitVeilleComponent},
   {path: 'assistance-programme-comit-veille', component: AssistanceProgrammeComitVeilleComponent},
   {path: 'prevention-projet-comit-veille', component: PreventionProjetComitVeilleComponent},
-  {path: 'prevention-programme-comit-veille', component: PreventionProjetComitVeilleComponent},
+  {path: 'prevention-programme-comit-veille', component: PreventionProgrammeComitVeilleComponent},
   {path: 'reinsertion-projet-comit-veille', component: ReinsertionProjetComitVeilleComponent},
   {path: 'reinsertion-programme-comit-veille', component: ReinsertionProgrammeComitVeilleComponent},
   {path: 'dons-comit-veille', component: DonsComitVeilleComponent},
