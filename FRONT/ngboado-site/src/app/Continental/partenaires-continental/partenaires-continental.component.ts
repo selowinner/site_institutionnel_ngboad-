@@ -97,7 +97,7 @@ export class PartenairesContinentalComponent implements OnInit {
 
   //fin
   }
-  openClickMenu() { openMenu();}
+openClickMenu() { openMenu();}
 
 closeClickMenu(){closeMenu();}
 

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+declare const openMenu: any;
+declare const closeMenu: any;
 
 @Component({
   selector: 'app-dons-district',
@@ -11,5 +13,8 @@ export class DonsDistrictComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  openClickMenu() {openMenu();}
+  closeClickMenu() {closeMenu();}
 
 }

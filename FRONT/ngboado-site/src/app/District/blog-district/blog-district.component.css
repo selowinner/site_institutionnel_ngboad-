@@ -1,0 +1,270 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden !important;
+  }
+  
+  #svice-icon{
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: 0px 0px 0px 8px rgba(243, 239, 239, 0.384);
+    color: #276070;
+    background: #fbfcfa;
+    border-radius: 50%;
+    text-align: center;
+    transition: 0.3s linear;
+    }
+    #svice-icon img{
+    left: 50%;
+    height: 140px;
+    border-radius: 50%;
+    width: 140px;
+    }
+  /*logo end*/
+  #dropd{
+    margin-top: 50px;
+    background-color: transparent !important;
+    /* border: 1px solid #000; */
+  }
+
+  #dropd2{
+    margin-top: 50px;
+    margin-left: 220px;
+    background-color: transparent !important;
+    /* border: 1px solid  #000; */
+  }
+  
+  .fa{
+    position: absolute;
+    right: 30px;
+    top: 0;
+    font-size: 15px;
+    color: #505056d0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+.lehr{
+  width: 10%;
+  height: 2px;
+  float: left;
+  background: #fff;
+  border: none;
+}
+
+
+/* le menu style start */
+.overlay {
+  background-image: url("../../../assets/images/bg-accueil.jpg");
+}
+/* le menu style end */
+
+
+#carousel {
+  /*Set the container carousel to be fullscreen. If you change the size
+  of your carousel make sure to also change the size of your slides*/
+  /* height: 100vh; */
+  width: 100vw;
+  /*Prevent images from wrapping*/
+  white-space: nowrap;
+  overflow: hidden;
+  /*Allow children to be positioned relatively*/
+  position: relative;
+}
+
+.slide-image {
+  /*Make the image container full screen*/
+  width: 60vw;
+  height: 60vh;
+  /*Make the image cover the the screen and center it*/
+  background-position: center;
+  background-size: cover;
+  /*Make images inline with each other*/
+  display: inline-block;
+}
+
+.arrow {
+  width: 3%;
+  position: absolute;
+  top: 88%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+#slide1Text{
+  position: relative;
+  top:16%;
+  left: 42%;
+}
+
+#slide2Text{
+  position: relative;
+  top:16%;
+  left: 42%;
+}
+
+#slide3Text{
+  position: relative;
+  top:16%;
+  left: 42%;
+}
+
+#slide4Text{
+  position: relative;
+  top:16%;
+  left: 42%;
+}
+
+#slide5Text{
+  position: relative;
+  top:16%;
+  left: 42%;
+}
+
+#right-arrow {
+  right: 68%;
+}
+
+#left-arrow {
+  left: 26%;
+}
+
+#slide1 {
+  background:  linear-gradient(to left, #00b82c, #0199394d, transparent), url('../../../assets/images/ado1.jpg');
+}
+
+#slide2 {
+  background: linear-gradient(to left, #00b82c, transparent), url('../../../assets/images/drogba2.jpg');
+}
+
+
+#slide3 {
+  background-image: linear-gradient(to left, #00b82c, transparent), url('../../../assets/images/arafat3.jpg');
+}
+
+
+#slide4 {
+  background-image: url('../../../assets/images/cr7.jpg');
+}
+
+#slide5 {
+  background-image: linear-gradient(to left, #00b82c, transparent), url('../../../assets/images/bg-accueil.jpg');
+}
+
+/*Mobile Devices*/
+@media (max-device-width: 1024px) {
+  .arrow {
+    width: 20%;
+  }
+  #right-arrow {
+    right: 55%;
+  }
+  
+  #left-arrow {
+    left: 25%;
+  }
+}
+
+/*Small Browsers*/
+@media (max-width: 768px) {
+  .arrow {
+    width: 10%;
+  }
+
+  #right-arrow {
+    right: 55%;
+  }
+  
+  #left-arrow {
+    left: 15%;
+  }
+}
+
+@media (max-width: 736px) {
+  .arrow {
+    width: 5%;
+  }
+
+  #right-arrow {
+    right: 55%;
+  }
+  
+  #left-arrow {
+    left: 5%;
+  }
+}
+
+.svice-icon{
+  cursor: pointer;
+  display: inline-block;
+  box-shadow: 0px 0px 0px 8px rgba(243, 239, 239, 0.384);
+  color: #276070;
+  background: #fbfcfa;
+  border-radius: 50%;
+  text-align: center;
+  transition: 0.3s linear;
+  }
+  .svice-icon img{
+  left: 0%;
+  height: 60px;
+  border-radius: 50%;
+  width: 60px;
+  }
+/*logo end*/
+
+.box{
+  width:100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Video modal */
+.modal-dialog {
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.modal-body {
+position:relative;
+padding:0px;
+}
+.close {
+position:absolute;
+right:-30px;
+top:0;
+z-index:999;
+font-size:2rem;
+font-weight: normal;
+color:#fff;
+opacity:1;
+}
+
+.round-button {
+  display:block;
+  width:70px;
+  height:70px;
+  margin-top: 70%;
+  /* line-height:60px; */
+  border: 8px solid #ccc;
+  border-radius: 50%;
+  text-align:center;
+  text-decoration:none;
+  background: #fff;
+  color: #000;
+  box-shadow: 0 0 3px #ccc;
+}
+
+#icon_slide_right{
+  width: 50px;
+  cursor: pointer;
+}
+
+#icon_slide_left{
+  width: 50px;
+  cursor: pointer;
+}

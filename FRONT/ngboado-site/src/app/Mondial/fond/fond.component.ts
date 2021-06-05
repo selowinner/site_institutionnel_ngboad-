@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 declare const openMenu: any;
 declare const closeMenu: any;
 declare const $: any;
+
 @Component({
   selector: 'app-fond',
   templateUrl: './fond.component.html',

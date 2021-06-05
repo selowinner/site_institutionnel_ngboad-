@@ -134,16 +134,16 @@ body{
 }
 
 #slide1 {
-  background:  linear-gradient(to left, #660099, #0099CC, transparent), url('../../../assets/images/ado1.jpg');
+  background: #d20514, url('../../../assets/images/ado1.jpg');
 }
 
 #slide2 {
-  background: linear-gradient(to left, #660099, transparent), url('../../../assets/images/drogba2.jpg');
+  background: #d20514, url('../../../assets/images/drogba2.jpg');
 }
 
 
 #slide3 {
-  background-image: linear-gradient(to left, #660099, transparent), url('../../../assets/images/arafat3.jpg');
+  background-image: #d20514, url('../../../assets/images/arafat3.jpg');
 }
 
 
@@ -152,7 +152,7 @@ body{
 }
 
 #slide5 {
-  background-image: linear-gradient(to left, #660099, transparent), url('../../../assets/images/bg-accueil.jpg');
+  background-image: #d20514, url('../../../assets/images/bg-accueil.jpg');
 }
 
 /*Mobile Devices*/
@@ -227,17 +227,6 @@ body{
 .modal-dialog {
   max-width: 800px;
   margin: 30px auto;
-}
-
-@media (max-width:1280px){
-  #programNonInst {
-    display:none;
-  }
-}
-@media (min-width:1280px){
-  #prNotInst {
-    display:none;
-  }
 }
 
 .modal-body {
