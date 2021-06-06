@@ -195,7 +195,7 @@ const routes: Routes = [
 
   //routes site regional
   {path: 'regional-accueil', component: RegionalAccueilComponent},
-  {path: 'presentation-regional', component: PresentationContinentalComponent},
+  {path: 'presentation-regional', component: PresentationRegionalComponent},
   {path: 'membres-regional', component: MembresRegionalComponent},
   {path: 'partenaires-regional', component: PartenairesRegionalComponent},
   {path: 'blog-regional', component: BlogRegionalComponent},  

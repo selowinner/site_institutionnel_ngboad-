@@ -1,77 +1,102 @@
 <!-- page d'accueil (debut) -->
 <div class="" id="header">
     <section class="contaliner" id="contaimner-heade">
-        <br><br><br>
-        <div id="page-contenu">
-
-            <div class="row text-center">
-                <div class="col-md-4"></div>
-                <div class="col-md-4 text-center" (click)="openClickMenu()">
-                    <div class="loader-logo" id="svice-icon">
-                        <img  class="toggle-button" src="../../../../assets/icones/logo-regional.jpg" />
-                    </div>
-                </div>
-                <div class="col-md-4"></div>
-            </div>
-            <br><br>
-            <div class="row mt-2 text-center" id="ligne-text-header">
-                <div class="col-md-3 "></div>
-                <div class="col-md-6 mb-4">
-                    <p style="font-size: 45px;color: #fff;">
-                        L'ultime<br>
-                        <b>entreprise créative</b><br/>
-                        Dans le marché<br>
-                    </p>
-                    <span style="color: #fff; font-size: 25px">Le meilleur modèle multi-page polyvalent</span>
-                </div>
-                <div class="col-md-3"></div>
-            </div>
-            <!-- <div id="brContenaire">
-                <br><br><br>
-            </div>
-            <div id="brContenaire1">
-                <br><br><br><br><br><br><br>
-            </div> --> <br>
-            <div class="card-popup">
-                <!-- les popups -->
-                <div class=" row">
-                    <div class="col-md-4">
-                        <div id="firstPop">
-                            <a routerLink="/prevention-programme"><button class="btn btn-danger btn-lg">Programme</button>&nbsp;</a>
-                            <a routerLink="/prevention-projet"><button class="btn btn-danger btn-lg">Projets</button>&nbsp;</a><br>
+        <div id="page-contenu" class="mt-4">
+            <div class="page-wrap d-flex flex-row align-items-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="text-center py-5" (click)="openClickMenu()">
+                            <div class="loader-logo" id="svice-icon">
+                                <img  class="toggle-button" src="../../../../assets/icones/logo-regional.jpg" />
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div id="twoPop">
-                            <div id="twoPop">
-                                <a routerLink="/assistance-programme"><button class="btn btn-danger btn-lg">Programme</button>&nbsp;</a>
-                                <a routerLink="/assistance-projet"><button class="btn btn-danger btn-lg">Projets</button>&nbsp;</a><br>
+                        
+                        <div class="col-md-12 text-center py-5">
+                            <div class="row mt-2 text-center" id="ligne-text-header">
+                                <div class="col-md-3 "></div>
+                                <div class="col-md-6 mb-4">
+                                    <p style="font-size: 45px;color: #fff;">
+                                        L'ultime<br>
+                                        <b>entreprise créative</b><br/>
+                                        Dans le marché<br>
+                                    </p>
+                                    <span style="color: #fff; font-size: 25px">Le meilleur modèle multi-page polyvalent</span>
+                                </div>
+                                <div class="col-md-3"></div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
 
+            
+            <div class="card-popup">
+                <div class="row">
+                    <div class="col-md-4 mb-5">
+                        <div class="row container text-center" id="firstPop">
+                            <div class="col-md-6">
+                                <a href="/prevention-projet-regional">
+                                    <button type="button" class="btn btn-secondary btn-lg btn-block" style="font-weight: bold;background-color: #26313c!important;border: none !important;">Projets</button>
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="/prevention-programme-regional">
+                                    <button type="button" class="btn btn-secondary btn-lg btn-block" style="font-weight: bold;background-color: #26313c!important;border: none !important;">Programmes</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-md-4">
-                        <div id="threePop">
-                            <a routerLink="/reinsertion-programme"><button class="btn btn-danger btn-lg">Programme</button>&nbsp;</a>
-                            <a routerLink="/reinsertion-programme"><button class="btn btn-danger btn-lg">Projets</button>&nbsp;</a><br>
+                        <div class="row container text-center" id="twoPop">
+                            <div class="col-md-6">
+                                <a href="/assistance-projet-regional">
+                                    <button type="button" class="btn btn-secondary btn-lg btn-block" style="font-weight: bold;background-color: #d20514!important;border: none !important;">
+                                        Projets
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="/assistance-programme-regional">
+                                    <button type="button" class="btn btn-secondary btn-lg btn-block" style="font-weight: bold;background-color: #d20514!important;border: none !important;">
+                                        Programmes
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row container text-center" id="threePop">
+                            <div class="col-md-6">
+                                <a href="/reinsertion-projet-regional">
+                                    <button type="button" class="btn btn-secondary btn-lg btn-block" style="font-weight: bold;background-color: #26313c!important;border: none !important;">
+                                        Projets
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="/reinsertion-programme-regional">
+                                    <button type="button" class="btn btn-secondary btn-lg btn-block" style="font-weight: bold;background-color: #26313c!important;border: none !important;">
+                                        Programmes
+                                    </button>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- les popups -->
                 <div class="row no-gutters m-card">
                     <div class="col-md-4 col-sm-4 col-xs-4 text-center" onclick="myFpop()">
                         <div class="card rounded-0 gear d-flex" style=" position: relative; background: #26313c; height: 194px !important; color: #fff; padding-top: 36px; border: none;cursor: pointer;">
                         <div class="card-body">
                             <h4 class="text-center" style="text-decoration: none; color: #fff;">
-                                <img style="width: 50px; height: 50px;" src="../../../../assets/icones/prevention.png" alt="prevention"><br>Prévention
+                                <img style="width: 50px; height: 50px;" src="../../../../assets/icones/prevention.png" alt="prevention"><br>
+                                Prévention
                             </h4>
                         </div>
                         </div>
                     </div>  
     
                     <div class="col-md-4 col-sm-4 col-xs-4 text-center posit" onclick="myTpop()">
-                        <div class="card rounded-0" style="background: #fd0003; height: 194px !important; color: #fff; padding-top: 36px; border: none;">
+                        <div class="card rounded-0" style="background: #d20514; height: 194px !important; color: #fff; padding-top: 36px; border: none;cursor: pointer;">
                             <div class="card-body">
                                 <h4 class="text-center" style="text-decoration: none; color: #fff;">
                                     <img  style="width: 50px; height: 50px;" src="../../../../assets/icones/assistance.png" alt="assistance"><br>Assistance
@@ -81,7 +106,7 @@
                     </div> 
     
                     <div class="col-md-4 col-sm-4 col-xs-4 text-center" onclick="myThpop()">
-                        <div class="card rounded-0" style="background: #0099CC; height: 194px !important; color: #fff; padding-top: 36px; border: none;cursor: pointer;">
+                        <div class="card rounded-0" style="background: #26313c; height: 194px !important; color: #fff; padding-top: 36px; border: none;cursor: pointer;">
                             <div class="card-body">
                                 <h4 class="text-center" style="text-decoration: none; color: #fff;">
                                     <img  style="width: 50px; height: 50px;" src="../../../../assets/icones/reinsertion.png" alt="reinsertion"><br>Réinsertion
@@ -97,8 +122,8 @@
   </div>
 <!-- page d'accueil (fin) -->
 
-  <!-- le menu (debut) -->
-  <header>
+<!-- le menu (debut) -->
+<header>
     <div id="myNav" class="overlay">
     <a href="javascript:void(0)" class="closebtn" id="closeNav" (click)="closeClickMenu()">&times;</a>
     <div class="overlay-content">
@@ -106,20 +131,20 @@
             <div class="col-md-4"></div>
             <div class="col-md-4 text-center" (click)="openClickMenu()">
                 <div id="svice-icon">
-                    <img  class="toggle-button" src="../../../assets/icones/logo-Sous-regional.jpg" />
+                    <img  class="toggle-button" src="../../../../assets/icones/logo-regional.jpg" />
                 </div>
             </div>
             <div class="col-md-4"></div>
         </div><br>
-      <a class="lover" routerLink="/sous-regional-accueil">Accueil</a>
-      <a class="lover" routerLink="/presentation-sous-regional">Présentation</a>
-      <a class="lover" routerLink="/mission-accueil-sous-regional">Mission</a>
-      <a class="lover" routerLink="/agence-fond-sous-regional">Agences / Fonds</a>
-      <a class="lover" routerLink="/membres-sous-regional">Membres</a>
-      <a class="lover" routerLink="/dons-sous-regional">Dons</a>
-      <a class="lover" routerLink="/blog-sous-regional">Blog</a>
-      <a class="lover" routerLink="/suggestions-plaintes-sous-regional">Suggestions / Plaintes</a>
-      <a class="lover" routerLink="/partenaires-sous-regional">Partenaires</a>
+        <a class="lover" routerLink="/regional-accueil">Accueil</a>
+        <a class="lover" routerLink="/presentation-regional">Présentation</a>
+        <a class="lover" routerLink="/mission-accueil-regional">Mission</a>
+        <a class="lover" routerLink="/agence-fond-regional">Agences / Fonds</a>
+        <a class="lover" routerLink="/membres-regional">Membres</a>
+        <a class="lover" routerLink="/dons-regional">Dons</a>
+        <a class="lover" routerLink="/blog-regional">Blog</a>
+        <a class="lover" routerLink="/suggestions-plaintes-regional">Suggestions / Plaintes</a>
+        <a class="lover" routerLink="/partenaires-regional">Partenaires</a>
       <ul>
         <span><a href="#">
             <i class="fab fa-facebook-f"></i>
@@ -143,4 +168,4 @@
     </div>
     </div>
   </header>
-  <!-- le menu (fin) -->
+<!-- le menu (fin) -->
