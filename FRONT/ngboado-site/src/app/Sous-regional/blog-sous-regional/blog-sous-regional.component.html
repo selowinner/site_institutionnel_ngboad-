@@ -1,365 +1,338 @@
 <div id="section1">
-    <!-- le logo (debut) -->
-    <div class="row mt-5 mb-4 container-fluid">
-      <div class="col-md-2">
-        <div ngbDropdown class="d-block mt-5 float-left">
-          <button class="btn" id="dropdownCategorie" ngbDropdownToggle>Categorie</button>
-          <div ngbDropdownMenu aria-labelledby="dropdownCategorie">
-            <button ngbDropdownItem>Action - 1</button>
-            <button ngbDropdownItem>Another Action</button>
-            <button ngbDropdownItem>Something else is here</button>
-          </div>
-        </div>
-      </div>
-  
-      <div class="col-md-8 text-center mt-5" (click)="openClickMenu()">
-          <div class="loader-logo" id="svice-icon">
-              <img  class="toggle-button" src="../../../assets/icones/logo-Sous-regional.jpg" />
-          </div>
-      </div>
-      
-      <div class="col-md-2">
-        <div ngbDropdown class="d-block mt-5 float-right">
-          <button class="btn" id="dropdownPeriode" ngbDropdownToggle>Periode</button>
-          <div ngbDropdownMenu aria-labelledby="dropdownPeriode">
-            <button ngbDropdownItem>Action - 1</button>
-            <button ngbDropdownItem>Another Action</button>
-            <button ngbDropdownItem>Something else is here</button>
-          </div>
+  <!-- le logo (debut) -->
+  <div class="row mt-5 mb-4 container-fluid">
+    <div class="col-md-2">
+      <div ngbDropdown class="d-block mt-5 float-left">
+        <button class="btn" id="dropdownCategorie" ngbDropdownToggle>Categorie</button>
+        <div ngbDropdownMenu aria-labelledby="dropdownCategorie">
+          <button ngbDropdownItem>Action - 1</button>
+          <button ngbDropdownItem>Another Action</button>
+          <button ngbDropdownItem>Something else is here</button>
         </div>
       </div>
     </div>
-    <!-- le logo (fin) -->
-    
-    <br><br>
-      <!-- ............................. -->
-      <section class="mt-5 mb-2">
-        <div id="slideMission" class="container-fluid">
-          <ul id="programNonInst" class="cs-hidden">
-            <!--1------------------------------>
-            <li class="item-a">
-              <div class="box" style="background:linear-gradient(to left, #660099, #0099CC, transparent), url('../../../assets/images/ado1.jpg')no-repeat;background-size: cover;">
-                <div class="row">
-                  <div class="col-md-6"></div>
-                  <div class="col-md-6 mt-5 mb-5">
-                    <h3 class="my-5" style="font-weight: bold;color: white;">Allassane Ouattara <br> candidat du RHDP</h3>
-                    <p style="color: white;">
-                      Le lorem ipsum est, en imprimerie, une suite <br>de mots sans signification utilisée 
-                     <br>à titre provisoire pour calibrer une mise en page, <br>
-                     le texte définitif venant remplacer le faux-texte.
-                    </p>
-                    
-                    <div id="iconBlock" class="mt-4">
-                      <div id="icon_slide_right" class="">
-                        <img src="../../../assets/images/arrow_right.svg" alt="">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <!--2------------------------------>
-            <li class="item-a">
-              <div class="box" style="background:linear-gradient(to left, #0099CC, transparent), url('../../../assets/images/drogba2.jpg')no-repeat;background-size: cover;">
-                <div class="row">
-                  <div class="col-md-6"></div>
-                  <div class="col-md-6 mt-5 mb-5">
-                    <h3 class="my-5" style="font-weight: bold;color: white;">FIF: Candidature validée <br> pour Didier Drogba</h3>
-                    <p style="color: white;">
-                      Le lorem ipsum est, en imprimerie, une suite <br>de mots sans signification utilisée 
-                      <br>à titre provisoire pour calibrer une mise en page, <br>
-                      le texte définitif venant remplacer le faux-texte.
-                    </p>
-  
-                    <div id="iconBlock" class="mt-4">
-                      <div class="row">
-                        <div class="col-md-2">
-                          <div id="icon_slide_left" class="float-right">
-                            <img src="../../../assets/images/arrow_left.svg" alt="">
-                          </div>
-                        </div>
-                        <div class="col-md-2">
-                          <div id="icon_slide_right" class="float-left">
-                            <img src="../../../assets/images/arrow_right.svg" alt="">
-                          </div>
-                        </div>
-                        <div class="col-md-8"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <!--3------------------------------>
-            <li class="item-a">
-              <div class="box" style="background:linear-gradient(to left, #dc3232, #f5a922, transparent), url('../../../assets/images/arafat3.jpg')no-repeat;background-size: cover;">
-                <div class="row">
-                  <div class="col-md-6"></div>
-                  <div class="col-md-6 mt-5 mb-5">
-                    <h3 class="my-5" style="font-weight: bold;color: white;">Arafat Dj: 1an déjà <br> qu'il nous a quitté</h3>
-                    <p style="color: white;">
-                      Le lorem ipsum est, en imprimerie, une suite <br>de mots sans signification utilisée 
-                      <br>à titre provisoire pour calibrer une mise en page, <br>
-                      le texte définitif venant remplacer le faux-texte.
-                    </p>
-  
-                    <div id="iconBlock" class="mt-4">
-                      <div class="row">
-                        <div class="col-md-2">
-                          <div id="icon_slide_left" class="float-right">
-                            <img src="../../../assets/images/arrow_left.svg" alt="">
-                          </div>
-                        </div>
-                        <div class="col-md-2">
-                          <div id="icon_slide_right" class="float-left">
-                            <img src="../../../assets/images/arrow_right.svg" alt="">
-                          </div>
-                        </div>
-                        <div class="col-md-8"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <!--4------------------------------>
-            <li class="item-a">
-              <div class="box" style="background: url('../../../assets/images/cr7.jpg')no-repeat;background-size: cover;">
-                <div class="row">
-                  <div class="col-md-6"></div>
-                  <div class="col-md-6 mt-5 mb-5">
-                    <h3 class="my-5" style="font-weight: bold;color: white;">La nouvelle désillusion<br> de Cristiano Ronaldo</h3>
-                    <p style="color: white;">
-                      Le lorem ipsum est, en imprimerie, une suite <br>de mots sans signification utilisée 
-                      <br>à titre provisoire pour calibrer une mise en page, <br>
-                      le texte définitif venant remplacer le faux-texte.
-                    </p>
-  
-                    <div id="iconBlock" class="mt-4">
-                      <div class="row">
-                        <div class="col-md-2">
-                          <div id="icon_slide_left" class="float-right">
-                            <img src="../../../assets/images/arrow_left.svg" alt="">
-                          </div>
-                        </div>
-                        <div class="col-md-2">
-                          <div id="icon_slide_right" class="float-left">
-                            <img src="../../../assets/images/arrow_right.svg" alt="">
-                          </div>
-                        </div>
-                        <div class="col-md-8"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <!--5------------------------------>
-            <li class="item-a">
-              <div class="box" style="background: linear-gradient(to left, #660099, #0099CC, transparent), url('../../../assets/images/ado1.jpg')no-repeat;background-size: cover;">
-                <div class="row">
-                  <div class="col-md-6 mt-5 mb-2 py-5">
-                    <div class="row">
-                      <div class="col-md-4"></div>
-                      <div class="col-md-4 mt-5">
-                        <div class="round-button video-btn" data-toggle="modal" data-src="https://player.vimeo.com/video/58385453?badge=0" data-target="#myModal">
-                          <i class="fa fa-play" style="font-size:30px;color: #000;left: 2%;right: 33%;cursor: pointer;margin-top: 27%;"></i>
-                        </div>
-                      </div>
-                      <div class="col-md-4"></div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mt-5 mb-5">
-                    <h3 class="my-5" style="font-weight: bold;color: white;">Allassane Ouattara <br> candidat du RHDP</h3>
-                    <p style="color: white;">
-                      Le lorem ipsum est, en imprimerie, une suite <br>de mots sans signification utilisée 
-                      <br>à titre provisoire pour calibrer une mise en page, <br>
-                      le texte définitif venant remplacer le faux-texte.
-                    </p>
-  
-                    <div id="iconBlock" class="mt-4">
-                      <div class="row">
-                        <div class="col-md-2">
-                          <div id="icon_slide_left" class="float-right">
-                            <img src="../../../assets/images/arrow_left.svg" alt="">
-                          </div>
-                        </div>
-                        <div class="col-md-2">
-                          <div id="icon_slide_right" class="float-left">
-                            <img src="../../../assets/images/arrow_right.svg" alt="">
-                          </div>
-                        </div>
-                        <div class="col-md-8"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <!--6------------------------------>
-            <li class="item-a">
-              <div class="box" style="background: #d20514, url('../../../assets/images/drogba2.jpg')no-repeat;background-size: cover;">
-                <div class="row">
-                  <div class="col-md-6 mt-5 mb-2 py-5">
-                    <div class="row">
-                      <div class="col-md-4"></div>
-                      <div class="col-md-4 mt-5">
-                        <div class="round-button video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/A-twOC3W558" data-target="#myModal">
-                          <i class="fa fa-play" style="font-size:30px;color: #000;left: 2%;right: 33%;cursor: pointer;margin-top: 27%;"></i>
-                        </div>
-                      </div>
-                      <div class="col-md-4"></div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mt-5 mb-5">
-                    <h3 class="my-5" style="font-weight: bold;color: white;">Allassane Ouattara <br> candidat du RHDP</h3>
-                    <p style="color: white;">
-                      Le lorem ipsum est, en imprimerie, une suite <br>de mots sans signification utilisée 
-                      <br>à titre provisoire pour calibrer une mise en page, <br>
-                      le texte définitif venant remplacer le faux-texte.
-                    </p>
-  
-                    <div id="iconBlock" class="mt-4">
-                      <div class="row">
-                        <div class="col-md-2">
-                          <div id="icon_slide_left" class="float-right">
-                            <img src="../../../assets/images/arrow_left.svg" alt="">
-                          </div>
-                        </div>
-                        <div class="col-md-2">
-                          <div id="icon_slide_right" class="float-left">
-                            <img src="../../../assets/images/arrow_right.svg" alt="">
-                          </div>
-                        </div>
-                        <div class="col-md-8"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
-          <!-- <ul id="prNotInst" class="cs-hidden">
-            <li class="item-a">
-              <div class="box" style="background:linear-gradient(to left, #dc3232, transparent), url('../../../assets/images/drogba2.jpg')no-repeat;background-size: cover;">
-                <div class="row">
-                  <div class="col-md-6"></div>
-                  <div class="col-md-6 mt-5 mb-5">
-                    <h3 class="my-5" style="font-weight: bold;color: white;">SDXFCGVH</h3>
-                    <p style="color: white;">
-                      Le lorem ipsum est, en imprimerie, une suite <br>de mots sans signification utilisée 
-                      <br>à titre provisoire pour calibrer une mise en page, <br>
-                      le texte définitif venant remplacer le faux-texte.
-                    </p>
-  
-                    <div id="iconBlock" class="mt-4">
-                      <div class="row">
-                        <div class="col-md-2">
-                          <div id="icon_slide_left" class="float-right">
-                            <img src="../../../assets/images/arrow_left.svg" alt="">
-                          </div>
-                        </div>
-                        <div class="col-md-2">
-                          <div id="icon_slide_right" class="float-left">
-                            <img src="../../../assets/images/arrow_right.svg" alt="">
-                          </div>
-                        </div>
-                        <div class="col-md-8"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul> -->
+
+    <div class="col-md-8 text-center mt-5" (click)="openClickMenu()">
+        <div class="loader-logo" id="svice-icon">
+            <img  class="toggle-button" src="../../../assets/icones/logo-Sous-regional.jpg" />
         </div>
-      </section>
-      <!-- ............................. -->
-  </div>
-  <!-- La barre de recherche -->
-  <br>
-  <div class="row mb-5 container-fluid">
-    <div class="col-md-4"></div>
-  
-    <div class="col-md-6 mt-5">
-      <div class="monForm">
-        <form class="" style="margin-left: 15% !important;">
-          <div class="form-group row">
-            <div class="col-sm-6">
-              <i class="fa fa-search"></i>
-              <input type="search" class="form-control" placeholder="Recherche">
-            </div>
-          </div>
-        </form>
-      </div>
     </div>
     
-    <div class="col-md-3"></div>
-  </div>
-  <!-- La barre de recherche -->
-  
-  <!-- le menu (debut) -->
-  <header>
-    <div id="myNav" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" id="closeNav" (click)="closeClickMenu()">&times;</a>
-    <div class="overlay-content">
-        <div class="row mt-4 mb-4 text-center">
-            <div class="col-md-4"></div>
-            <div class="col-md-4 text-center" (click)="openClickMenu()">
-                <div id="svice-icon">
-                    <img  class="toggle-button" src="../../../assets/icones/logo-Sous-regional.jpg" />
-                </div>
-            </div>
-            <div class="col-md-4"></div>
-        </div><br>
-      <a class="lover" routerLink="/continental-accueil">Accueil</a>
-      <a class="lover" routerLink="/presentation-continental">Présentation</a>
-      <a class="lover" routerLink="/mission-accueil-continental">Mission</a>
-      <a class="lover" routerLink="/agence-fond-continental">Agences / Fonds</a>
-      <a class="lover" routerLink="/membres-continental">Membres</a>
-      <a class="lover" routerLink="/dons-continental">Dons</a>
-      <a class="lover" routerLink="/blog-continental">Blog</a>
-      <a class="lover" routerLink="/suggestion-plainte-continental">Suggestions / Plaintes</a>
-      <a class="lover" routerLink="/partenaires-continental">Partenaires</a>
-      <ul>
-        <span><a href="#">
-            <i class="fab fa-facebook-f"></i>
-        </a></span>&nbsp;
-        <span><a href="#">
-            <i class="fab fa-twitter"></i>
-        </a></span>&nbsp;
-        <span><a href="#">
-            <i class="fab fa-linkedin-in"></i>
-        </a></span>&nbsp;
-        <span><a href="#">
-            <i class="fab fa-instagram"></i>
-        </a></span>&nbsp;
-        <span><a href="#">
-            <i class="fab fa-youtube"></i>
-        </a></span>
-        <br>
-        <small> &copy;2020 - ONG N'GBOADÔ</small>
-        <br><br><br>
-    </ul>
-    </div>
-    </div>
-  </header>
-  <!-- le menu (fin) -->
-  
-  <!-- Video modal -->
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>        
-          <!-- 16:9 aspect ratio -->
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
-          </div>
+    <div class="col-md-2">
+      <div ngbDropdown class="d-block mt-5 float-right">
+        <button class="btn" id="dropdownPeriode" ngbDropdownToggle>Periode</button>
+        <div ngbDropdownMenu aria-labelledby="dropdownPeriode">
+          <button ngbDropdownItem>Action - 1</button>
+          <button ngbDropdownItem>Another Action</button>
+          <button ngbDropdownItem>Something else is here</button>
         </div>
       </div>
     </div>
-  </div> 
+  </div>
+  <!-- le logo (fin) -->
+  
+  <!-- <div class="container">
+    <ol>
+      <li *ngFor="let post of posts">{{ post.title }}</li>
+    </ol>
+  </div> -->
+  <br><br>
+    <!-- ............................. -->
+    <section class="mt-5 mb-2">
+      <div id="slideMission" class="container-fluid">
+        <ul id="programNonInst" class="cs-hidden">
+          <!--1------------------------------>
+          <li class="item-a">
+            <div class="box" style="background:linear-gradient(to left,  #dc3232,  #f5a922, transparent), url('../../../assets/images/ado1.jpg')no-repeat;background-size: cover;">
+              <div class="row">
+                <div class="col-md-6"></div>
+                <div class="col-md-6 mt-5 mb-5">
+                  <h3 class="my-5" style="font-weight: bold;color: white;">Allassane Ouattara <br> candidat du RHDP</h3>
+                  <p style="color: white;">
+                    Le lorem ipsum est, en imprimerie, une suite <br>de mots sans signification utilisée 
+                   <br>à titre provisoire pour calibrer une mise en page, <br>
+                   le texte définitif venant remplacer le faux-texte.
+                  </p>
+                  
+                  <div id="iconBlock" class="mt-4">
+                    <div id="icon_slide_right" class="">
+                      <img src="../../../assets/images/arrow_right.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!--2------------------------------>
+          <li class="item-a">
+            <div class="box" style="background:linear-gradient(to left,  #dc3232, transparent), url('../../../assets/images/drogba2.jpg')no-repeat;background-size: cover;">
+              <div class="row">
+                <div class="col-md-6"></div>
+                <div class="col-md-6 mt-5 mb-5">
+                  <h3 class="my-5" style="font-weight: bold;color: white;">FIF: Candidature validée <br> pour Didier Drogba</h3>
+                  <p style="color: white;">
+                    Le lorem ipsum est, en imprimerie, une suite <br>de mots sans signification utilisée 
+                    <br>à titre provisoire pour calibrer une mise en page, <br>
+                    le texte définitif venant remplacer le faux-texte.
+                  </p>
+
+                  <div id="iconBlock" class="mt-4">
+                    <div class="row">
+                      <div class="col-md-2">
+                        <div id="icon_slide_left" class="float-right">
+                          <img src="../../../assets/images/arrow_left.svg" alt="">
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div id="icon_slide_right" class="float-left">
+                          <img src="../../../assets/images/arrow_right.svg" alt="">
+                        </div>
+                      </div>
+                      <div class="col-md-8"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!--3------------------------------>
+          <li class="item-a">
+            <div class="box" style="background:linear-gradient(to left,  #dc3232, transparent), url('../../../assets/images/arafat3.jpg')no-repeat;background-size: cover;">
+              <div class="row">
+                <div class="col-md-6"></div>
+                <div class="col-md-6 mt-5 mb-5">
+                  <h3 class="my-5" style="font-weight: bold;color: white;">Arafat Dj: 1an déjà <br> qu'il nous a quitté</h3>
+                  <p style="color: white;">
+                    Le lorem ipsum est, en imprimerie, une suite <br>de mots sans signification utilisée 
+                    <br>à titre provisoire pour calibrer une mise en page, <br>
+                    le texte définitif venant remplacer le faux-texte.
+                  </p>
+
+                  <div id="iconBlock" class="mt-4">
+                    <div class="row">
+                      <div class="col-md-2">
+                        <div id="icon_slide_left" class="float-right">
+                          <img src="../../../assets/images/arrow_left.svg" alt="">
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div id="icon_slide_right" class="float-left">
+                          <img src="../../../assets/images/arrow_right.svg" alt="">
+                        </div>
+                      </div>
+                      <div class="col-md-8"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!--4------------------------------>
+          <li class="item-a">
+            <div class="box" style="background: url('../../../assets/images/cr7.jpg')no-repeat;background-size: cover;">
+              <div class="row">
+                <div class="col-md-6"></div>
+                <div class="col-md-6 mt-5 mb-5">
+                  <h3 class="my-5" style="font-weight: bold;color: white;">La nouvelle désillusion<br> de Cristiano Ronaldo</h3>
+                  <p style="color: white;">
+                    Le lorem ipsum est, en imprimerie, une suite <br>de mots sans signification utilisée 
+                    <br>à titre provisoire pour calibrer une mise en page, <br>
+                    le texte définitif venant remplacer le faux-texte.
+                  </p>
+
+                  <div id="iconBlock" class="mt-4">
+                    <div class="row">
+                      <div class="col-md-2">
+                        <div id="icon_slide_left" class="float-right">
+                          <img src="../../../assets/images/arrow_left.svg" alt="">
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div id="icon_slide_right" class="float-left">
+                          <img src="../../../assets/images/arrow_right.svg" alt="">
+                        </div>
+                      </div>
+                      <div class="col-md-8"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!--5------------------------------>
+          <li class="item-a">
+            <div class="box" style="background: linear-gradient(to left,  #dc3232,  #f5a922, transparent), url('../../../assets/images/ado1.jpg')no-repeat;background-size: cover;">
+              <div class="row">
+                <div class="col-md-6 mt-5 mb-2 py-5">
+                  <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4 mt-5">
+                      <div class="round-button video-btn" data-toggle="modal" data-src="https://player.vimeo.com/video/58385453?badge=0" data-target="#myModal">
+                        <i class="fa fa-play" style="font-size:30px;color: #000;left: 2%;right: 33%;cursor: pointer;margin-top: 27%;"></i>
+                      </div>
+                    </div>
+                    <div class="col-md-4"></div>
+                  </div>
+                </div>
+                <div class="col-md-6 mt-5 mb-5">
+                  <h3 class="my-5" style="font-weight: bold;color: white;">Allassane Ouattara <br> candidat du RHDP</h3>
+                  <p style="color: white;">
+                    Le lorem ipsum est, en imprimerie, une suite <br>de mots sans signification utilisée 
+                    <br>à titre provisoire pour calibrer une mise en page, <br>
+                    le texte définitif venant remplacer le faux-texte.
+                  </p>
+
+                  <div id="iconBlock" class="mt-4">
+                    <div class="row">
+                      <div class="col-md-2">
+                        <div id="icon_slide_left" class="float-right">
+                          <img src="../../../assets/images/arrow_left.svg" alt="">
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div id="icon_slide_right" class="float-left">
+                          <img src="../../../assets/images/arrow_right.svg" alt="">
+                        </div>
+                      </div>
+                      <div class="col-md-8"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!--6------------------------------>
+          <li class="item-a">
+            <div class="box" style="background: linear-gradient(to left,  #dc3232, transparent), url('../../../assets/images/drogba2.jpg')no-repeat;background-size: cover;">
+              <div class="row">
+                <div class="col-md-6 mt-5 mb-2 py-5">
+                  <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4 mt-5">
+                      <div class="round-button video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/A-twOC3W558" data-target="#myModal">
+                        <i class="fa fa-play" style="font-size:30px;color: #000;left: 2%;right: 33%;cursor: pointer;margin-top: 27%;"></i>
+                      </div>
+                    </div>
+                    <div class="col-md-4"></div>
+                  </div>
+                </div>
+                <div class="col-md-6 mt-5 mb-5">
+                  <h3 class="my-5" style="font-weight: bold;color: white;">Allassane Ouattara <br> candidat du RHDP</h3>
+                  <p style="color: white;">
+                    Le lorem ipsum est, en imprimerie, une suite <br>de mots sans signification utilisée 
+                    <br>à titre provisoire pour calibrer une mise en page, <br>
+                    le texte définitif venant remplacer le faux-texte.
+                  </p>
+
+                  <div id="iconBlock" class="mt-4">
+                    <div class="row">
+                      <div class="col-md-2">
+                        <div id="icon_slide_left" class="float-right">
+                          <img src="../../../assets/images/arrow_left.svg" alt="">
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div id="icon_slide_right" class="float-left">
+                          <img src="../../../assets/images/arrow_right.svg" alt="">
+                        </div>
+                      </div>
+                      <div class="col-md-8"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        
+      </div>
+    </section>
+    <!-- ............................. -->
+</div>
+<!-- La barre de recherche -->
+<br>
+<div class="row mb-5 container-fluid">
+  <div class="col-md-4"></div>
+
+  <div class="col-md-6 mt-5">
+    <div class="monForm">
+      <form class="" style="margin-left: 15% !important;">
+        <div class="form-group row">
+          <div class="col-sm-6">
+            <i class="fa fa-search"></i>
+            <input type="search" class="form-control" placeholder="Recherche">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  <div class="col-md-3"></div>
+</div>
+<!-- La barre de recherche -->
+
+<!-- le menu (debut) -->
+<header>
+  <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" id="closeNav" (click)="closeClickMenu()">&times;</a>
+  <div class="overlay-content">
+      <div class="row mt-4 mb-4 text-center">
+          <div class="col-md-4"></div>
+          <div class="col-md-4 text-center" (click)="openClickMenu()">
+              <div id="svice-icon">
+                  <img  class="toggle-button" src="../../../assets/icones/logo-Sous-regional.jpg" />
+              </div>
+          </div>
+          <div class="col-md-4"></div>
+      </div><br>
+      <a class="lover" routerLink="/sous-regional-accueil">Accueil</a>
+        <a class="lover" routerLink="/presentation-sous-regional">Présentation</a>
+        <a class="lover" routerLink="/mission-accueil-sous-regional">Mission</a>
+        <a class="lover" routerLink="/agence-fond-sous-regional">Agences / Fonds</a>
+        <a class="lover" routerLink="/membres-sous-regional">Membres</a>
+        <a class="lover" routerLink="/dons-sous-regional">Dons</a>
+        <a class="lover" routerLink="/blog-sous-regional">Blog</a>
+        <a class="lover" routerLink="/suggestion-plainte-sous-regional">Suggestions / Plaintes</a>
+        <a class="lover" routerLink="/partenaires-sous-regional">Partenaires</a>
+    <ul>
+      <span><a href="#">
+        <i class="fab fa-facebook-f"></i>
+    </a></span>&nbsp;
+    <span><a href="#">
+        <i class="fab fa-twitter"></i>
+    </a></span>&nbsp;
+    <span><a href="#">
+        <i class="fab fa-linkedin-in"></i>
+    </a></span>&nbsp;
+    <span><a href="#">
+        <i class="fab fa-instagram"></i>
+    </a></span>&nbsp;
+    <span><a href="#">
+        <i class="fab fa-youtube"></i>
+    </a></span>
+      <br>
+      <small> &copy;2020 - ONG N'GBOADÔ</small>
+      <br><br><br>
+  </ul>
+  </div>
+  </div>
+</header>
+<!-- le menu (fin) -->
+
+<!-- Video modal -->
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>        
+        <!-- 16:9 aspect ratio -->
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 

@@ -149,6 +149,7 @@ import { ReinsertionProjetSectionComponent } from './Section/Mission/reinsertion
 import { ReinsertionProgrammeSectionComponent } from './Section/Mission/reinsertion-programme-section/reinsertion-programme-section.component';
 import { DonsSectionComponent } from './Section/dons-section/dons-section.component';
 import { AssistanceProgrammePaysComponent } from './Pays/Mission/assistance-programme-pays/assistance-programme-pays.component';
+import { AgenceSectionComponent } from './Section/agence-section/agence-section.component';
 
 
 const routes: Routes = [
@@ -183,7 +184,6 @@ const routes: Routes = [
   {path: 'agence-fond-continental', component: AgenceFondContinentalComponent},  
   {path: 'agence-continental', component: AgenceContinentalComponent },
   {path: 'fond-continental', component: FondContinentalComponent },
-  {path: 'presentation-continental', component: PresentationContinentalComponent },
   {path: 'mission-accueil-continental', component: MissionAccueilContinentalComponent },
   {path: 'assistance-projet-continental', component: AssistanceProjetContinentalComponent },
   {path: 'assistance-continental', component: AssistanceContinentalComponent },
@@ -203,7 +203,6 @@ const routes: Routes = [
   {path: 'agence-fond-regional', component: AgenceFondRegionalComponent},  
   {path: 'agence-regional', component: AgenceRegionalComponent},
   {path: 'fond-regional', component: FondRegionalComponent},
-  {path: 'presentation-regional', component: PresentationRegionalComponent},
   {path: 'mission-accueil-regional', component: MissionAccueilRegionalComponent },
   {path: 'assistance-projet-regional', component: AssistanceProjetRegionalComponent },
   {path: 'assistance-programme-regional', component: AssistanceProgrammeRegionalComponent },
@@ -279,7 +278,7 @@ const routes: Routes = [
   {path: 'blog-section', component: BlogSectionComponent },  
   {path: 'suggestions-plaintes-section', component: SuggestionsPlaintesSectionComponent },  
   {path: 'agence-fond-section', component: AgenceFondSectionComponent },  
-  {path: 'agence-section', component: AgenceFondSectionComponent},
+  {path: 'agence-section', component: AgenceSectionComponent},
   {path: 'fond-section', component: FondSectionComponent},
   {path: 'presentation-section', component: PresentationSectionComponent},
   {path: 'mission-accueil-section', component: MissionAccueilSectionComponent},

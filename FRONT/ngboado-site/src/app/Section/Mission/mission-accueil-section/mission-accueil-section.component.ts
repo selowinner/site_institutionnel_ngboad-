@@ -13,7 +13,7 @@ export class MissionAccueilSectionComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  penClickMenu() { openMenu();}
+  openClickMenu() { openMenu();}
 
   closeClickMenu(){closeMenu();} 
 }
