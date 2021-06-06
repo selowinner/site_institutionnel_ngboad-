@@ -46,7 +46,7 @@ body{
   color: #fff;
 }
 
-#svice-icon{
+#svice-icon, #svice-icon1{
   cursor: pointer;
   display: inline-block;
   box-shadow: 0px 0px 0px 30px rgba(255,255,255,0.3);
@@ -87,7 +87,12 @@ div.jeflex2 {
   background: linear-gradient(to right, #019939, #336699);
 }
 
-
+#svice-icon1 img{
+  left: 50%;
+  height: 200px;
+  border-radius: 50%;
+  width: 200px;
+}
 
 /*logo animation start*/
 .loader-logo {

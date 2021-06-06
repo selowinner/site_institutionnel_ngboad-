@@ -148,6 +148,7 @@ import { PreventionProgrammeSectionComponent } from './Section/Mission/preventio
 import { ReinsertionProjetSectionComponent } from './Section/Mission/reinsertion-projet-section/reinsertion-projet-section.component';
 import { ReinsertionProgrammeSectionComponent } from './Section/Mission/reinsertion-programme-section/reinsertion-programme-section.component';
 import { DonsSectionComponent } from './Section/dons-section/dons-section.component';
+import { AssistanceProgrammePaysComponent } from './Pays/Mission/assistance-programme-pays/assistance-programme-pays.component';
 
 
 const routes: Routes = [
@@ -222,10 +223,9 @@ const routes: Routes = [
   {path: 'agence-fond-pays', component: AgenceFondPaysComponent },  
   {path: 'agence-pays', component: AgencePaysComponent},
   {path: 'fond-pays', component: FondPaysComponent},
-  {path: 'presentation-pays', component: PresentationsPaysComponent},
   {path: 'mission-accueil-pays', component: MissionPaysComponent},
   {path: 'assistance-projet-pays', component: AssistanceProjetPaysComponent},
-  {path: 'assistance-programme-pays', component: AssistanceProjetSousRegionalComponent},
+  {path: 'assistance-programme-pays', component: AssistanceProgrammePaysComponent},
   {path: 'prevention-projet-pays', component: PreventionProjetPaysComponent},
   {path: 'prevention-programme-pays', component: PreventionProgrammePaysComponent},
   {path: 'reinsertion-projet-pays', component: ReinsertionProjetPaysComponent},
@@ -242,7 +242,6 @@ const routes: Routes = [
   {path: 'agence-fond-sous-regional', component: AgenceFondSousRegionalComponent },  
   {path: 'agence-sous-regional', component: AgenceSousRegionalComponent},
   {path: 'fond-sous-regional', component: FondSousRegionalComponent},
-  {path: 'presentation-sous-regional', component: PresentationSousRegionalComponent},
   {path: 'mission-accueil-sous-regional', component: MissionAccueilSousRegionalComponent},
   {path: 'assistance-projet-sous-regional', component: AssistanceProjetSousRegionalComponent},
   {path: 'assistance-programme-sous-regional', component: AssistanceProgrammeSousRegionalComponent},

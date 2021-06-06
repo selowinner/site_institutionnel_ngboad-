@@ -4,7 +4,7 @@ body{
 
 
 #firstPop, #twoPop, #threePop{
-  display: none;
+  visibility: hidden;
 }
 
 #ligne-text-header{
@@ -60,13 +60,24 @@ body{
     display: inline-block;
   }
 }
+
+  
+.page-wrap {
+    min-height: 70vh;
+}
 #page-contenu{
   position: relative;
   top: 50%;
   z-index: 1;
   width: 100%;
+  min-height: 100%;
   margin-bottom: 0;
   text-align: center;
+}
+#btnRow{
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 20px rgb(255, 255, 255);
+    text-align: center;
 }
 
 /*logo*/
