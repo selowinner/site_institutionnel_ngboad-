@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+declare const openMenu: any;
+declare const closeMenu: any;
 
 @Component({
   selector: 'app-suggestions-plaintes-section',
@@ -11,5 +13,7 @@ export class SuggestionsPlaintesSectionComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  openClickMenu() { openMenu();}
 
+  closeClickMenu(){closeMenu();}
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+declare const openMenu: any;
+declare const closeMenu: any; 
 
 @Component({
   selector: 'app-mission-accueil-section',
@@ -11,5 +13,7 @@ export class MissionAccueilSectionComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  penClickMenu() { openMenu();}
 
+  closeClickMenu(){closeMenu();} 
 }
