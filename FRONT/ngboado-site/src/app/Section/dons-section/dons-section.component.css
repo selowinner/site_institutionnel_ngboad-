@@ -1,0 +1,217 @@
+body{
+    font-family: 'Nunito' sans-serif;
+  }
+  
+  /*Bg image*/
+  .landing-page{
+   width: 100%;
+   height: 110vh;
+   background: #000;
+   position: relative;
+   overflow: hidden;
+  }
+  .landing-page::after{
+   content: "";
+   position: absolute;
+   left: 0;
+   top: 0px;
+   width: 100%;
+   height: 100%;
+   background: url("../../../assets//images/don_bg.jpg") no-repeat;
+   background-size: cover;
+   opacity: .3;
+  }
+  
+  .page-content{
+   position: absolute;
+   top: 25%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   z-index: 1;
+   width: 100%;
+   /* max-width: 1300px; */
+   text-align: center;
+   padding: 0 40px;
+   box-sizing: border-box;
+   line-height: 275%;
+  }
+  .page-content h2{
+   color: #fff;
+   font-size: 38px;
+  }
+  .page-content p{
+   color: #fff;
+   font-size: 20px;
+  }
+  
+  /*logo*/
+  #svice-icon{
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: 0px 0px 0px 30px rgba(255,255,255,0.3);
+    color: #276070;
+    background: #fbfcfa;
+    border-radius: 50%;
+    text-align: center;
+    transition: 0.3s linear;
+  }
+  #svice-icon img{
+    left: 50%;
+    height: 150px;
+    border-radius: 50%;
+    width: 150px;
+  }
+  /*logo*/
+  
+  /*logo animation start*/
+  .loader-logo {
+   overflow: hidden;
+   transform: translatey(0px);
+   -webkit-animation: float 3s ease-in-out infinite;
+           animation: float 3s ease-in-out infinite;
+  }
+  
+  
+  @-webkit-keyframes float {
+   0% {
+     transform: translatey(0px);
+   }
+   50% {
+     transform: translatey(-20px);
+   }
+   100% {
+     transform: translatey(0px);
+   }
+  }
+  
+  @keyframes float {
+   0% {
+     transform: translatey(0px);
+   }
+   50% {
+     transform: translatey(-20px);
+   }
+   100% {
+     transform: translatey(0px);
+   }
+  }
+  /*logo animation end*/
+  /*logo style end*/
+  /*Bg image style end*/
+  
+  
+  /* section 1 style start */
+  ol,
+  ul {
+     margin: 0;
+     padding: 0;
+     list-style: none;
+  }
+  a, 
+  a:hover, 
+  a:focus {
+     outline: none;
+     text-decoration: none;
+     color: inherit;
+  }
+  img{
+    height: 100vh;
+    width: 100%;
+  }
+  .mesimg{
+   margin-top: 13%;
+    width: 40px !important;
+    height: 40px !important;
+    }
+  
+    .Texte{
+      font-weight: 800;
+    }
+  /*...................... section 1 style end....................... */
+  
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 1; /* Firefox */
+  }
+  
+  
+
+  *{
+    padding: 0;
+    margin: 0;
+}
+
+input[type=text]{
+background-color: transparent;
+text-align: center;
+color: #fff !important;
+}
+
+label {
+color: #fff;
+}
+span {
+color: #fff;
+}
+.btn { color: #fff; 
+  background-color: transparent; 
+  border-radius: 15px;
+  border: 2px solid #fff; 
+  padding: 5px 25px 5px 25px;
+  font-size: 15px;
+}
+
+input[type="radio"]{
+  height: 19px;
+  width: 55px;
+}
+.don_txt{
+  font-size: 20px;
+}
+label{
+  font-size: 17px;
+}
+
+.custom-select {
+  position: relative;
+  display: block;
+  max-width: 500px;
+  min-width: 280px;
+  margin: 0 auto;
+  border: 1px solid #fff;
+  background-color: transparent;
+  z-index: 10;
+}
+.custom-select select {
+  border: none;
+  outline: none;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  margin: 0;
+  display: block;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  padding: 12px 55px 15px 15px;
+  color: #fff;
+}
+.custom-select:after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+  height: 100%;
+  content: "∨";
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  z-index: -1;
+}
+/* .overlay {
+    background-image: url("../../../../assets/images/don_bg.jpg");
+    background-position: center;
+    background-size: cover;
+} */
