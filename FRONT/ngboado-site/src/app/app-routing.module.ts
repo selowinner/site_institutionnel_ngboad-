@@ -150,6 +150,7 @@ import { ReinsertionProgrammeSectionComponent } from './Section/Mission/reinsert
 import { DonsSectionComponent } from './Section/dons-section/dons-section.component';
 import { AssistanceProgrammePaysComponent } from './Pays/Mission/assistance-programme-pays/assistance-programme-pays.component';
 import { AgenceSectionComponent } from './Section/agence-section/agence-section.component';
+import { PreventionProgrammeContinentalComponent } from './Continental/Mission/prevention-programme-continental/prevention-programme-continental.component';
 
 
 const routes: Routes = [
@@ -186,9 +187,9 @@ const routes: Routes = [
   {path: 'fond-continental', component: FondContinentalComponent },
   {path: 'mission-accueil-continental', component: MissionAccueilContinentalComponent },
   {path: 'assistance-projet-continental', component: AssistanceProjetContinentalComponent },
-  {path: 'assistance-continental', component: AssistanceContinentalComponent },
+  {path: 'assistance-programme-continental', component: AssistanceContinentalComponent },
   {path: 'prevention-projet-continental', component: PreventionProjetContinentalComponent },
-  {path: 'prevention-programme-continental', component: PreventionProjetContinentalComponent },
+  {path: 'prevention-programme-continental', component: PreventionProgrammeContinentalComponent },
   {path: 'reinsertion-projet-continental', component: ReinsertionProjetContinentalComponent },
   {path: 'reinsertion-programme-continental', component: ReinsertionProgrammeContinentalComponent },
   {path: 'dons-continental', component: DonsContinentalComponent},
