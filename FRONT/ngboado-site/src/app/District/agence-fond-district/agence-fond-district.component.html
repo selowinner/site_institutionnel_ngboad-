@@ -1,44 +1,46 @@
 <!--image d'accueil start-->
-
  <!--Header-->
  <div class="" id="header">
-    <section class="container mt-5" id="container-heade">
-        <br><br><br><br><br>
-        <div id="page-contenu">
-            <div class="row mb-4 text-center"> 
-                <div class="col-md-4"></div>
-                <div class="col-md-4 text-center" (click)="openClickMenu()">
-                    <div class="loader-logo" id="svice-icon">
-                        <img  class="toggle-button" src="../../../assets/icones/logo.png" />
+    <section class="container" id="container-heade">
+        <div id="page-contenu" class="mt-5">
+            <div class="page-wrap d-flex flex-row align-items-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="text-center py-5" (click)="openClickMenu()">
+                            <div class="loader-logo" id="svice-icon">
+                                <img  class="toggle-button" src="../../../../assets/icones/logo-district.jpg" />
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-12 text-center py-5">
+                            <div class="row mt-4 mb-4 text-center py-4" id="ligne-text-header">
+                                <div class="col-md-3"></div>
+                                <div class="col-md-6 leTitre py-4">
+                                    <p style="font-size: 45px;color: #fff;">
+                                      <b>Agences & Fonds</b><br/>
+                                      <span style="font-size: 45px;">Dans le marché</span> <br>
+                                      <span style="color: #fff; font-size: 25px">Le meilleur modèle multi-page</span>
+                                    </p>
+                                </div>
+                                <div class="col-md-3"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4"></div>
             </div>
-  
-            <div class="row mt-4 mb-4 text-center" id="ligne-text-header">
-                <div class="col-md-3"></div>
-                <div class="col-md-6 leTitre">
-                    <p style="font-size: 45px;color: #fff;">
-                      <b>Agences & Fonds</b><br/>
-                      <span style="font-size: 45px;">Dans le marché</span> <br>
-                      <span style="color: #fff; font-size: 25px">Le meilleur modèle multi-page</span>
-                    </p>
-                </div>
-                <div class="col-md-3"></div>
-            </div>
-            <div>
-         
+            
+            <div class="">
                   <div class="row no-gutters">
-                      <div class="col-md-6 ag-card-ac1">
+                      <div class="col-md-6 col-sm-3 ag-card-ac1 py-2">
                           <div style="padding: 40px;">
-                              <a routerLink="/agence" ><p class="Text-center" style="padding-top: 50px; padding-bottom: 30px; line-height: 35px; font-size: 40px;"><b>Agences</b> <br>
+                              <a routerLink="/agence-district" ><p class="Text-center" style="padding-top: 50px; padding-bottom: 30px; line-height: 35px; font-size: 40px;"><b>Agences</b> <br>
                               <span style="font-size: 30px;">Le meilleur modèle multi-page </span>
                               </p></a>
                             </div>
                       </div>
-                      <div class="col-md-6 ag-card-ac2">
+                      <div class="col-md-6 col-sm-3 ag-card-ac2 py-2">
                           <div style="padding: 40px;">
-                              <a routerLink="/agence" ><p class="Text-center" style="padding-top: 50px; padding-bottom: 30px; line-height: 35px; font-size: 40px;"><b>Agences</b> <br>
+                              <a routerLink="/fond-district" ><p class="Text-center" style="padding-top: 50px; padding-bottom: 30px; line-height: 35px; font-size: 40px;"><b>Fonds</b> <br>
                               <span style="font-size: 30px;">Le meilleur modèle multi-page </span>
                               </p></a>
                             </div>
@@ -62,20 +64,20 @@
             <div class="col-md-4"></div>
             <div class="col-md-4 text-center" (click)="openClickMenu()">
                 <div id="svice-icon">
-                    <img  class="toggle-button" src="../../../assets/icones/logo.png" />
+                    <img  class="toggle-button" src="../../../assets/icones/logo-district.jpg" />
                 </div>
             </div>
             <div class="col-md-4"></div>
         </div><br>
-      <a class="lover" routerLink="/">Accueil</a>
-      <a class="lover" routerLink="/presentation">Présentation</a>
-      <a class="lover" routerLink="/mission-accueil">Mission</a>
-      <a class="lover" routerLink="/agence-fond">Agences / Fonds</a>
-      <a class="lover" routerLink="/membres">Membres</a>
-      <a class="lover" routerLink="/dons">Dons</a>
-      <a class="lover" routerLink="/blog">Blog</a>
-      <a class="lover" routerLink="/suggestions-plaintes">Suggestions / Plaintes</a>
-      <a class="lover" routerLink="/partenaires">Partenaires</a>
+        <a class="lover" routerLink="/district-accueil">Accueil</a>
+        <a class="lover" routerLink="/presentation-district">Présentation</a>
+        <a class="lover" routerLink="/mission-accueil-district">Mission</a>
+        <a class="lover" routerLink="/agence-fond-district">Agences / Fonds</a>
+        <a class="lover" routerLink="/membres-district">Membres</a>
+        <a class="lover" routerLink="/dons-district">Dons</a>
+        <a class="lover" routerLink="/blog-district">Blog</a>
+        <a class="lover" routerLink="/suggestion-plainte-district">Suggestions / Plaintes</a>
+        <a class="lover" routerLink="/partenaires-district">Partenaires</a>
       <ul>
           <span><a href="#">
               <i class="fab fa-facebook-f"></i>

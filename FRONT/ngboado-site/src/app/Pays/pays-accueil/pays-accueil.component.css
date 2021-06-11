@@ -168,7 +168,7 @@ body{
   
   /* ...............section 2 style start ................... */
   .nbre{
-    background: -webkit-linear-gradient(to left, #fe7612, #fe7612);
+    background: linear-gradient(to left, #fe7612, #fe7612);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

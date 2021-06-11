@@ -167,7 +167,7 @@ img{
 
 /* ...............section 2 style start ................... */
 .nbre{
-  background: -webkit-linear-gradient(to left, #019939, #336699);
+  background: linear-gradient(to left, #019939, #336699);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

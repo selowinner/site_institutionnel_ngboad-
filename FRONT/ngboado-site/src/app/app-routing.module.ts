@@ -151,6 +151,7 @@ import { DonsSectionComponent } from './Section/dons-section/dons-section.compon
 import { AssistanceProgrammePaysComponent } from './Pays/Mission/assistance-programme-pays/assistance-programme-pays.component';
 import { AgenceSectionComponent } from './Section/agence-section/agence-section.component';
 import { PreventionProgrammeContinentalComponent } from './Continental/Mission/prevention-programme-continental/prevention-programme-continental.component';
+import { PreventionProgrammeDistrictComponent } from './District/Mission/prevention-programme-district/prevention-programme-district.component';
 
 
 const routes: Routes = [
@@ -261,12 +262,11 @@ const routes: Routes = [
   {path: 'agence-fond-district', component: AgenceFondDistrictComponent },  
   {path: 'agence-district', component: AgenceDistrictComponent},
   {path: 'fond-district', component: FondDistrictComponent},
-  {path: 'presentation-district', component: PresentationDistrictComponent},
   {path: 'mission-accueil-district', component: MissionAccueilDistrictComponent},
   {path: 'assistance-projet-district', component: AssistanceProjetDistrictComponent},
   {path: 'assistance-programme-district', component: AssistanceProgrammeDistrictComponent},
   {path: 'prevention-projet-district', component: PreventionProjetDistrictComponent},
-  {path: 'prevention-programme-district', component: PreventionProgrammePaysComponent},
+  {path: 'prevention-programme-district', component: PreventionProgrammeDistrictComponent},
   {path: 'reinsertion-projet-district', component: ReinsertionProjetDistrictComponent},
   {path: 'reinsertion-programme-district', component: ReinsertionProgrammeDistrictComponent},
   {path: 'dons-district', component: DonsDistrictComponent},

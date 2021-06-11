@@ -1,181 +1,181 @@
 body{
-    font-family: 'Nunito' sans-serif;
+  font-family: 'Nunito' sans-serif;
+}
+
+
+#firstPop, #twoPop, #threePop{
+  visibility: hidden;
+}
+
+#ligne-text-header{
+  line-height: 50px;
+}
+
+.bidul{
+  color: transparent;
+}
+
+/*Bg image*/
+@media screen and (max-width: 200px) {
+  #cache{
+      display: none !important;
   }
-  
-  
-  #firstPop, #twoPop, #threePop{
-    visibility: hidden;
-  }
-  
-  #ligne-text-header{
-    line-height: 50px;
-  }
-  
-  .bidul{
-    color: transparent;
-  }
-  
-  /*Bg image*/
-  @media screen and (max-width: 200px) {
-    #cache{
-        display: none !important;
-    }
-  }
-  #header{
-    width: 100%;
-    height: 100%;
-    background: #000;
-    position: relative;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-  }
-  #header::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    background: url("../../../../assets/images/missionAcc.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
-    opacity: .3;
-  }
-  #brContenaire, #brContenaire1{
-    display: none;
-  }
-  @media screen and (max-height: 984px) {
-    #brContenaire{
-      display: inline-block;
-    }
-  }
-  @media screen and (max-height: 1024px) {
-    #brContenaire{
-      display: inline-block;
-    }
-  }
-  @media screen and (max-height: 1280px) {
-    #brContenaire1{
-      display: inline-block;
-    }
-  }
-  
-    
-  .page-wrap {
-      min-height: 70vh;
-  }
-  #page-contenu{
-    position: relative;
-    top: 50%;
-    z-index: 1;
-    width: 100%;
-    min-height: 100%;
-    margin-bottom: 0;
-    text-align: center;
-  }
-  #btnRow{
-      cursor: pointer;
-      box-shadow: 0px 0px 0px 20px rgb(255, 255, 255);
-      text-align: center;
-  }
-  
-  /*logo*/
-  #svice-icon{
-    cursor: pointer;
+}
+#header{
+  width: 100%;
+  height: 100%;
+  background: #000;
+  position: relative;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+#header::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: url("../../../../assets/images/missionAcc.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: .3;
+}
+#brContenaire, #brContenaire1{
+  display: none;
+}
+@media screen and (max-height: 984px) {
+  #brContenaire{
     display: inline-block;
-    box-shadow: 0px 0px 0px 30px rgba(255,255,255,0.3);
-    color: #276070;
-    background: #fbfcfa;
-    border-radius: 50%;
+  }
+}
+@media screen and (max-height: 1024px) {
+  #brContenaire{
+    display: inline-block;
+  }
+}
+@media screen and (max-height: 1280px) {
+  #brContenaire1{
+    display: inline-block;
+  }
+}
+
+  
+.page-wrap {
+    min-height: 70vh;
+}
+#page-contenu{
+  position: relative;
+  top: 50%;
+  z-index: 1;
+  width: 100%;
+  min-height: 100%;
+  margin-bottom: 0;
+  text-align: center;
+}
+#btnRow{
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 20px rgb(255, 255, 255);
     text-align: center;
-    transition: 0.3s linear;
-  }
-  #svice-icon img{
-    left: 50%;
-    height: 100px;
-    border-radius: 50%;
-    width: 100px;
-  }
-  /* 
-  /*logo*/
-  
-  /*logo animation start*/
-  .loader-logo {
-   overflow: hidden;
+}
+
+/*logo*/
+#svice-icon{
+  cursor: pointer;
+  display: inline-block;
+  box-shadow: 0px 0px 0px 30px rgba(255,255,255,0.3);
+  color: #276070;
+  background: #fbfcfa;
+  border-radius: 50%;
+  text-align: center;
+  transition: 0.3s linear;
+}
+#svice-icon img{
+  left: 50%;
+  height: 100px;
+  border-radius: 50%;
+  width: 100px;
+}
+/* 
+/*logo*/
+
+/*logo animation start*/
+.loader-logo {
+ overflow: hidden;
+ transform: translatey(0px);
+ -webkit-animation: float 3s ease-in-out infinite;
+         animation: float 3s ease-in-out infinite;
+}
+
+
+@-webkit-keyframes float {
+ 0% {
    transform: translatey(0px);
-   -webkit-animation: float 3s ease-in-out infinite;
-           animation: float 3s ease-in-out infinite;
+ }
+ 50% {
+   transform: translatey(-20px);
+ }
+ 100% {
+   transform: translatey(0px);
+ }
+}
+
+@keyframes float {
+ 0% {
+   transform: translatey(0px);
+ }
+ 50% {
+   transform: translatey(-20px);
+ }
+ 100% {
+   transform: translatey(0px);
+ }
+}
+/*logo animation end*/
+/*logo style end*/
+/*Bg image style end*/
+
+
+/* section 1 style start */
+ol,
+ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+a, 
+a:hover, 
+a:focus {
+   outline: none;
+   text-decoration: none;
+   color: inherit;
+}
+img{
+  height: 100vh;
+  width: 100%;
+}
+.mesimg{
+ margin-top: 13%;
+  width: 40px !important;
+  height: 40px !important;
   }
-  
-  
-  @-webkit-keyframes float {
-   0% {
-     transform: translatey(0px);
-   }
-   50% {
-     transform: translatey(-20px);
-   }
-   100% {
-     transform: translatey(0px);
-   }
+
+  .Texte{
+    font-weight: 800;
   }
-  
-  @keyframes float {
-   0% {
-     transform: translatey(0px);
-   }
-   50% {
-     transform: translatey(-20px);
-   }
-   100% {
-     transform: translatey(0px);
-   }
-  }
-  /*logo animation end*/
-  /*logo style end*/
-  /*Bg image style end*/
-  
-  
-  /* section 1 style start */
-  ol,
-  ul {
-     margin: 0;
-     padding: 0;
-     list-style: none;
-  }
-  a, 
-  a:hover, 
-  a:focus {
-     outline: none;
-     text-decoration: none;
-     color: inherit;
-  }
-  img{
-    height: 100vh;
-    width: 100%;
-  }
-  .mesimg{
-   margin-top: 13%;
-    width: 40px !important;
-    height: 40px !important;
-    }
-  
-    .Texte{
-      font-weight: 800;
-    }
-  /*...................... section 1 style end....................... */
-  
-  
-  
-  
-  
-  
-  
-  
-  /* ....................... */
-  .overlay {
-    background-image: url("../../../../assets/images/missionAcc.jpg");
-    background-position: center;
-    background-size: cover;
-  }
+/*...................... section 1 style end....................... */
+
+
+
+
+
+
+
+
+/* ....................... */
+.overlay {
+  background-image: url("../../../../assets/images/missionAcc.jpg");
+  background-position: center;
+  background-size: cover;
+}
