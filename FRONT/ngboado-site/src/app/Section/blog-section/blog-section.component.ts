@@ -28,9 +28,60 @@ export class BlogSectionComponent implements OnInit {
         item:2,
         slideMargin:0,
         slideWidth:200,
-        loop:true,
+        loop:false,
         controls:false,
         pager:false
+      });
+
+      //Prev
+      $('#goToPrevSlide').click(function(){
+        slider.goToPrevSlide(); 
+      });
+
+      $('#goToPrevSlide1').click(function(){
+        slider.goToPrevSlide(); 
+      });
+
+      $('#goToPrevSlide2').click(function(){
+        slider.goToPrevSlide(); 
+      });
+
+      $('#goToPrevSlide3').click(function(){
+        slider.goToPrevSlide(); 
+      });
+
+      $('#goToPrevSlide4').click(function(){
+        slider.goToPrevSlide(); 
+      });
+
+      $('#goToPrevSlide5').click(function(){
+        slider.goToPrevSlide(); 
+      });
+
+
+      //Next
+      $('#goToNextSlide').click(function(){
+        slider.goToNextSlide(); 
+      });
+
+      $('#goToNextSlide1').click(function(){
+        slider.goToNextSlide(); 
+      });
+
+      $('#goToNextSlide2').click(function(){
+        slider.goToNextSlide(); 
+      });
+
+      $('#goToNextSlide3').click(function(){
+        slider.goToNextSlide(); 
+      });
+
+      $('#goToNextSlide4').click(function(){
+        slider.goToNextSlide(); 
+      });
+
+      $('#goToNextSlide5').click(function(){
+        slider.goToNextSlide(); 
       });
 
       //VIDEO DANS LES SLIDE

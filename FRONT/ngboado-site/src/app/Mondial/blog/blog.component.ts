@@ -19,7 +19,7 @@ export class BlogComponent implements OnInit {
 
   public ngOnInit(): void {
     $(document).ready(function() {
-      $('#prNotInst').lightSlider({
+      var slider1 = $('#prNotInst').lightSlider({
         item:1,
         slideMargin:0,
         slidePager: false,
@@ -29,11 +29,51 @@ export class BlogComponent implements OnInit {
         pager:false
       });
 
+      $('#goToPrevSlide').click(function(){
+        slider.goToPrevSlide(); 
+      });
+
+      $('#goToPrevSlide1').click(function(){
+        slider.goToPrevSlide(); 
+      });
+
+      $('#goToPrevSlide2').click(function(){
+        slider.goToPrevSlide(); 
+      });
+
+      $('#goToPrevSlide3').click(function(){
+        slider.goToPrevSlide(); 
+      });
+
+      $('#goToPrevSlide4').click(function(){
+        slider.goToPrevSlide(); 
+      });
+
+      $('#goToNextSlide').click(function(){
+        slider.goToNextSlide(); 
+      });
+
+      $('#goToNextSlide1').click(function(){
+        slider.goToNextSlide(); 
+      });
+
+      $('#goToNextSlide2').click(function(){
+        slider.goToNextSlide(); 
+      });
+
+      $('#goToNextSlide3').click(function(){
+        slider.goToNextSlide(); 
+      });
+
+      $('#goToNextSlide4').click(function(){
+        slider.goToNextSlide(); 
+      });
+
       var slider = $('#programNonInst').lightSlider({
         item:2,
         slideMargin:0,
         slideWidth:200,
-        loop:true,
+        loop:false,
         controls:false,
         pager:false
       });
