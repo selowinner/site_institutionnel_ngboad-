@@ -168,7 +168,7 @@ img{
 
 /* ...............section 2 style start ................... */
 .nbre{
-  background: -webkit-linear-gradient(left, #d20514, #d20514);
+  background: -webkit-linear-gradient(to left, #d20514, #d20514);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -301,7 +301,7 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
  }
 
  .Mnbtn {
-   background-image: linear-gradient(left, #d20514, #d20514) !important;
+   background-image: linear-gradient(to left, #d20514, #d20514) !important;
    color: black !important;
  }
 

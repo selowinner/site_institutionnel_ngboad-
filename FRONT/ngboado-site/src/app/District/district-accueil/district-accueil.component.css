@@ -162,7 +162,7 @@ body{
   
   /* ...............section 2 style start ................... */
   .nbre{
-    background: -webkit-linear-gradient(left, #00b82c, #00b82c);
+    background: -webkit-linear-gradient(to left, #00b82c, #00b82c);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -293,7 +293,7 @@ body{
    }
   
    .Mnbtn {
-     background-image: linear-gradient(left, #00b82c, #00b82c) !important;
+     background-image: linear-gradient(to left, #00b82c, #00b82c) !important;
      color: black !important;
    }
   
