@@ -4,7 +4,9 @@
 	overflow-x: hidden;
 	overflow-y: hidden !important;
   }
-  
+  #firstImg, #twoImg, #threeImg{
+  visibility: hidden;
+}
   /* logo style (start) */
   @media screen and (max-width: 767px) {
   #cache{

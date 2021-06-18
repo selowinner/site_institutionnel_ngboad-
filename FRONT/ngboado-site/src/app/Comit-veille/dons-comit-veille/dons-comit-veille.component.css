@@ -5,7 +5,7 @@ body{
   /*Bg image*/
   .landing-page{
    width: 100%;
-   height: 110vh;
+   height: 100vh;
    background: #000;
    position: relative;
    overflow: hidden;
@@ -15,8 +15,8 @@ body{
    position: absolute;
    left: 0;
    top: 0px;
-   width: 100%;
-   height: 100%;
+   width: 100vw;
+   height: 100vh;
    background: url("../../../assets//images/don_bg.jpg") no-repeat;
    background-size: cover;
    opacity: .3;
@@ -24,12 +24,11 @@ body{
   
   .page-content{
    position: absolute;
-   top: 25%;
+   top: 10%;
    left: 50%;
    transform: translate(-50%,-50%);
    z-index: 1;
    width: 100%;
-   /* max-width: 1300px; */
    text-align: center;
    padding: 0 40px;
    box-sizing: border-box;
@@ -210,8 +209,9 @@ label{
   font-size: 24px;
   z-index: -1;
 }
-/* .overlay {
-    background-image: url("../../../../assets/images/don_bg.jpg");
-    background-position: center;
-    background-size: cover;
-} */
+
+/* le menu style start */
+.overlay {
+  background-image: url("../../../assets/images/don_bg.jpg");
+  }
+  /* le menu style end */

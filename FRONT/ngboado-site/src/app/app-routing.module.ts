@@ -176,7 +176,7 @@ const routes: Routes = [
   {path: 'dons', component: DonsComponent},
  
 
-  //routes site continental
+         //routes site continental
   {path: 'continent-accueil',component: ContinentAccueilComponent},
   {path: 'presentation-continental',component: PresentationContinentalComponent},
   {path: 'membres-continental',component: MembresContinentalComponent},
@@ -195,7 +195,7 @@ const routes: Routes = [
   {path: 'reinsertion-programme-continental', component: ReinsertionProgrammeContinentalComponent },
   {path: 'dons-continental', component: DonsContinentalComponent},
 
-  //routes site regional
+          //routes site regional
   {path: 'regional-accueil', component: RegionalAccueilComponent},
   {path: 'presentation-regional', component: PresentationRegionalComponent},
   {path: 'membres-regional', component: MembresRegionalComponent},
@@ -214,7 +214,7 @@ const routes: Routes = [
   {path: 'reinsertion-programme-regional', component: ReinsertionProgrammeRegionalComponent },
   {path: 'dons-regional', component: DonsRegionalComponent },
 
-  //routes site pays
+         //routes site pays
   {path: 'pays-accueil', component: PaysAccueilComponent },
   {path: 'presentation-pays', component: PresentationsPaysComponent },
   {path: 'membres-pays', component: MembresPaysComponent },
@@ -233,7 +233,7 @@ const routes: Routes = [
   {path: 'reinsertion-programme-pays', component: ReinsertionProgrammePaysComponent},
   {path: 'dons-pays', component: DonsPaysComponent},
 
-  // routes site sous-regional
+         // routes site sous-regional
   {path: 'sous-regional-accueil', component: SousRegionalAccueilComponent },
   {path: 'presentation-sous-regional', component: PresentationSousRegionalComponent },
   {path: 'membres-sous-regional', component: MembresSousRegionalComponent },
@@ -252,7 +252,7 @@ const routes: Routes = [
   {path: 'reinsertion-programme-sous-regional', component: ReinsertionProgrammeSousRegionalComponent},
   {path: 'dons-sous-regional', component: DonsSousRegionalComponent},
 
-  //routes site district
+         //routes site district
   {path: 'district-accueil', component: DistrictAccueilComponent },
   {path: 'presentation-district', component: PresentationDistrictComponent },
   {path: 'membres-district', component: MembresDistrictComponent },
@@ -271,7 +271,7 @@ const routes: Routes = [
   {path: 'reinsertion-programme-district', component: ReinsertionProgrammeDistrictComponent},
   {path: 'dons-district', component: DonsDistrictComponent},
 
-  //routes site section//
+         //routes site section//
   {path: 'section-accueil', component: SectionAccueilComponent },
   {path: 'presentation-section', component: PresentationSectionComponent },
   {path: 'membres-section', component: MembresSectionComponent },
@@ -291,7 +291,7 @@ const routes: Routes = [
   {path: 'reinsertion-programme-section', component: ReinsertionProgrammeSectionComponent},
   {path: 'dons-section', component: DonsSectionComponent},
 
-  //routes site comit-veille
+         //routes site comit-veille
   {path: 'comit-veille-accueil', component: ComitVeilleAccueilComponent },
   {path: 'presentation-comit-veille', component: PresentationComitVeilleComponent },
   {path: 'membres-comit-veille', component: MembresComitVeilleComponent },
