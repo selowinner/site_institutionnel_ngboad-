@@ -25,14 +25,12 @@ body{
   #dropd{
     margin-top: 50px;
     background-color: transparent !important;
-    /* border: 1px solid #000; */
   }
 
   #dropd2{
     margin-top: 50px;
     margin-left: 220px;
     background-color: transparent !important;
-    /* border: 1px solid  #000; */
   }
   
   .fa{
@@ -65,25 +63,17 @@ body{
 
 
 #carousel {
-  /*Set the container carousel to be fullscreen. If you change the size
-  of your carousel make sure to also change the size of your slides*/
-  /* height: 100vh; */
+  
   width: 100vw;
-  /*Prevent images from wrapping*/
   white-space: nowrap;
   overflow: hidden;
-  /*Allow children to be positioned relatively*/
-  position: relative;
 }
 
 .slide-image {
-  /*Make the image container full screen*/
   width: 60vw;
   height: 60vh;
-  /*Make the image cover the the screen and center it*/
   background-position: center;
   background-size: cover;
-  /*Make images inline with each other*/
   display: inline-block;
 }
 
