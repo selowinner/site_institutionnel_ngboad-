@@ -136,7 +136,7 @@ input.accordion {
   background: #fff;
   font-weight: bold;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 15px;
 }
 .accordion-label:hover {
   background: linear-gradient(to right, #326797 , #069443);
@@ -150,6 +150,7 @@ input.accordion {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+
 .accordion-content {
   max-height: 0;
   color: rgba(4,57,94,1);
@@ -167,8 +168,7 @@ input:checked + .accordion-label {
   border: none;
 }
 input:checked + .accordion-label::after {
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
+  content: "-";
 }
 input:checked ~ .accordion-content {
   max-height: 70vh;
