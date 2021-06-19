@@ -65,3 +65,25 @@ function myFunction() {
       x.style.display = "none";
     }
   }
+
+
+
+
+
+  function getSuggestionForm(suggElem, plainteElem, autreElem){
+    suggElem.style.display = 'block';
+    plainteElem.style.display = 'none';
+    autreElem.style.display = 'none';
+  }
+
+  function getPlaintesForm(suggElem, plainteElem, autreElem){
+    suggElem.style.display = 'none';
+      plainteElem.style.display = 'block';
+      autreElem.style.display = 'none';
+  }
+
+  function getAutresForm(suggElem, plainteElem, autreElem){
+    suggElem.style.display = 'none';
+      plainteElem.style.display = 'none';
+      autreElem.style.display = 'block';
+  }
