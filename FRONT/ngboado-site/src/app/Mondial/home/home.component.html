@@ -1,7 +1,7 @@
 <div class="" id="header">
     <section class="container" id="container-heade">
         <div id="page-contenu">
-            <div class="row mt-4 text-center">
+            <!-- <div class="row mt-4 text-center">
                 <div class="col-md-4"></div>
                 <div class="col-md-4 mt-3 mb-5 py-5 text-center" (click)="openClickMenu()">
                     <div class="loader-logo" id="svice-icon">
@@ -9,9 +9,53 @@
                     </div>
                 </div>
                 <div class="col-md-4"></div>
+            </div> -->
+
+            <div class="row mt-5 text-center">
+                <div class="col-md-4"></div>
+                <div class="col-md-4 mt-4 mb-5 py-5">
+                    <input type="checkbox" id="active" checked>
+                    <label for="active" class="menu-btn mb-4">
+                        <div class="loader-logo" id="svice-icon">
+                            <img  class="toggle-button img-fluid" src="../../../assets/icones/logo.png" />
+                        </div>
+                    </label>
+                    <div class="wrapper">
+                        <div id="navLink">
+                            <p><a routerLink="/">Accueil</a></p>
+                            <p><a routerLink="/presentation">Présentation</a></p>
+                            <p><a routerLink="/mission-accueil">Mission</a></p>
+                            <p><a routerLink="/agence-fond">Agences / Fonds</a></p>
+                            <p><a routerLink="/membres">Membres</a></p>
+                            <p><a routerLink="/dons">Dons</a></p>
+                            <p><a routerLink="/blog">Blog</a></p>
+                            <p><a routerLink="/suggestions-plaintes">Suggestions / Plaintes</a></p>
+                            <p><a routerLink="/partenaires">Partenaires</a></p>
+                            <p class="mt-3">
+                                <span><a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                                </a></span> &nbsp;
+                                <span><a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a></span>&nbsp;
+                                <span><a href="#">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a></span>&nbsp;
+                                <span><a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a></span>&nbsp;
+                                <span><a href="#">
+                                    <i class="fab fa-youtube"></i>
+                                </a></span>
+                            </p>
+                            <p class="mt-5"><small> &copy;2020 - ONG N'GBOADÔ</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-right"></div>
             </div>
 
-            <div class="row text-center py-3" id="ligne-text-header">
+            <div class="row container text-center py-3" id="ligne-text-header">
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
                     <p style="font-size: 42px;color: #fff;">L'ultime<br>
@@ -24,7 +68,7 @@
         <div>
         <br>
         <!-- flex-box -->
-        <div class="flex-container" style="margin-top: 0%;">
+        <div class="flex-container container" style="margin-top: 0%;">
             <div class="jeflex1">
                 <h4 class="Texte text-center">
                     <img class="mt-3" style="width: 50px;height: 50px;" src="../../../assets/icones/prevention.png" alt="Prévention"><br>Prévention
@@ -51,38 +95,6 @@
   </section>
 </div>
 <!--/-Header-->
-
-<div class="navigation">
-    <!-- <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
-    <label for="nav-toggle" class="navigation__button">
-      <span class="navigation__icon" aria-label="toggle navigation menu"></span>
-    </label>
-    <div class="navigation__background"></div> -->
-
-    <nav class="navigation__nav" role="navigation">
-        <div class="row py-5 mt-5 mb-5 text-center">
-            <div class="col-md-4"></div>
-            <div class="col-md-4 text-center mt-5 mb-5">
-                <div id="svice-icon1">
-                    <img  class="toggle-button" src="../../../../assets/icones/logo.png" />
-                </div>
-            </div>
-            <div class="col-md-4"></div>
-        </div>
-        <br>
-        <ul class="navigation__list py-5 mt-5 mb-5">
-            <li class="navigation__item"><a href="#" class="navigation__link" routerLink="/">Accueil</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link" routerLink="/presentation">Présentation</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link" routerLink="/mission-accueil">Mission</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link" routerLink="/agence-fond">Agences / Fonds</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link" routerLink="/membres">Membres</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link" routerLink="/dons">Dons</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link" routerLink="/blog">Blog</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link" routerLink="/suggestions-plaintes">Suggestions / Plaintes</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link" routerLink="/partenaires">Partenaires</a></li>
-        </ul>
-    </nav>
-</div>
 
 <!-- le menu (debut) -->
 <header>
