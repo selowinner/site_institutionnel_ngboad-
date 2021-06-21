@@ -1,6 +1,4 @@
 /* box style */
-
-  
 div.ag-card-ac1{
   background: #019939;
   color: #fff;
@@ -15,7 +13,7 @@ div.ag-card-ac2{
 /*logo*/
 
 /*logo animation start*/
-.loader-logo {
+/* .loader-logo {
 overflow: hidden;
 transform: translatey(0px);
 -webkit-animation: float 3s ease-in-out infinite;
@@ -45,7 +43,7 @@ transform: translatey(0px);
 100% {
   transform: translatey(0px);
 }
-}
+} */
 /*logo animation end*/
 /*logo style end*/
 /*Bg image style end*/
@@ -87,6 +85,7 @@ background-image: url("../../../assets/images/agence&fond.jpg");
 #header{
 width: 100%;
 background: #000;
+min-height: 100vh;
 position: relative;
 overflow: hidden;
 }

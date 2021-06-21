@@ -735,6 +735,8 @@ h1 {
 #active:checked ~ .wrapper{
   clip-path: circle(75%);
 }
+
+
 .menu-btn{
   position: relative;
   z-index: 2;
