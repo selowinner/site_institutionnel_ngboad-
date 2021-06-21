@@ -16,7 +16,7 @@
       <div class="col-md-4"></div>
       <div class="col-md-3 text-center container">
           <div class="AsProg">
-            Programmes - Réinsertion
+            Programmes - Réinsertions
           </div>
       </div>
       <div class="col-md-4"></div>
@@ -27,8 +27,8 @@
   
   <!-- /* Programme intitutionnels */ -->
   <div class="row mx-auto">
-      <div class="col-md-5 mt-2 mb-2 container">
-          <div class="ProgInst">&nbsp;&nbsp;1. Programmes intitutionnels</div>
+      <div class="col-md-5 mt-2 mb-2 container" (click)="dispayProgrammeNotInst()">
+          <div class="ProgInst" id="ProgInst">&nbsp;&nbsp;1. Programmes intitutionnels</div>
       </div>
       <div class="col-md-7 mt-2 mb-2">
           <div class="container">
@@ -47,8 +47,8 @@
   
   
   <!-- le carousel -->
-  <div class="">
-      <ul id="autoWidth" class="cs-hidden">
+  <div class="" id="projetInstitutionel" style="display: block;">
+      <ul id="autoWidth" class="cs-hidden" >
   <!--1------------------------------>
   
         <li class="item-a">
@@ -125,57 +125,52 @@
   <!-- le carousel fin -->
   
   
-  <!-- /* Programme non-intitutionnels */ -->
-      <div class="row">
-        <div class="col-md-5 Asist" onclick="maFonction()">
-          <div class="ProgNInst">&nbsp;&nbsp; 2. Programmes non-intitutionnels</div>
-        </div>
-        <div class="col-md-7"></div>
-      </div>
-  <!-- /* Programme non-intitutionnels */ -->
+<!-- /* Programme non-intitutionnels */ -->
+<div class="row mx-auto">
+  <div (click)="dispayProgrammeNotInst()" class="col-md-5 mt-2 mb-2 container">
+    <div class="ProgNInst" id="ProgNInst">&nbsp;&nbsp;2. Programmes non-intitutionnels</div>
+  </div>
+  <div class="col-md-7 mt-2 mb-2">
+    <div class="container"></div>
+  </div>
+</div>
+<!-- /* Programme non-intitutionnels */ -->
   
   
-  <!-- le carousel -->
-<div id="slideMission">
+<!-- le carousel -->
+<div id="slideMission" class="mb-4" style="display: none;">
   <ul id="AutoWidth" class="cs-hidden">
-<!--1------------------------------>
-
-    <li class="item-a"> 
-        <div class="box" data-toggle="modal" data-target="#exampleModal">
-            <p class="marvel">01 <span class="marvel2">Programme</span></p>
-            <hr class="trait">
-            <div class="details">
-              <p class="lorem text-center">
-                Agence N'GBOADÔ pour la <br> Coordination des Actions Humanitaires.</p>
-            </div>
-          </div>
-    </li>
-<!--2------------------------------>
-
+    <!--1------------------------------>
     <li class="item-a">
-        <div class="box" data-toggle="modal" data-target="#exampleModal">
-            <p class="marvel">02 <span class="marvel2">Programme</span></p>
-            <hr class="trait">
-            <div class="details">
-              <p class="lorem text-center">
-                Agence N'GBOADÔ de Developpe-<br>ment et d'Impact pour les droits humains.</p>
-            </div>
+      <div class="box" data-toggle="modal" data-target="#exampleModal">
+        <p class="marvel">01 <span class="marvel2">Programme</span></p>
+        <hr class="trait" >
+        <div class="details">
+          <p class="lorem text-center">Agence N'GBOADÔ pour la <br> Coordination des Actions Humanitaires.</p>
         </div>
+      </div>
     </li>
-<!--3------------------------------>
-
+    <!--2------------------------------>
     <li class="item-a">
-        <div class="box" data-toggle="modal" data-target="#exampleModal">
-          <p class="marvel">03 <span class="marvel2">Programme</span></p>
-          <hr class="trait">
-          <div class="details">
-            <p class="lorem text-center">
-              Agence N'GBOADÔ<br> pour l'Education et la Culture.</p>
-          </div>
+      <div class="box" data-toggle="modal" data-target="#exampleModal">
+        <p class="marvel">02 <span class="marvel2">Programme</span></p>
+        <hr class="trait">
+        <div class="details">
+          <p class="lorem text-center">Agence N'GBOADÔ de Developpe-<br>ment et d'Impact pour les droits humains.</p>
         </div>
+      </div>
     </li>
-<!--4------------------------------>
-
+    <!--3------------------------------>
+    <li class="item-a">
+      <div class="box" data-toggle="modal" data-target="#exampleModal">
+        <p class="marvel">03 <span class="marvel2">Programme</span></p>
+        <hr class="trait">
+        <div class="details">
+          <p class="lorem text-center">Agence N'GBOADÔ<br> pour l'Education et la Culture.</p>
+        </div>
+      </div>
+    </li>
+    <!--4------------------------------>
     <li class="item-a">
         <div class="box" data-toggle="modal" data-target="#exampleModal">
           <p class="marvel">04 <span class="marvel2">Programme</span></p>
@@ -186,8 +181,7 @@
           </div>
         </div>
     </li>
-<!--5------------------------------>
-  
+    <!--5------------------------------>
     <li class="item-a">
         <div class="box" data-toggle="modal" data-target="#exampleModal">
           <p class="marvel">00 <span class="marvel2">Programme</span></p>
@@ -197,8 +191,7 @@
           </div>
         </div>
     </li>
-<!--6------------------------------>
-
+    <!--6------------------------------>
     <li class="item-a">
         <div class="box" data-toggle="modal" data-target="#exampleModal">
           <p class="marvel">001 <span class="marvel2">Programme</span></p>
@@ -215,7 +208,6 @@
   
       
   </section>
-
    <!-- Modal -->
 <div class="modal fade" id="exampleModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
@@ -236,7 +228,10 @@
   </div>
 </div>
    <!-- Modal -->
-   
+
+
+
+
   <!-- le menu (debut) -->
 <header>
   <div id="myNav" class="overlay">

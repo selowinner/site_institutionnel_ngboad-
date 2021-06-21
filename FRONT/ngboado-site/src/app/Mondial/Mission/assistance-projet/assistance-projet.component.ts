@@ -28,7 +28,7 @@ export class AssistanceProjetComponent implements OnInit {
     var elRmStyle = document.getElementById('ProgInst');
     var prInst = document.getElementById('projetInstitutionel');
     if(element.style.display === 'none'){
-      console.log(this.number == 1);
+      //console.log(this.number == 1);
       element.style.display = 'block';
       elStyle.style.background = 'linear-gradient(to right, #019939, #336699)';
       elStyle.style.color = '#fff';
