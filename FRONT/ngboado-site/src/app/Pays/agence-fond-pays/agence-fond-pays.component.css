@@ -10,65 +10,25 @@ div.ag-card-ac2{
     background: #31568d;
     color: #fff;
 }
-/* box style */
-
-/*logo*/
-
-/*logo animation start*/
-.loader-logo {
-  overflow: hidden;
-  transform: translatey(0px);
-  -webkit-animation: float 3s ease-in-out infinite;
-          animation: float 3s ease-in-out infinite;
-}
-
-
-@-webkit-keyframes float {
-  0% {
-    transform: translatey(0px);
-  }
-  50% {
-    transform: translatey(-20px);
-  }
-  100% {
-    transform: translatey(0px);
-  }
-}
-
-@keyframes float {
-  0% {
-    transform: translatey(0px);
-  }
-  50% {
-    transform: translatey(-20px);
-  }
-  100% {
-    transform: translatey(0px);
-  }
-}
-/*logo animation end*/
-/*logo style end*/
-/*Bg image style end*/
-
 
 /* section 1 style start */
 ol,
 ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 a, 
 a:hover, 
 a:focus {
-    outline: none;
-    text-decoration: none;
-    color: inherit;
+  outline: none;
+  text-decoration: none;
+  color: inherit;
 }
 
-   .Texte{
-     font-weight: 800;
-   }
+ .Texte{
+   font-weight: 800;
+ }
 /*...................... section 1 style end....................... */
 
 
@@ -81,12 +41,13 @@ background-image: url("../../../assets/images/agence&fond.jpg");
 
 @media screen and (max-width: 767px) {
 #cache{
-    display: none !important;
+  display: none !important;
 }
 }
 #header{
 width: 100%;
 background: #000;
+min-height: 100vh;
 position: relative;
 overflow: hidden;
 }

@@ -18,9 +18,9 @@ function myFunction() {
   }
 
   function myFpop() {
-    var x = document.getElementById("firstPop");
-    var y = document.getElementById("twoPop");
-    var z = document.getElementById("threePop");
+    var x = document.getElementById("firstPop"),
+    y = document.getElementById("twoPop"),
+    z = document.getElementById("threePop");
 
     if(x.style.visibility === "visible") {
       x.style.visibility = "hidden";
@@ -32,9 +32,9 @@ function myFunction() {
   }
 
   function myTpop() {
-    var x = document.getElementById("twoPop");
-    var y = document.getElementById("firstPop");
-    var z = document.getElementById("threePop");
+    var x = document.getElementById("twoPop"),
+    y = document.getElementById("firstPop"),
+    z = document.getElementById("threePop");
     if(x.style.visibility === "visible") {
       x.style.visibility = "hidden";
     } else {
@@ -45,9 +45,9 @@ function myFunction() {
   }
 
   function myThpop() {
-    var x = document.getElementById("threePop");
-    var y = document.getElementById("firstPop");
-    var z = document.getElementById("twoPop");
+    var x = document.getElementById("threePop"),
+    y = document.getElementById("firstPop"),
+    z = document.getElementById("twoPop");
     if(x.style.visibility === "visible") {
       x.style.visibility = "hidden";
     } else {
@@ -66,6 +66,7 @@ function myFunction() {
     }
   }
 
+  //SUGGESTIONS ET PLAINTES
   function getSuggestionForm(suggElem, plainteElem, autreElem){
     suggElem.style.display = 'block';
     plainteElem.style.display = 'none';
@@ -83,7 +84,7 @@ function myFunction() {
       plainteElem.style.display = 'none';
       autreElem.style.display = 'block';
   }
-
+  //PRESENTATION
   function displayAndHideImage(historiqueId, assembleId, conseilAdminId, secretarialGenId, cabinetMaketingId, conseilEcoId, courUnivId, activeElementId){
     if(activeElementId === historiqueId.id){
       historiqueId.style.display = 'block';
@@ -144,9 +145,10 @@ function myFunction() {
     }
   }
 
+  //PRESENTATION LIRE PLUS
   function showMoreTexte(elemId, btnLirePlus){
-    var elStyle = document.getElementById(`${elemId}`);
-    var buttonElm = document.getElementById(`${btnLirePlus}`);
+    var elStyle = document.getElementById(`${elemId}`),
+    buttonElm = document.getElementById(`${btnLirePlus}`);
     if(elStyle.style.display === 'none'){
         elStyle.style.display = 'block';
         buttonElm.textContent = "Masquer"
@@ -157,13 +159,7 @@ function myFunction() {
   }
 
   //SLIDER MEMBRES & PARTENAIRES
-  function createSlider(
-    arrowPrevClassName, 
-    arrowNextClassName, 
-    sliderItemClassName, 
-    dataSliderAttrName, 
-    dataPositionAttrName,
-    idModalTag){
+  function createSlider(arrowPrevClassName, arrowNextClassName, sliderItemClassName, dataSliderAttrName, dataPositionAttrName){
       console.clear();
       const elem = document.querySelector('[data-component="slider"]'),
       allElement = document.querySelectorAll(`${dataSliderAttrName}`),
@@ -255,8 +251,4 @@ function myFunction() {
               }
         })
       })
-  }
-
-  function jumSlider(){
-
   }
