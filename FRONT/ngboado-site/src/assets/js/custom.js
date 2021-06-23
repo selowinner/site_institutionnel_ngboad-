@@ -154,4 +154,95 @@ function myFunction() {
         elStyle.style.display = 'none';
         buttonElm.textContent = "Lire la suite"
     }
-}
+  }
+
+  //SLIDER MEMBRES & PARTENAIRES
+  function createSlider(arrowPrevClassName, arrowNextClassName, sliderItemClassName, dataSliderAttrName, idModalTag){
+      console.clear();
+      const elem = document.querySelector('[data-component="slider"]');
+      const allElement = document.querySelectorAll(`${dataSliderAttrName}`);
+      const myArray = Array.prototype.slice.call(allElement);
+      //Next
+      document.querySelector(`${arrowPrevClassName}`).addEventListener('click', ()=>{
+        myArray.map(el => {
+			    const pos = Number(el.getAttribute('data-position'));
+			    const next = (pos+1) > myArray.length-1 ? 0 : pos+1;
+			    const go =  next;
+			
+			    el.setAttribute('data-position', go)
+		    })
+      })
+
+      //prev
+      document.querySelector(`${arrowNextClassName}`).addEventListener('click', ()=>{
+        myArray.map(el => {
+          const pos = Number(el.getAttribute('data-position'));
+          console.log(pos);
+          const prev = (pos-1) < 0 ? myArray.length-1 : pos-1;
+          const go = prev;
+  
+          el.setAttribute('data-position', go)
+        })
+      })
+
+      //Jump
+      document.querySelectorAll(`${sliderItemClassName}`).forEach(sliderItem => {
+        sliderItem.addEventListener('click', ()=>{
+          const pos = Number(sliderItem.getAttribute("data-position"));
+              if(pos == 0){
+                //todo implementation du modal
+                const mEl = document.querySelector('[data-position="0"]').lastElementChild;
+                //Récuperation de l'id de chaque element
+                const dataslider = mEl.id;
+                console.log(mEl);
+                //Ajout des deux attribues dans l'element 
+                mEl.setAttribute('data-toggle', 'modal');
+                mEl.setAttribute('data-target', '#exampleModalCenter' + dataslider);
+                /* if(idModalTag === "bureaux"){
+                  mEl.setAttribute('data-target', '#exampleModalCenter'+dataslider);
+                }else if(idModalTag === "fondateurs"){
+                  mEl.setAttribute('data-target', '#fondateurModal'+dataslider);
+                }else if(idModalTag === "donnateurs"){
+                  mEl.setAttribute('data-target', '#donnateurModal'+dataslider);
+                }else if(idModalTag === "honneurs"){
+                  mEl.setAttribute('data-target', '#honneurModal'+dataslider);
+                }else if(idModalTag === "assistants"){
+                  mEl.setAttribute('data-target', '#assistantModal'+dataslider);
+                }else if(idModalTag === "actifs"){
+                  mEl.setAttribute('data-target', '#actifModal'+dataslider);
+                } */
+
+                for(let i = 0; i < pos; i++) {
+                  const timeout = setTimeout(()=>{
+                    
+                      myArray.map(el => {
+                      const pos = Number(el.getAttribute('data-position'));
+                      const prev = (pos-1) < 0 ? myArray.length-1 : pos-1;
+                      const go = prev;
+                      
+                      el.setAttribute('data-position', go)
+                    })
+                  }, 100)
+                }
+              }else{
+                for(let i = 0; i < pos; i++) {
+                  const timeout = setTimeout(()=>{
+                      myArray.map(el => {
+                      const pos = Number(el.getAttribute('data-position'));
+                      const prev = (pos-1) < 0 ? myArray.length-1 : pos-1;
+                      const go = prev;
+                      
+                      el.lastElementChild.setAttribute('data-toggle', '');
+                      el.lastElementChild.setAttribute('data-target', '#');
+                      el.setAttribute('data-position', go)
+                    })
+                  }, 100)
+              }
+              }
+        })
+      })
+  }
+
+  function jumSlider(){
+
+  }
