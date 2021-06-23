@@ -235,37 +235,37 @@
 }
 
 .slider .slider__item[data-position="0"],
-.slider .slider__item__fondateurs[data-position="0"],
-.slider .slider__item__donateurs[data-position="0"],
-.slider .slider__item__honneurs[data-position="0"],
-.slider .slider__item__assistants[data-position="0"],
-.slider .slider__item__actifs[data-position="0"] {
+.slider .slider__item__fondateurs[data-position-fondateur="0"],
+.slider .slider__item__donateurs[data-position-donnateurs="0"],
+.slider .slider__item__honneurs[data-position-honneur="0"],
+.slider .slider__item__assistants[data-position-assistant="0"],
+.slider .slider__item__actifs[data-position-actif="0"] {
     left: 50%;
     z-index: 25;
     opacity: 1;
 }
 
 .slider__item[data-position="0"] .tooltiptext,
-.slider__item__fondateurs[data-position="0"] .tooltiptext,
-.slider__item__donateurs[data-position="0"] .tooltiptext,
-.slider__item__honneurs[data-position="0"] .tooltiptext,
-.slider__item__assistants[data-position="0"] .tooltiptext,
-.slider__item__actifs[data-position="0"] .tooltiptext {
+.slider__item__fondateurs[data-position-fondateur="0"] .tooltiptext,
+.slider__item__donateurs[data-position-donnateurs="0"] .tooltiptext,
+.slider__item__honneurs[data-position-honneur="0"] .tooltiptext,
+.slider__item__assistants[data-position-assistant="0"] .tooltiptext,
+.slider__item__actifs[data-position-actif="0"] .tooltiptext {
     visibility: visible;
 }
 
 .slider .slider__item[data-position="1"],
 .slider .slider__item[data-position="4"],
-.slider .slider__item__fondateurs[data-position="1"],
-.slider .slider__item__fondateurs[data-position="4"],
-.slider .slider__item__donateurs[data-position="1"],
-.slider .slider__item__donateurs[data-position="4"],
-.slider .slider__item__honneurs[data-position="1"],
-.slider .slider__item__honneurs[data-position="4"],
-.slider .slider__item__assistants[data-position="1"],
-.slider .slider__item__assistants[data-position="4"],
-.slider .slider__item__actifs[data-position="1"],
-.slider .slider__item__actifs[data-position="4"] {
+.slider .slider__item__fondateurs[data-position-fondateur="1"],
+.slider .slider__item__fondateurs[data-position-fondateur="4"],
+.slider .slider__item__donateurs[data-position-donnateurs="1"],
+.slider .slider__item__donateurs[data-position-donnateurs="4"],
+.slider .slider__item__honneurs[data-position-honneur="1"],
+.slider .slider__item__honneurs[data-position-honneur="4"],
+.slider .slider__item__assistants[data-position-assistant="1"],
+.slider .slider__item__assistants[data-position-assistant="4"],
+.slider .slider__item__actifs[data-position-actif="1"],
+.slider .slider__item__actifs[data-position-actif="4"] {
     width: 150px;
     height: 200px;
     opacity: 0.6;
@@ -274,35 +274,35 @@
 }
 
 .slider .slider__item[data-position="1"],
-.slider .slider__item__fondateurs[data-position="1"],
-.slider .slider__item__donateurs[data-position="1"],
-.slider .slider__item__honneurs[data-position="1"],
-.slider .slider__item__assistants[data-position="1"],
-.slider .slider__item__actifs[data-position="1"] {
+.slider .slider__item__fondateurs[data-position-fondateur="1"],
+.slider .slider__item__donateurs[data-position-donnateurs="1"],
+.slider .slider__item__honneurs[data-position-honneur="1"],
+.slider .slider__item__assistants[data-position-assistant="1"],
+.slider .slider__item__actifs[data-position-actif="1"] {
     left: 27%;
 }
 
 .slider .slider__item[data-position="4"],
-.slider .slider__item__fondateurs[data-position="4"],
-.slider .slider__item__donateurs[data-position="4"],
-.slider .slider__item__honneurs[data-position="4"],
-.slider .slider__item__assistants[data-position="4"],
-.slider .slider__item__actifs[data-position="4"] {
+.slider .slider__item__fondateurs[data-position-fondateur="4"],
+.slider .slider__item__donateurs[data-position-donnateurs="4"],
+.slider .slider__item__honneurs[data-position-honneur="4"],
+.slider .slider__item__assistants[data-position-assistant="4"],
+.slider .slider__item__actifs[data-position-actif="4"] {
     left: 63%;
 }
 
 .slider .slider__item[data-position="2"],
 .slider .slider__item[data-position="3"],
-.slider .slider__item__fondateurs[data-position="2"],
-.slider .slider__item__fondateurs[data-position="3"],
-.slider .slider__item__donateurs[data-position="2"],
-.slider .slider__item__donateurs[data-position="3"],
-.slider .slider__item__honneurs[data-position="2"],
-.slider .slider__item__honneurs[data-position="3"],
-.slider .slider__item__assistants[data-position="2"],
-.slider .slider__item__assistants[data-position="3"],
-.slider .slider__item__actifs[data-position="2"],
-.slider .slider__item__actifs[data-position="3"] {
+.slider .slider__item__fondateurs[data-position-fondateur="2"],
+.slider .slider__item__fondateurs[data-position-fondateur="3"],
+.slider .slider__item__donateurs[data-position-donnateurs="2"],
+.slider .slider__item__donateurs[data-position-donnateurs="3"],
+.slider .slider__item__honneurs[data-position-honneur="2"],
+.slider .slider__item__honneurs[data-position-honneur="3"],
+.slider .slider__item__assistants[data-position-assistant="2"],
+.slider .slider__item__assistants[data-position-assistant="3"],
+.slider .slider__item__actifs[data-position-actif="2"],
+.slider .slider__item__actifs[data-position-actif="3"] {
     width: 150;
     height: 200px;
     opacity: 0.6;
@@ -311,20 +311,20 @@
 }
 
 .slider .slider__item[data-position="2"],
-.slider .slider__item__fondateurs[data-position="2"],
-.slider .slider__item__donateurs[data-position="2"],
-.slider .slider__item__honneurs[data-position="2"],
-.slider .slider__item__assistants[data-position="2"],
-.slider .slider__item__actifs[data-position="2"] {
+.slider .slider__item__fondateurs[data-position-fondateur="2"],
+.slider .slider__item__donateurs[data-position-donnateurs="2"],
+.slider .slider__item__honneurs[data-position-honneur="2"],
+.slider .slider__item__assistants[data-position-assistant="2"],
+.slider .slider__item__actifs[data-position-actif="2"] {
     left: 12.5%;
 }
 
 .slider .slider__item[data-position="3"],
-.slider .slider__item__fondateurs[data-position="3"],
-.slider .slider__item__donateurs[data-position="3"],
-.slider .slider__item__honneurs[data-position="3"],
-.slider .slider__item__assistants[data-position="3"],
-.slider .slider__item__actifs[data-position="3"] {
+.slider .slider__item__fondateurs[data-position-fondateur="3"],
+.slider .slider__item__donateurs[data-position-donnateurs="3"],
+.slider .slider__item__honneurs[data-position-honneur="3"],
+.slider .slider__item__assistants[data-position-assistant="3"],
+.slider .slider__item__actifs[data-position-actif="3"] {
     left: 87.5%;
 }
 
