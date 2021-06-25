@@ -26,13 +26,6 @@
   
 }
 
-.Ags1{
-  height: 50px;
-text-align: center;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
 .tabs .tab {
   order: 99;
   flex-grow: 1;
@@ -99,7 +92,8 @@ text-align: center;
 
 
 
-#member-slider {
+#member-slider, 
+#members-slider-fondateurs {
   width: 100%;
   height: 300px;
   position: relative;
@@ -221,7 +215,12 @@ background-color: transparent;
   position: relative;
 }
 
-.slider .slider__item {
+.slider .slider__item,
+.slider .slider__item__fondateurs,
+.slider .slider__item__donateurs,
+.slider .slider__item__honneurs,
+.slider__item__assistants,
+.slider__item__actifs {
   width: 20%;
   height: 200px;
   background: transparent;
@@ -235,18 +234,38 @@ background-color: transparent;
   z-index: 10;
 }
 
-.slider .slider__item[data-position="0"] {
+.slider .slider__item[data-position="0"],
+.slider .slider__item__fondateurs[data-position-fondateur="0"],
+.slider .slider__item__donateurs[data-position-donnateurs="0"],
+.slider .slider__item__honneurs[data-position-honneur="0"],
+.slider .slider__item__assistants[data-position-assistant="0"],
+.slider .slider__item__actifs[data-position-actif="0"] {
   left: 50%;
   z-index: 25;
   opacity: 1;
 }
 
-.slider__item[data-position="0"] .tooltiptext {
+.slider__item[data-position="0"] .tooltiptext,
+.slider__item__fondateurs[data-position-fondateur="0"] .tooltiptext,
+.slider__item__donateurs[data-position-donnateurs="0"] .tooltiptext,
+.slider__item__honneurs[data-position-honneur="0"] .tooltiptext,
+.slider__item__assistants[data-position-assistant="0"] .tooltiptext,
+.slider__item__actifs[data-position-actif="0"] .tooltiptext {
   visibility: visible;
 }
 
 .slider .slider__item[data-position="1"],
-.slider .slider__item[data-position="4"] {
+.slider .slider__item[data-position="4"],
+.slider .slider__item__fondateurs[data-position-fondateur="1"],
+.slider .slider__item__fondateurs[data-position-fondateur="4"],
+.slider .slider__item__donateurs[data-position-donnateurs="1"],
+.slider .slider__item__donateurs[data-position-donnateurs="4"],
+.slider .slider__item__honneurs[data-position-honneur="1"],
+.slider .slider__item__honneurs[data-position-honneur="4"],
+.slider .slider__item__assistants[data-position-assistant="1"],
+.slider .slider__item__assistants[data-position-assistant="4"],
+.slider .slider__item__actifs[data-position-actif="1"],
+.slider .slider__item__actifs[data-position-actif="4"] {
   width: 150px;
   height: 200px;
   opacity: 0.6;
@@ -254,16 +273,36 @@ background-color: transparent;
   z-index: 20;
 }
 
-.slider .slider__item[data-position="1"] {
+.slider .slider__item[data-position="1"],
+.slider .slider__item__fondateurs[data-position-fondateur="1"],
+.slider .slider__item__donateurs[data-position-donnateurs="1"],
+.slider .slider__item__honneurs[data-position-honneur="1"],
+.slider .slider__item__assistants[data-position-assistant="1"],
+.slider .slider__item__actifs[data-position-actif="1"] {
   left: 27%;
 }
 
-.slider .slider__item[data-position="4"] {
+.slider .slider__item[data-position="4"],
+.slider .slider__item__fondateurs[data-position-fondateur="4"],
+.slider .slider__item__donateurs[data-position-donnateurs="4"],
+.slider .slider__item__honneurs[data-position-honneur="4"],
+.slider .slider__item__assistants[data-position-assistant="4"],
+.slider .slider__item__actifs[data-position-actif="4"] {
   left: 63%;
 }
 
 .slider .slider__item[data-position="2"],
-.slider .slider__item[data-position="3"] {
+.slider .slider__item[data-position="3"],
+.slider .slider__item__fondateurs[data-position-fondateur="2"],
+.slider .slider__item__fondateurs[data-position-fondateur="3"],
+.slider .slider__item__donateurs[data-position-donnateurs="2"],
+.slider .slider__item__donateurs[data-position-donnateurs="3"],
+.slider .slider__item__honneurs[data-position-honneur="2"],
+.slider .slider__item__honneurs[data-position-honneur="3"],
+.slider .slider__item__assistants[data-position-assistant="2"],
+.slider .slider__item__assistants[data-position-assistant="3"],
+.slider .slider__item__actifs[data-position-actif="2"],
+.slider .slider__item__actifs[data-position-actif="3"] {
   width: 150;
   height: 200px;
   opacity: 0.6;
@@ -271,11 +310,21 @@ background-color: transparent;
   z-index: 1000;
 }
 
-.slider .slider__item[data-position="2"] {
+.slider .slider__item[data-position="2"],
+.slider .slider__item__fondateurs[data-position-fondateur="2"],
+.slider .slider__item__donateurs[data-position-donnateurs="2"],
+.slider .slider__item__honneurs[data-position-honneur="2"],
+.slider .slider__item__assistants[data-position-assistant="2"],
+.slider .slider__item__actifs[data-position-actif="2"] {
   left: 12.5%;
 }
 
-.slider .slider__item[data-position="3"] {
+.slider .slider__item[data-position="3"],
+.slider .slider__item__fondateurs[data-position-fondateur="3"],
+.slider .slider__item__donateurs[data-position-donnateurs="3"],
+.slider .slider__item__honneurs[data-position-honneur="3"],
+.slider .slider__item__assistants[data-position-assistant="3"],
+.slider .slider__item__actifs[data-position-actif="3"] {
   left: 87.5%;
 }
 
@@ -286,39 +335,40 @@ background-color: transparent;
 /* le menu style end */
 
 
+/*logo*/
 #svice-icon{
+cursor: pointer;
+display: inline-block;
+box-shadow: 0px 0px 0px 2px rgba(194, 194, 194, 0.384);
+color: #276070;
+background: #fbfcfa;
+border-radius: 50%;
+text-align: center;
+transition: 0.3s linear;
+}
+#svice-icon img{
+left: 50%;
+height: 150px;
+border-radius: 50%;
+width: 150px;
+}
+
+#svice-icon1{
   cursor: pointer;
   display: inline-block;
-  box-shadow: 0px 0px 0px 2px rgba(194, 194, 194, 0.384);
+  box-shadow: 0px 0px 0px 30px rgba(253, 253, 253, 0.384);
   color: #276070;
   background: #fbfcfa;
   border-radius: 50%;
   text-align: center;
   transition: 0.3s linear;
   }
-  #svice-icon img{
+  #svice-icon1 img{
   left: 50%;
-  height: 150px;
+  height: 200px;
   border-radius: 50%;
-  width: 150px;
+  width: 200px;
   }
-  
-  #svice-icon1{
-    cursor: pointer;
-    display: inline-block;
-    box-shadow: 0px 0px 0px 30px rgba(253, 253, 253, 0.384);
-    color: #276070;
-    background: #fbfcfa;
-    border-radius: 50%;
-    text-align: center;
-    transition: 0.3s linear;
-    }
-    #svice-icon1 img{
-    left: 50%;
-    height: 200px;
-    border-radius: 50%;
-    width: 200px;
-    }
 /* 
 /*logo*/
 
