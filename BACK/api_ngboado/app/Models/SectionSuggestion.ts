@@ -9,7 +9,7 @@ import { BaseModel, column } from '@ioc:Adonis/Lucid/Orm'
  *      type: object
  *      properties:
  *        id:
- *          type: uint
+ *          type: integer
  *        title:
  *          type: string
  *        slug:
@@ -30,6 +30,34 @@ import { BaseModel, column } from '@ioc:Adonis/Lucid/Orm'
  *          type: string
  *        updatedAt: 
  *          type: string
+ *      required:
+ *        - title
+ *    SectionSuggestionDto:
+ *      type: object
+ *      properties:
+ *        title:
+ *          type: string
+ *        image:
+ *          type: string
+ *        description:
+ *          type: string
+ *        has_button:
+ *          type: boolean
+ *        button_text:
+ *          type: string
+ *        has_button_link:
+ *          type: boolean
+ *        button_link:
+ *          type: string
+ *      required:
+ *        - title
+ *    SectionSuggestions:
+ *      type: object
+ *      properties:
+ *        section_suggestions:
+ *          type: array
+ *          items:
+ *            "$ref": '#/components/schemas/SectionSuggestion'
  */
 export default class SectionSuggestion extends BaseModel {
   @column({ isPrimary: true })

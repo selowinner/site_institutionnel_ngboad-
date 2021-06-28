@@ -1,7 +1,6 @@
 import { DateTime } from 'luxon'
-import { BaseModel, belongsTo, column } from '@ioc:Adonis/Lucid/Orm'
+import { BaseModel, belongsTo, column, BelongsTo } from '@ioc:Adonis/Lucid/Orm'
 import Bureau from './Bureau'
-import { BelongsTo } from '@ioc:Adonis/Lucid/Relations'
 
 /**
  * @swagger
@@ -11,7 +10,7 @@ import { BelongsTo } from '@ioc:Adonis/Lucid/Relations'
  *      type: object
  *      properties:
  *        id:
- *          type: uint
+ *          type: integer
  *        title:
  *          type: string
  *        slug:
@@ -19,9 +18,9 @@ import { BelongsTo } from '@ioc:Adonis/Lucid/Relations'
  *        description:
  *          type: string
  *        bureau_id:
- *          type: uint
+ *          type: integer
  *        bureau:
- *          "$ref": '#/components/schemas/Bureau'
+ *          "$ref": '#/components/schemas/BureauSimple'
  *        createdAt: 
  *          type: string
  *        updatedAt: 
@@ -29,6 +28,54 @@ import { BelongsTo } from '@ioc:Adonis/Lucid/Relations'
  *      required:
  *        - title
  *        - bureau_id
+ *    FondDto:
+ *      type: object
+ *      properties:
+ *        title:
+ *          type: string
+ *        slug:
+ *          type: string
+ *        description:
+ *          type: string
+ *        bureau_id:
+ *          type: integer
+ *      required:
+ *        - title
+ *        - bureau_id
+ *    FondSimple:
+ *      type: object
+ *      properties:
+ *        id:
+ *          type: integer
+ *        title:
+ *          type: string
+ *        slug:
+ *          type: string
+ *        description:
+ *          type: string
+ *        bureau_id:
+ *          type: integer
+ *        createdAt: 
+ *          type: string
+ *        updatedAt: 
+ *          type: string
+ *      required:
+ *        - title
+ *        - bureau_id
+ *    FondSimples:
+ *      type: object
+ *      properties:
+ *        fonds:
+ *          type: array
+ *          items:
+ *            "$ref": '#/components/schemas/FondSimple'
+ *    Fonds:
+ *      type: object
+ *      properties:
+ *        fonds:
+ *          type: array
+ *          items:
+ *            "$ref": '#/components/schemas/Fond'
  */
 export default class Fond extends BaseModel {
   @column({ isPrimary: true })
@@ -47,7 +94,7 @@ export default class Fond extends BaseModel {
   public bureau_id: String|null
 
   @belongsTo(() => Bureau, {
-    foreignKey: 'bureau_id'
+    localKey: 'bureau_id'
   })
   public bureau: BelongsTo<typeof Bureau>
 

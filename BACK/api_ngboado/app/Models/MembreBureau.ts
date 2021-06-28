@@ -11,15 +11,15 @@ import Membre from './Membre'
  *      type: object
  *      properties:
  *        id:
- *          type: uint
+ *          type: integer
  *        membre_id:
- *          type: uint
+ *          type: integer
  *        bureau_id:
- *          type: uint
+ *          type: integer
  *        membre:
- *          "$ref": '#/components/schemas/Membre'
+ *          "$ref": '#/components/schemas/MembreSimple'
  *        bureau:
- *          "$ref": '#/components/schemas/Bureau'
+ *          "$ref": '#/components/schemas/BureauSimple'
  *        createdAt: 
  *          type: string
  *        updatedAt: 
@@ -27,6 +27,46 @@ import Membre from './Membre'
  *      required:
  *        - membre_id
  *        - bureau_id
+ *    MembreBureauDto:
+ *      type: object
+ *      properties:
+ *        membre_id:
+ *          type: integer
+ *        bureau_id:
+ *          type: integer
+ *      required:
+ *        - membre_id
+ *        - bureau_id
+ *    MembreBureauSimple:
+ *      type: object
+ *      properties:
+ *        id:
+ *          type: integer
+ *        membre_id:
+ *          type: integer
+ *        bureau_id:
+ *          type: integer
+ *        createdAt: 
+ *          type: string
+ *        updatedAt: 
+ *          type: string
+ *      required:
+ *        - membre_id
+ *        - bureau_id
+ *    MembreBureauSimples:
+ *      type: object
+ *      properties:
+ *        membre_bureaux:
+ *          type: array
+ *          items:
+ *            "$ref": '#/components/schemas/MembreBureauSimple'
+ *    MembreBureaux:
+ *      type: object
+ *      properties:
+ *        membre_bureaux:
+ *          type: array
+ *          items:
+ *            "$ref": '#/components/schemas/MembreBureau'
  */
 export default class MembreBureau extends BaseModel {
   @column({ isPrimary: true })
@@ -39,12 +79,12 @@ export default class MembreBureau extends BaseModel {
   public membre_id: number
 
   @belongsTo(() => Bureau, {
-    foreignKey: "bureau_id"
+    localKey: "bureau_id"
   })
   public bureau: BelongsTo<typeof Bureau>
 
   @belongsTo(() => Membre, {
-    foreignKey: "membre_id"
+    localKey: "membre_id"
   })
   public membre: BelongsTo<typeof Membre>
 

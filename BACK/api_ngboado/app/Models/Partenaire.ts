@@ -1,7 +1,6 @@
 import { DateTime } from 'luxon'
-import { BaseModel, belongsTo, column } from '@ioc:Adonis/Lucid/Orm'
+import { BaseModel, belongsTo, column, BelongsTo } from '@ioc:Adonis/Lucid/Orm'
 import CategoriePartenaire from './CategoriePartenaire'
-import { BelongsTo } from '@ioc:Adonis/Lucid/Relations'
 
 /**
  * @swagger
@@ -11,7 +10,7 @@ import { BelongsTo } from '@ioc:Adonis/Lucid/Relations'
  *      type: object
  *      properties:
  *        id:
- *          type: uint
+ *          type: integer
  *        title:
  *          type: string
  *        slug:
@@ -27,9 +26,9 @@ import { BelongsTo } from '@ioc:Adonis/Lucid/Relations'
  *        description:
  *          type: string
  *        categorie_id:
- *          type: uint
+ *          type: integer
  *        categorie:
- *          "$ref": '#/components/schemas/CategoriePartenaire'
+ *          "$ref": '#/components/schemas/CategoriePartenaireSimple'
  *        createdAt: 
  *          type: string
  *        updatedAt: 
@@ -38,6 +37,70 @@ import { BelongsTo } from '@ioc:Adonis/Lucid/Relations'
  *        - categorie_id
  *        - title
  *        - image
+ *    PartenaireDto:
+ *      type: object
+ *      properties:
+ *        title:
+ *          type: string
+ *        image:
+ *          type: string
+ *        has_link:
+ *          type: boolean
+ *        link:
+ *          type: string
+ *        slogan:
+ *          type: string
+ *        description:
+ *          type: string
+ *        categorie_id:
+ *          type: integer
+ *      required:
+ *        - categorie_id
+ *        - title
+ *        - image
+ *    PartenaireSimple:
+ *      type: object
+ *      properties:
+ *        id:
+ *          type: integer
+ *        title:
+ *          type: string
+ *        slug:
+ *          type: string
+ *        image:
+ *          type: string
+ *        has_link:
+ *          type: boolean
+ *        link:
+ *          type: string
+ *        slogan:
+ *          type: string
+ *        description:
+ *          type: string
+ *        categorie_id:
+ *          type: integer
+ *        createdAt: 
+ *          type: string
+ *        updatedAt: 
+ *          type: string
+ *      required:
+ *        - categorie_id
+ *        - title
+ *        - image
+ *    PartenaireSimples:
+ *      type: object
+ *      properties:
+ *        partenaires:
+ *          type: array
+ *          items:
+ *            "$ref": '#/components/schemas/PartenaireSimple'
+ *    Partenaires:
+ *      type: object
+ *      properties:
+ *        partenaires:
+ *          type: array
+ *          items:
+ *            "$ref": '#/components/schemas/Partenaire'
  */
 export default class Partenaire extends BaseModel {
   @column({ isPrimary: true })
@@ -68,7 +131,7 @@ export default class Partenaire extends BaseModel {
   public categorie_id: number
 
   @belongsTo(() => CategoriePartenaire, {
-    foreignKey: 'categorie_id'
+    localKey: 'categorie_id'
   })
   public categorie: BelongsTo<typeof CategoriePartenaire> 
   

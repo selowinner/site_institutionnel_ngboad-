@@ -9,9 +9,9 @@ import { BaseModel, column } from '@ioc:Adonis/Lucid/Orm'
  *      type: object
  *      properties:
  *        id:
- *          type: uint
+ *          type: integer
  *        anonymous:
- *          type: string
+ *          type: boolean
  *        name:
  *          type: string
  *        objet:
@@ -25,6 +25,27 @@ import { BaseModel, column } from '@ioc:Adonis/Lucid/Orm'
  *      required:
  *        - anonymous
  *        - suggestion
+ *    SuggestionDto:
+ *      type: object
+ *      properties:
+ *        anonymous:
+ *          type: boolean
+ *        name:
+ *          type: string
+ *        objet:
+ *          type: string
+ *        suggestion:
+ *          type: string
+ *      required:
+ *        - anonymous
+ *        - suggestion
+ *    Suggestions:
+ *      type: object
+ *      properties:
+ *        suggestions:
+ *          type: array
+ *          items:
+ *            "$ref": '#/components/schemas/Suggestion'
  */
 export default class Suggestion extends BaseModel {
   @column({ isPrimary: true })

@@ -11,7 +11,7 @@ import { BaseModel, column } from '@ioc:Adonis/Lucid/Orm'
  *        id:
  *          readonly: true
  *          title: "Identifiant en base de donnée"
- *          type: uint
+ *          type: integer
  *        title:
  *          readonly: true
  *          type: string
@@ -53,6 +53,50 @@ import { BaseModel, column } from '@ioc:Adonis/Lucid/Orm'
  *        - description
  *        - tags
  *        - image
+ *    AccordionDto:
+ *      type: object
+ *      properties:
+ *        title:
+ *          readonly: true
+ *          type: string
+ *          title: "Titre de L'accordion"
+ *          minLength: 2
+ *        description:
+ *          type: string
+ *          nullable: true
+ *          title: "Description de l'accordion"
+ *        image:
+ *          type: string
+ *          nullable: true
+ *          title: "image pour l'accordion"
+ *        has_button:
+ *          type: boolean
+ *        button_text:
+ *          type: string
+ *        has_link:
+ *          type: boolean
+ *        uri_path:
+ *          type: string
+ *        has_button_link:
+ *          type: boolean
+ *        button_link:
+ *          type: string
+ *        tags:
+ *          type: array
+ *          items:
+ *            type: string
+ *      required:
+ *        - title
+ *        - description
+ *        - tags
+ *        - image
+ *    Accordions:
+ *      type: object
+ *      properties:
+ *        accordions:
+ *          type: array
+ *          items:
+ *            "$ref": '#/components/schemas/Accordion'
  */
 export default class Accordion extends BaseModel {
   @column({ isPrimary: true })

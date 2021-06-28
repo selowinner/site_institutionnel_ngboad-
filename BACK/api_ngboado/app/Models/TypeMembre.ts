@@ -10,15 +10,17 @@ import Membre from './Membre'
  *      type: object
  *      properties:
  *        id:
- *          type: uint
+ *          type: integer
  *        role:
  *          type: string
  *        role_priority:
- *          type: uint
+ *          type: integer
  *        slug:
  *          type: string
  *        membres:
- *          "$ref": '#/components/schemas/Membre'
+ *          type: array
+ *          items:
+ *            "$ref": '#/components/schemas/MembreSimple'
  *        createdAt: 
  *          type: string
  *        updatedAt: 
@@ -26,6 +28,48 @@ import Membre from './Membre'
  *      required:
  *        - role
  *        - role_priority
+ *    TypeMembreDto:
+ *      type: object
+ *      properties:
+ *        role:
+ *          type: string
+ *        role_priority:
+ *          type: integer
+ *      required:
+ *        - role
+ *        - role_priority
+ *    TypeMembreSimple:
+ *      type: object
+ *      properties:
+ *        id:
+ *          type: integer
+ *        role:
+ *          type: string
+ *        role_priority:
+ *          type: integer
+ *        slug:
+ *          type: string
+ *        createdAt: 
+ *          type: string
+ *        updatedAt: 
+ *          type: string
+ *      required:
+ *        - role
+ *        - role_priority
+ *    TypeMembreSimples:
+ *      type: object
+ *      properties:
+ *        type_membres:
+ *          type: array
+ *          items:
+ *            "$ref": '#/components/schemas/TypeMembreSimple'
+ *    TypeMembres:
+ *      type: object
+ *      properties:
+ *        type_membres:
+ *          type: array
+ *          items:
+ *            "$ref": '#/components/schemas/TypeMembre'
  */
 export default class TypeMembre extends BaseModel {
   @column({ isPrimary: true })
@@ -41,7 +85,8 @@ export default class TypeMembre extends BaseModel {
   public role_priority: number
 
   @hasMany(() => Membre, {
-    'foreignKey': 'type_membre'
+    foreignKey: 'type_membre_id',
+    localKey: 'id'
   })
   public membres: HasMany<typeof Membre>
 

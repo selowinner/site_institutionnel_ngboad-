@@ -9,8 +9,10 @@ import { BaseModel, column } from '@ioc:Adonis/Lucid/Orm'
  *      type: object
  *      properties:
  *        id:
- *          type: uint
+ *          type: integer
  *        title:
+ *          type: string
+ *        subtitle:
  *          type: string
  *        slug:
  *          type: string
@@ -38,7 +40,44 @@ import { BaseModel, column } from '@ioc:Adonis/Lucid/Orm'
  *          type: string
  *        updatedAt: 
  *          type: string
- *      
+ *      required:
+ *        - title
+ *    SlideDto:
+ *      type: object
+ *      properties:
+ *        title:
+ *          type: string
+ *        subtitle:
+ *          type: string
+ *        image:
+ *          type: string
+ *        description:
+ *          type: string
+ *        has_link:
+ *          type: boolean
+ *        uri_path:
+ *          type: string
+ *        has_button:
+ *          type: boolean
+ *        button_text:
+ *          type: string
+ *        has_button_link:
+ *          type: boolean
+ *        button_link:
+ *          type: string
+ *        tags:
+ *          type: array
+ *          items:
+ *            type: string
+ *      required:
+ *        - title
+ *    Slides:
+ *      type: object
+ *      properties:
+ *        slides:
+ *          type: array
+ *          items:
+ *            "$ref": '#/components/schemas/Slide'
  */
 export default class Slide extends BaseModel {
   @column({ isPrimary: true })

@@ -25,4 +25,15 @@ Route.get('/', async () => {
 })
 
 
+Route.group(() => {
+  Route.get('/type_membres/indexWithRelations', 'TypeMembresController.indexWithRelations')
+  Route.get('/type_membres/:id/showWithRelation', 'TypeMembresController.showWithRelation')
+  Route.resource('/type_membres', 'TypeMembresController')
+  Route.resource('/suggestions', 'SuggestionsController')
+  Route.resource('/slides', 'MembresController')
+  Route.resource('/section_suggestions', 'MembresController')
+  Route.get('/projets/indexWithRelations', 'ProjetsController.indexWithRelations')
+  Route.get('/projets/showWithRelation', 'ProjetsController.showWithRelation')
+  Route.resource('/projets', 'ProjetsController')
+}).prefix('/api')
 // Route.get('/api/docs', 'SwaggerController.index')

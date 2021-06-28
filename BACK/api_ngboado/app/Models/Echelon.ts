@@ -9,13 +9,13 @@ import { BaseModel, belongsTo, BelongsTo, column } from '@ioc:Adonis/Lucid/Orm'
  *      type: object
  *      properties:
  *        id:
- *          type: uint
+ *          type: integer
  *        title:
  *          type: string
  *        slug:
  *          type: string
  *        parent_id:
- *          type: uint
+ *          type: integer
  *        parent:
  *          type: Echelon
  *        createdAt: 
@@ -24,6 +24,46 @@ import { BaseModel, belongsTo, BelongsTo, column } from '@ioc:Adonis/Lucid/Orm'
  *          type: string
  *      required:
  *        - title
+ *    EchelonDto:
+ *      type: object
+ *      properties:
+ *        title:
+ *          type: string
+ *        parent_id:
+ *          type: integer
+ *      required:
+ *        - title
+ *    EchelonSimple:
+ *      type: object
+ *      properties:
+ *        id:
+ *          type: integer
+ *        title:
+ *          type: string
+ *        slug:
+ *          type: string
+ *        parent_id:
+ *          type: integer
+ *        createdAt: 
+ *          type: string
+ *        updatedAt: 
+ *          type: string
+ *      required:
+ *        - title
+ *    EchelonSimples:
+ *      type: object
+ *      properties:
+ *        echelons:
+ *          type: array
+ *          items:
+ *            "$ref": '#/components/schemas/EchelonSimple'
+ *    Echelons:
+ *      type: object
+ *      properties:
+ *        echelons:
+ *          type: array
+ *          items:
+ *            "$ref": '#/components/schemas/Echelon'
  */
 export default class Echelon extends BaseModel {
   @column({ isPrimary: true })
@@ -39,7 +79,7 @@ export default class Echelon extends BaseModel {
   public parent_id: number|null
 
   @belongsTo(() => Echelon, {
-    foreignKey: 'parent_id'
+    localKey: 'parent_id'
   })
   public parent: BelongsTo<typeof Echelon>
 

@@ -5,17 +5,43 @@ import { BaseModel, column, belongsTo, BelongsTo } from '@ioc:Adonis/Lucid/Orm'
  * @swagger
  * components:
  *  schemas:
- *    BlogCategorie:
+ *    BlogCategorieDto:
+ *      type: object
+ *      properties:
+ *        title:
+ *          type: string
+ *        parent_id:
+ *          type: integer
+ *      required:
+ *        - title
+ *    BlogCategorieSimple:
  *      type: object
  *      properties:
  *        id:
- *          type: uint
+ *          type: integer
  *        title:
  *          type: string
  *        slug:
  *          type: string
  *        parent_id:
- *          type: uint
+ *          type: integer
+ *        createdAt:
+ *          type: string
+ *        updatedAt:
+ *          type: string
+ *      required:
+ *        - title
+ *    BlogCategorie:
+ *      type: object
+ *      properties:
+ *        id:
+ *          type: integer
+ *        title:
+ *          type: string
+ *        slug:
+ *          type: string
+ *        parent_id:
+ *          type: integer
  *        parent:
  *          type: BlogCategorie
  *        createdAt:
@@ -24,6 +50,20 @@ import { BaseModel, column, belongsTo, BelongsTo } from '@ioc:Adonis/Lucid/Orm'
  *          type: string
  *      required:
  *        - title
+ *    BlogCategorieSimples:
+ *      type: object
+ *      properties:
+ *        blog_categories:
+ *          type: array
+ *          items:
+ *            "$ref": '#/components/schemas/BlogCategorieSimple'
+ *    BlogCategories:
+ *      type: object
+ *      properties:
+ *        blog_categories:
+ *          type: array
+ *          items:
+ *            "$ref": '#/components/schemas/BlogCategorie'
  */
 export default class BlogCategorie extends BaseModel {
   @column({ isPrimary: true })
@@ -39,7 +79,7 @@ export default class BlogCategorie extends BaseModel {
   public slug: String|null
 
   @belongsTo(() => BlogCategorie, {
-    foreignKey: 'parent_id'
+    localKey: 'parent_id'
   })
   public parent: BelongsTo<typeof BlogCategorie>
 

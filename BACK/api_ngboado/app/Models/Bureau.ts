@@ -14,7 +14,7 @@ import Projet from './Projet'
  *      type: object
  *      properties:
  *        id:
- *          type: uint
+ *          type: integer
  *        title:
  *          type: string
  *        slug:
@@ -22,7 +22,7 @@ import Projet from './Projet'
  *        description:
  *          type: string
  *        echelon_id:
- *          type: uint
+ *          type: integer
  *        lat:
  *          type: float
  *        lon:
@@ -30,21 +30,13 @@ import Projet from './Projet'
  *        echelon:
  *          "$ref": '#/components/schemas/Echelon'
  *        membres:
- *          type: array
- *          items: 
- *            "$ref": '#/components/schemas/Membre'
+ *          "$ref": '#/components/schemas/Membres'
  *        fonds:
- *          type: array
- *          items: 
- *            "$ref": '#/components/schemas/Fond'
+ *          "$ref": '#/components/schemas/Fonds'
  *        programmes:
- *          type: array
- *          items: 
- *            "$ref": '#/components/schemas/Programme'
+ *          "$ref": '#/components/schemas/Programmes'
  *        projets:
- *          type: array
- *          items: 
- *            "$ref": '#/components/schemas/Projet'
+ *          "$ref": '#/components/schemas/Projets'
  *        createdAt:
  *          type: string
  *        updatedAt:
@@ -52,6 +44,60 @@ import Projet from './Projet'
  *      required:
  *        - echelon_id
  *        - title
+ *    BureauDto:
+ *      type: object
+ *      properties:
+ *        title:
+ *          type: string
+ *        description:
+ *          type: string
+ *        echelon_id:
+ *          type: integer
+ *        lat:
+ *          type: float
+ *        lon:
+ *          type: float
+ *      required:
+ *        - echelon_id
+ *        - title
+ *    BureauSimple:
+ *      type: object
+ *      properties:
+ *        id:
+ *          type: integer
+ *        title:
+ *          type: string
+ *        slug:
+ *          type: string
+ *        description:
+ *          type: string
+ *        echelon_id:
+ *          type: integer
+ *        lat:
+ *          type: float
+ *        lon:
+ *          type: float
+ *        createdAt:
+ *          type: string
+ *        updatedAt:
+ *          type: string
+ *      required:
+ *        - echelon_id
+ *        - title
+ *    BureauSimples:
+ *      type: object
+ *      properties:
+ *        bureaux:
+ *          type: array
+ *          items:
+ *            "$ref": '#/components/schemas/BureauSimple'
+ *    Bureaux:
+ *      type: object
+ *      properties:
+ *        bureaux:
+ *          type: array
+ *          items:
+ *            "$ref": '#/components/schemas/Bureau'
  */
 export default class Bureau extends BaseModel {
   @column({ isPrimary: true })
@@ -76,7 +122,7 @@ export default class Bureau extends BaseModel {
   public lon: number|null
 
   @belongsTo(() => Echelon, {
-    foreignKey:  'echelon_id'
+    localKey:  'echelon_id'
   })
   public echelon: BelongsTo<typeof Echelon>
 

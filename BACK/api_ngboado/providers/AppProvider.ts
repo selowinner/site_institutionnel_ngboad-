@@ -1,6 +1,8 @@
+import geoip from 'geoip-lite'
 import { ApplicationContract } from '@ioc:Adonis/Core/Application'
 
 export default class AppProvider {
+  
   constructor (protected app: ApplicationContract) {
   }
 
@@ -10,6 +12,11 @@ export default class AppProvider {
 
   public async boot () {
     // IoC container is ready
+    // const HttpContext = this.app.container.use('Adonis/Core/HttpContext')
+
+    // HttpContext.getter('location', function location() {
+    //   return geoip.lookup(this.request.ip())
+    // })
   }
 
   public async ready () {

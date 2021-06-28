@@ -11,7 +11,7 @@ import MembreBureau from './MembreBureau'
  *      type: object
  *      properties:
  *        id:
- *          type: uint
+ *          type: integer
  *        fullname:
  *          type: string
  *        job: 
@@ -23,13 +23,13 @@ import MembreBureau from './MembreBureau'
  *        biographie:
  *          type: string
  *        type_membre_id:
- *          type: uint
- *        membre:
- *          "$ref": '#/components/schemas/Membre'
+ *          type: integer
+ *        type_membre:
+ *          "$ref": '#/components/schemas/TypeMembreSimple'
  *        bureaux:
  *          type: array
  *          items:
- *            "$ref": '#/components/schemas/Bureau'
+ *            "$ref": '#/components/schemas/MembreBureauSimple'
  *        createdAt: 
  *          type: string
  *        updatedAt: 
@@ -40,6 +40,68 @@ import MembreBureau from './MembreBureau'
  *        - image
  *        - biographie
  *        - type_membre_id
+ *    MembreDto:
+ *      type: object
+ *      properties:
+ *        fullname:
+ *          type: string
+ *        job: 
+ *          type: string
+ *        slug:
+ *          type: string
+ *        image:
+ *          type: string
+ *        biographie:
+ *          type: string
+ *        type_membre_id:
+ *          type: integer
+ *      required:
+ *        - fullname
+ *        - job
+ *        - image
+ *        - biographie
+ *        - type_membre_id
+ *    MembreSimple:
+ *      type: object
+ *      properties:
+ *        id:
+ *          type: integer
+ *        fullname:
+ *          type: string
+ *        job: 
+ *          type: string
+ *        slug:
+ *          type: string
+ *        image:
+ *          type: string
+ *        biographie:
+ *          type: string
+ *        type_membre_id:
+ *          type: integer
+ *        createdAt: 
+ *          type: string
+ *        updatedAt: 
+ *          type: string
+ *      required:
+ *        - fullname
+ *        - job
+ *        - image
+ *        - biographie
+ *        - type_membre_id
+ *    MembreSimples:
+ *      type: object
+ *      properties:
+ *        membres:
+ *          type: array
+ *          items:
+ *            "$ref": '#/components/schemas/MembreSimple'
+ *    Membres:
+ *      type: object
+ *      properties:
+ *        membres:
+ *          type: array
+ *          items:
+ *            "$ref": '#/components/schemas/Membre'
  */
 export default class Membre extends BaseModel {
   @column({ isPrimary: true })
@@ -60,13 +122,18 @@ export default class Membre extends BaseModel {
   @column()
   public biographie: String|null
 
+  @column()
+  public type_membre_id: number
+
   @belongsTo(() => TypeMembre, {
-    'foreignKey': 'type_membre_id'
+    localKey: 'type_membre_id',
+    foreignKey: 'id'
   })
-  public type: BelongsTo<typeof TypeMembre>
-  
+  public type_membre: BelongsTo<typeof TypeMembre>
+
   @hasMany(() => MembreBureau, {
-    'foreignKey': 'membre_id'
+    foreignKey: 'membre_id',
+    localKey: 'id'
   })
   public bureaux: HasMany<typeof MembreBureau>
 

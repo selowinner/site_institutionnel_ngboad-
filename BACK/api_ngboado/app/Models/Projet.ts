@@ -10,7 +10,7 @@ import Bureau from './Bureau'
  *      type: object
  *      properties:
  *        id:
- *          type: uint
+ *          type: integer
  *        title:
  *          type: string
  *        slug:
@@ -24,13 +24,65 @@ import Bureau from './Bureau'
  *        description:
  *          type: string
  *        bureau_id:
- *          type: uint
+ *          type: integer
  *        bureau:
- *          "$ref": '#/components/schemas/Bureau'
+ *          "$ref": '#/components/schemas/BureauSimple'
  *        createdAt: 
  *          type: string
  *        updatedAt: 
  *          type: string
+ *    ProjetDto:
+ *      type: object
+ *      properties:
+ *        title:
+ *          type: string
+ *        images:
+ *          type: array
+ *          items:
+ *            type: string
+ *        slogan:
+ *          type: string
+ *        description:
+ *          type: string
+ *        bureau_id:
+ *          type: integer
+ *    ProjetSimple:
+ *      type: object
+ *      properties:
+ *        id:
+ *          type: integer
+ *        title:
+ *          type: string
+ *        slug:
+ *          type: string
+ *        images:
+ *          type: array
+ *          items:
+ *            type: string
+ *        slogan:
+ *          type: string
+ *        description:
+ *          type: string
+ *        bureau_id:
+ *          type: integer
+ *        createdAt: 
+ *          type: string
+ *        updatedAt: 
+ *          type: string
+ *    ProjetSimples:
+ *      type: object
+ *      properties:
+ *        projets:
+ *          type: array
+ *          items:
+ *            "$ref": '#/components/schemas/ProjetSimple'
+ *    Projets:
+ *      type: object
+ *      properties:
+ *        projets:
+ *          type: array
+ *          items:
+ *            "$ref": '#/components/schemas/Projet'
  */
 export default class Projet extends BaseModel {
   @column({ isPrimary: true })
@@ -55,7 +107,7 @@ export default class Projet extends BaseModel {
   public bureau_id: number
 
   @belongsTo(() => Bureau, {
-    foreignKey: "bureau_id"
+    localKey: "bureau_id"
   })
   public bureau: BelongsTo<typeof Bureau>
 
