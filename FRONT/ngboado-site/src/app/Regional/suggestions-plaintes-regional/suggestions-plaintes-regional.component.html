@@ -20,121 +20,101 @@
   </div>
 </section>
 
-<section class="section2">
-  <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-5 mt-4 py-5">
-          <div class="ac">
-              <input class="ac-input" id="ac-1" name="ac-1" type="checkbox" />
-              <label class="ac-label" for="ac-1">1. Suggestions</label>
-              
-              <article class="ac-text">
-                <p class="lorem-acc">
-              <span>Job Sodjinou</span> est née le 19 Mars 1981 à Koumassi, Abidjan.
-               Béninois d'origine, il est le 5ème garçon d'une famille de 9 enfants.
-               Après l'obtention d'unBac scientifique, il est orienté au CBCG de 
-               Cocody où il étudie la Finance Comptabilité.
-            </p>
-            <p class="lorem-acc">
-              Toujours en quête de savoir, il décide de faire un tour en Europe.
-              C'est ainsi que le 18 août 2015, il pose ses valises en Suisse.
-              Les réalités du pays hôte le contraignent à la dépravation sexuelle
-              suivie de son corolaire, la drogue.
-            </p>
-            <p class="lorem-acc">
-             Devenue toxicomane, sans repère et dans l'impossibilité d'avoir du boulot
-             sans son pays d'accueil, la drogue devint.
-              Maecenas ligula massa, varius a, semper congue, euismod non.
-            </p>
-                
-              </article><!--/ac-text-->
-          </div><!--/ac-->
-      
-            <div class="ac">
-              <input class="ac-input" id="ac-4" name="ac-4" type="checkbox" />
-              <label class="ac-label" for="ac-4">2. Plaintes</label>
-              
-              <article class="ac-text">
-                <p class="lorem-acc">
-                  <span>Job Sodjinou</span> est née le 19 Mars 1981 à Koumassi, Abidjan.
-                   Béninois d'origine, il est le 5ème garçon d'une famille de 9 enfants.
-                   Après l'obtention d'unBac scientifique, il est orienté au CBCG de 
-                   Cocody où il étudie la Finance Comptabilité.
-                </p>
-                <p class="lorem-acc">
-                  Toujours en quête de savoir, il décide de faire un tour en Europe.
-                  C'est ainsi que le 18 août 2015, il pose ses valises en Suisse.
-                  Les réalités du pays hôte le contraignent à la dépravation sexuelle
-                  suivie de son corolaire, la drogue.
-                </p>
-                <p class="lorem-acc">
-                 Devenue toxicomane, sans repère et dans l'impossibilité d'avoir du boulot
-                 sans son pays d'accueil, la drogue devint.
-                  Maecenas ligula massa, varius a, semper congue, euismod non.
-                </p>
-              </article><!--/ac-text-->
-            </div><!--/ac-->
-      
-            <div class="ac">
-              <input class="ac-input" id="ac-3" name="ac-3" type="checkbox" />
-              <label class="ac-label" for="ac-3">3. Autres</label>
-              
-              <article class="ac-text">
-                <p class="lorem-acc">
-                  <span>Job Sodjinou</span> est née le 19 Mars 1981 à Koumassi, Abidjan.
-                   Béninois d'origine, il est le 5ème garçon d'une famille de 9 enfants.
-                   Après l'obtention d'unBac scientifique, il est orienté au CBCG de 
-                   Cocody où il étudie la Finance Comptabilité.
-                </p>
-                <p class="lorem-acc">
-                  Toujours en quête de savoir, il décide de faire un tour en Europe.
-                  C'est ainsi que le 18 août 2015, il pose ses valises en Suisse.
-                  Les réalités du pays hôte le contraignent à la dépravation sexuelle
-                  suivie de son corolaire, la drogue.
-                </p>
-                <p class="lorem-acc">
-                 Devenue toxicomane, sans repère et dans l'impossibilité d'avoir du boulot
-                 sans son pays d'accueil, la drogue devint.
-                  Maecenas ligula massa, varius a, semper congue, euismod non.
-                </p>
-              </article><!--/ac-text-->
-            </div><!--/ac-->
-        </div>
-
-
-      <div class="col-md-6 py-5">
-          <div class="card">
-              <p class="anonyme text-center mt-4">
-                  Voulez-vous faire une suggestion de façon anonyme ?<br><br>
-                  <span class="anony" onclick="myFunction()">Oui</span> &nbsp; &nbsp; <span class="anony">Non</span>
-                </p>
-          
-
-              <form style="padding-left: 25px; padding-right: 25px; padding-bottom: 25px;">
-                <div id="prof">
-                  <div class="form-group mb-4">
-                    <input type="text" class="form-control" placeholder="Pacôme">
+<section class="mt-5 py-5 accordion-form-section">
+  <div class="row py-5">
+      <div class="col-6 float-left">
+          <div class="accordion-wrapper">
+              <div class="accordion">
+                <input class="accordion" type="radio" name="radio-a" id="check1" checked>
+                <label (click)="suggestionForm()" class="accordion-label" for="check1" id="lCheck1">1. Suggestions</label>
+                <div class="accordion-content">
+                  <p>
+                    Job Sodjinou est née le 19 Mars 1981 à Koumassi, Abidjan. Béninois d'origine, il est le 5ème garçon d'une famille de 9 enfants. Après l'obtention d'unBac scientifique, il est orienté au CBCG de Cocody où il étudie la Finance Comptabilité. <br>
+                    Toujours en quête de savoir, il décide de faire un tour en Europe. C'est ainsi que le 18 août 2015, il pose ses valises en Suisse. Les réalités du pays hôte le contraignent à la dépravation sexuelle suivie de son corolaire, la drogue.
+                  </p>
+                  <p>
+                    Devenue toxicomane, sans repère et dans l'impossibilité d'avoir du boulot sans son pays d'accueil, la drogue devint. Maecenas ligula massa, varius a, semper congue, euismod non. 
+                  </p>
                 </div>
-                <div class="form-group mb-4">
-                    <input type="text" class="form-control" placeholder="Kouadio">
-                </div>
-                </div>
-                  <div class="form-group mb-2">
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="7" placeholder="Faites votre suggestion..."></textarea>
+              </div>
+              <div class="accordion">
+                  <input class="accordion" type="radio" name="radio-a" id="check2">
+                  <label (click)="plaintesForm()" class="accordion-label" for="check2">2. Plaintes</label>
+                  <div class="accordion-content">
+                      <p>
+                          Job Sodjinou est née le 19 Mars 1981 à Koumassi, Abidjan. Béninois d'origine, il est le 5ème garçon d'une famille de 9 enfants. Après l'obtention d'unBac scientifique, il est orienté au CBCG de Cocody où il étudie la Finance Comptabilité. <br>
+                          Toujours en quête de savoir, il décide de faire un tour en Europe. C'est ainsi que le 18 août 2015, il pose ses valises en Suisse. Les réalités du pays hôte le contraignent à la dépravation sexuelle suivie de son corolaire, la drogue.
+                      </p>
+                      <p>
+                          Devenue toxicomane, sans repère et dans l'impossibilité d'avoir du boulot sans son pays d'accueil, la drogue devint. Maecenas ligula massa, varius a, semper congue, euismod non. 
+                      </p>
                   </div>
-                  <div class="text-center">
-                      <div class="row mt-4 mb-2">
-                          <div class="col-4"></div>
-                          <div class="col-4">
-                              <button type="submit" class="btn btn-block btn-warning mbn" style="background-color: #d20514 !important;color: #fff;">Envoyer</button>
-                          </div>
-                          <div class="col-4"></div>
-                      </div>
+              </div>
+              <div class="accordion">
+                  <input class="accordion" type="radio" name="radio-a" id="check3">
+                  <label (click)="autresForm()" class="accordion-label" for="check3">3. Autres</label>
+                  <div class="accordion-content">
+                      <p>
+                          Job Sodjinou est née le 19 Mars 1981 à Koumassi, Abidjan. Béninois d'origine, il est le 5ème garçon d'une famille de 9 enfants. Après l'obtention d'unBac scientifique, il est orienté au CBCG de Cocody où il étudie la Finance Comptabilité. <br>
+                          Toujours en quête de savoir, il décide de faire un tour en Europe. C'est ainsi que le 18 août 2015, il pose ses valises en Suisse. Les réalités du pays hôte le contraignent à la dépravation sexuelle suivie de son corolaire, la drogue.
+                      </p>
+                      <p>
+                          Devenue toxicomane, sans repère et dans l'impossibilité d'avoir du boulot sans son pays d'accueil, la drogue devint. Maecenas ligula massa, varius a, semper congue, euismod non. 
+                      </p>
                   </div>
-              </form>
+              </div>
           </div>
       </div>
-
+      <div class="col-6 float-right">
+          <section id="formulaire" style="margin: 0 auto !important">
+              <div class="card card-2">
+                  <div class="py-5 text-center" style="margin-left: 30px !important;margin-right: 30px !important;">
+                      <div id="fSuggestions" style="display: block;">
+                          <form action="" method="POST">
+                              <div class="form-group mt-3 mb-3">
+                                <input type="text" class="form-control" id="prenoms" aria-describedby="prenoms" placeholder="Pacôme">
+                              </div>
+                              <div class="form-group mt-4">
+                                  <input type="text" class="form-control" id="nom" aria-describedby="nom" placeholder="Kouadio">
+                              </div>
+                              <div class="form-group mt-4">
+                                  <textarea class="form-control" name="faiteVotreSugg" id="faiteVotreSugg" rows="4" placeholder="Faites votre suggestion..."></textarea>
+                              </div>
+                              <button type="submit" id="EnvoyerBtn" class="btn btn-md btn-primary">Envoyer</button>
+                          </form>
+                      </div>
+                      <div id="fPlaintes" style="display: none;">
+                          <form action="" method="POST">
+                              <div class="form-group mt-3 mb-3">
+                                <input type="text" class="form-control" id="prenoms" aria-describedby="prenoms" placeholder="Pacôme">
+                              </div>
+                              <div class="form-group mt-4">
+                                  <input type="text" class="form-control" id="nom" aria-describedby="nom" placeholder="Kouadio">
+                              </div>
+                              <div class="form-group mt-4">
+                                  <textarea class="form-control" name="faiteVotreSugg" id="faiteVotreSugg" rows="4" placeholder="Quel est l'objet de votre plainte ?"></textarea>
+                              </div>
+                              <button type="submit" id="EnvoyerBtn" class="btn btn-md btn-primary">Envoyer</button>
+                          </form>
+                      </div>
+                      <div id="fAutres" style="display: none;">
+                          <form action="" method="POST">
+                              <div class="form-group mt-3 mb-3">
+                                <input type="text" class="form-control" id="prenoms" aria-describedby="prenoms" placeholder="Prénoms">
+                              </div>
+                              <div class="form-group mt-4">
+                                  <input type="text" class="form-control" id="nom" aria-describedby="nom" placeholder="Nom">
+                              </div>
+                              <div class="form-group mt-4">
+                                  <textarea class="form-control" name="faiteVotreSugg" id="faiteVotreSugg" rows="4" placeholder="Entrez votre préoccupation ici."></textarea>
+                              </div>
+                              <button type="submit" id="EnvoyerBtn" class="btn btn-md btn-primary">Envoyer</button>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </section>
+      </div>
   </div>
 </section>
 

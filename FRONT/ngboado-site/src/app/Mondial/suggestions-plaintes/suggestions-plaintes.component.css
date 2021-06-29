@@ -3,33 +3,6 @@ body{
   overflow-y: hidden !important;
 }
 
-/* le logo */
-
-@-webkit-keyframes float {
-  0% {
-    transform: translatey(0px);
-  }
-  50% {
-    transform: translatey(-20px);
-  }
-  100% {
-    transform: translatey(0px);
-  }
-}
-
-@keyframes float {
-  0% {
-    transform: translatey(0px);
-  }
-  50% {
-    transform: translatey(-20px);
-  }
-  100% {
-    transform: translatey(0px);
-  }
-}
-/* le logo */
-
 .page-content{
   position: absolute;
   top: 40%;
