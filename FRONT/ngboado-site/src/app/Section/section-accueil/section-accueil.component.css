@@ -182,7 +182,7 @@ body{
   }
   
   .cite{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 470;
     color: #262626 !important;
   }
@@ -197,8 +197,16 @@ body{
   
   .lorem{
      color: #828282 !important;
-     font-weight: 600;
-     font-size: 17px;
+     font-weight: normal;
+     font-size: 16px;
+  }
+  .lorem1{
+    font-size: 14px;
+  }
+
+  .lorem-bloc4{
+    color: #828282 !important;
+    font-size: 12px;
   }
   /* .............. section 2 style end.................... */
   
@@ -291,14 +299,10 @@ body{
   
    .plainte{
      color: #262626;
-     font-weight: 500;
-     font-size: 18px;
+     font-weight: normal;
+     font-size: 22px;
    }
-   .lorem-bloc4{
-     color: #828282;
-     font-size: 12px;
-     font-weight: 600;
-   }
+ 
   
    .Mnbtn {
      background-image: linear-gradient(to left, #b550ec, #b550ec) !important;

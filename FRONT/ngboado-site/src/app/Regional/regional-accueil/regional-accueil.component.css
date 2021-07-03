@@ -92,48 +92,6 @@ div.jeflex2 {
   color: #fff;
   background: #d20514;
 }
-
-
-
-/*logo animation start*/
-.loader-logo {
- overflow: hidden;
- transform: translatey(0px);
- -webkit-animation: float 3s ease-in-out infinite;
-         animation: float 3s ease-in-out infinite;
-}
-
-
-@-webkit-keyframes float {
- 0% {
-   transform: translatey(0px);
- }
- 50% {
-   transform: translatey(-20px);
- }
- 100% {
-   transform: translatey(0px);
- }
-}
-
-@keyframes float {
- 0% {
-   transform: translatey(0px);
- }
- 50% {
-   transform: translatey(-20px);
- }
- 100% {
-   transform: translatey(0px);
- }
-}
-/*logo animation end*/
-/*logo style end*/
-
-/*Bg image style end*/
-
-
-
 /* section 1 style start */
 ol,
 ul {
@@ -182,7 +140,7 @@ img{
 }
 
 .cite{
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 470;
   color: #262626 !important;
 }
@@ -197,8 +155,16 @@ img{
 
 .lorem{
    color: #828282 !important;
-   font-weight: 600;
-   font-size: 17px;
+   font-weight: normal;
+   font-size: 16px;
+}
+.lorem1{
+  font-size: 14px;
+}
+
+.lorem-bloc4{
+  color: #828282 !important;
+  font-size: 12px;
 }
 /* .............. section 2 style end.................... */
 
@@ -291,14 +257,10 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 
  .plainte{
    color: #262626;
-   font-weight: 500;
-   font-size: 18px;
+   font-weight: normal;
+   font-size: 22px;
  }
- .lorem-bloc4{
-   color: #828282;
-   font-size: 12px;
-   font-weight: 600;
- }
+
 
  .Mnbtn {
    background-image: linear-gradient(to left, #d20514, #d20514) !important;

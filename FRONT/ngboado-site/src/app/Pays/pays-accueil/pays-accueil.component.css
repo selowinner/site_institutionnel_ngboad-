@@ -93,47 +93,6 @@ body{
     background: #fe7612;
   }
   
-  
-  
-  /*logo animation start*/
-  .loader-logo {
-   overflow: hidden;
-   transform: translatey(0px);
-   -webkit-animation: float 3s ease-in-out infinite;
-           animation: float 3s ease-in-out infinite;
-  }
-  
-  
-  @-webkit-keyframes float {
-   0% {
-     transform: translatey(0px);
-   }
-   50% {
-     transform: translatey(-20px);
-   }
-   100% {
-     transform: translatey(0px);
-   }
-  }
-  
-  @keyframes float {
-   0% {
-     transform: translatey(0px);
-   }
-   50% {
-     transform: translatey(-20px);
-   }
-   100% {
-     transform: translatey(0px);
-   }
-  }
-  /*logo animation end*/
-  /*logo style end*/
-  
-  /*Bg image style end*/
-  
-  
-  
   /* section 1 style start */
   ol,
   ul {
@@ -182,7 +141,7 @@ body{
   }
   
   .cite{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 470;
     color: #262626 !important;
   }
@@ -197,8 +156,16 @@ body{
   
   .lorem{
      color: #828282 !important;
-     font-weight: 600;
-     font-size: 17px;
+     font-weight: normal;
+     font-size: 16px;
+  }
+  .lorem1{
+    font-size: 14px;
+  }
+  
+  .lorem-bloc4{
+    color: #828282 !important;
+    font-size: 12px;
   }
   /* .............. section 2 style end.................... */
   
@@ -290,14 +257,9 @@ body{
    }
   
    .plainte{
-     color: #262626;
-     font-weight: 500;
-     font-size: 18px;
-   }
-   .lorem-bloc4{
-     color: #828282;
-     font-size: 12px;
-     font-weight: 600;
+    color: #262626;
+    font-weight: normal;
+    font-size: 22px;
    }
   
    .Mnbtn {
