@@ -84,8 +84,19 @@ function myFunction() {
       plainteElem.style.display = 'none';
       autreElem.style.display = 'block';
   }
+
+
   //PRESENTATION
-  function displayAndHideImage(historiqueId, assembleId, conseilAdminId, secretarialGenId, cabinetMaketingId, conseilEcoId, courUnivId, activeElementId){
+  function displayAndHideImage(
+    historiqueId, 
+    assembleId, 
+    conseilAdminId, 
+    secretarialGenId, 
+    cabinetMaketingId, 
+    conseilEcoId, 
+    courUnivId, 
+    activeElementId)
+  {
     if(activeElementId === historiqueId.id){
       historiqueId.style.display = 'block';
       assembleId.style.display = 'none';
