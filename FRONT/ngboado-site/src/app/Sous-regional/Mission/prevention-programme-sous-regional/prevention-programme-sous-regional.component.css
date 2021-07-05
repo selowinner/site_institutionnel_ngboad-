@@ -92,7 +92,7 @@ width: 125px;
   .marvel{
     font-weight: bold;
     font-size: 55px;
-    color: #dc3232;
+    color: #f5a922;
     padding-top: 30px;
   }
   .marvel1{
@@ -150,7 +150,7 @@ ul span a {
   padding: 5px;
   text-decoration: none;
   border-radius: 0.2rem;
-  background-image: linear-gradient(to right, #dc3232, #f5a922);
+  background-image: linear-gradient(to right, #f5a922, #dc3232);
   border: none !important;
   color: #fff;
   text-align: center;
@@ -168,8 +168,9 @@ ul span a {
   padding: 6px;
   text-decoration: none;
   border-radius: 0.2rem;
-  background-image: linear-gradient(to right, #dc3232, #f5a922);
-  border: none !important;
+  background-image: linear-gradient(to right, #f5a922, #dc3232);
+  border: 1px solid #ced4da !important;
+  cursor: pointer;
   color: #fff;
   font-size: 17px;
   font-weight: bold;
@@ -210,9 +211,6 @@ justify-content: center;
 }
 /* search bar icon */
 /* Programmes intitutionnels */
-#slideMission{
-  display: none;
-}
 
 .Asist{
   cursor: pointer;
@@ -220,17 +218,18 @@ justify-content: center;
 
 /* Programmes intitutionnels */
 .ProgNInst {
-width: 550px;
-height: 40px;
-padding: 6px;
-text-decoration: none;
-border-radius: 0.2rem;
-/* background-image: linear-gradient(to right, #fe7612, #fe7612); */
-/* background-image: transparent; */
-border: 1px solid #ced4da !important;
-color: #4d4d4d;
-font-size: 17px;
-margin-left: 30px !important;
+  border: 1px solid #ced4da !important;
+  color: #4d4d4d;
+  height: 40px;
+  padding: 6px;
+  text-decoration: none;
+  border-radius: 0.2rem;
+  background: #fff;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+  margin-left: 15px !important;
+  margin-right: 15px !important;
 }
 /* Programmes intitutionnels */
 
